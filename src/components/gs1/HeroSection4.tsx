@@ -12,7 +12,7 @@ const HeroSection3 = () => {
           height={1080}
           className="w-full h-full object-cover opacity-15 grayscale"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-white/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#F5EFE6] via-[#F5EFE6]/90 to-[#F5EFE6]/60" />
       </div>
 
       <div className="relative z-10 max-w-4xl">
@@ -20,7 +20,7 @@ const HeroSection3 = () => {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="inline-block bg-gray-100 text-gray-700 font-label text-[0.6875rem] uppercase tracking-[0.2em] px-3 py-1 mb-8"
+          className="inline-block bg-[#EBE3D5] text-gray-700 font-label text-[0.6875rem] uppercase tracking-[0.2em] px-3 py-1 mb-8"
         >
           Industrial Excellence
         </motion.span>
@@ -62,7 +62,7 @@ const HeroSection3 = () => {
           </a>
           <a
             href="#capabilities"
-            className="border border-gray-300 text-gray-900 px-8 py-4 font-headline font-bold uppercase text-sm tracking-widest hover:bg-gray-50 transition-all"
+            className="border border-[#D4C9B8] text-gray-900 px-8 py-4 font-headline font-bold uppercase text-sm tracking-widest hover:bg-[#EBE3D5] transition-all"
           >
             Explore Our Capabilities
           </a>

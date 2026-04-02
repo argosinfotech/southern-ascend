@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 const StephenGouldSection3 = () => {
   return (
-    <section id="about" className="py-16 px-6 md:px-12 bg-gray-50">
+    <section id="about" className="py-16 px-6 md:px-12 bg-[#EBE3D5]">
       <div className="max-w-[1920px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -26,7 +26,7 @@ const StephenGouldSection3 = () => {
             through the Stephen Gould network.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-gray-900 p-6">
+            <div className="bg-[#1E3448] p-6">
               <h4 className="font-headline font-bold text-white mb-2">
                 Regional Reach
               </h4>
@@ -35,7 +35,7 @@ const StephenGouldSection3 = () => {
                 fulfillment and multi-market execution.
               </p>
             </div>
-            <div className="bg-gray-900 p-6">
+            <div className="bg-[#1E3448] p-6">
               <h4 className="font-headline font-bold text-white mb-2">
                 Scalable Support
               </h4>

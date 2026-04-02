@@ -21,7 +21,7 @@ const legalLinks = [
 
 const Footer4 = () => {
   return (
-    <footer className="bg-gray-900 border-t border-gray-800 pt-20 pb-8 px-6 md:px-12">
+    <footer className="bg-[#1E3448] border-t border-[#2A4A60] pt-20 pb-8 px-6 md:px-12">
       <div className="max-w-[1920px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
         <div>
           <div className="font-headline font-bold text-white text-xl mb-6 uppercase tracking-tighter">
@@ -66,7 +66,7 @@ const Footer4 = () => {
         </div>
       </div>
 
-      <div className="max-w-[1920px] mx-auto mt-8 pt-4 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div className="max-w-[1920px] mx-auto mt-8 pt-4 border-t border-[#2A4A60] flex flex-col md:flex-row justify-between items-center gap-6">
         <span className="text-gray-500 text-sm">
           © {new Date().getFullYear()} Gould Southern. All Rights Reserved.
         </span>

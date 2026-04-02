@@ -41,7 +41,7 @@ const HeaderLight = () => {
   }, []);
 
   return (
-    <header className={`fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm transition-shadow duration-300 ${scrolled ? "shadow-sm border-b border-gray-200" : ""}`}>
+    <header className={`fixed top-0 w-full z-50 bg-[#F5EFE6]/95 backdrop-blur-sm transition-shadow duration-300 ${scrolled ? "shadow-sm border-b border-[#E8DFD1]" : ""}`}>
       <div className="flex justify-between items-center px-6 md:px-12 py-6 max-w-[1920px] mx-auto">
         <div className="flex items-center gap-3">
           <img src={logo} alt="Gould Southern logo" className="h-8 w-8 object-contain" />
@@ -61,13 +61,13 @@ const HeaderLight = () => {
               <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${capOpen ? "rotate-180" : ""}`} />
             </button>
             {capOpen && (
-              <div className="absolute top-full left-0 mt-3 min-w-[220px] bg-white border border-gray-200 shadow-lg py-2 z-50">
+              <div className="absolute top-full left-0 mt-3 min-w-[220px] bg-white border border-[#E8DFD1] shadow-lg py-2 z-50">
                 {capabilitiesItems.map((item) => (
                   <a
                     key={item.label}
                     href={item.href}
                     onClick={() => setCapOpen(false)}
-                    className="block px-5 py-2.5 text-sm font-headline font-semibold text-gray-700 hover:text-secondary hover:bg-gray-50 transition-colors"
+                    className="block px-5 py-2.5 text-sm font-headline font-semibold text-gray-700 hover:text-secondary hover:bg-[#EBE3D5] transition-colors"
                   >
                     {item.label}
                   </a>
@@ -105,7 +105,7 @@ const HeaderLight = () => {
 
       {/* Mobile Nav */}
       {mobileOpen && (
-        <div className="md:hidden bg-white border-t border-gray-200">
+        <div className="md:hidden bg-[#F5EFE6] border-t border-[#E8DFD1]">
           <div className="px-6 py-6 flex flex-col gap-4">
             <button
               onClick={() => setMobileCapOpen(!mobileCapOpen)}

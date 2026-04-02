@@ -24,7 +24,7 @@ const points = [
 
 const WhySection3 = () => {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-white">
       <div className="max-w-[1920px] mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
@@ -41,7 +41,7 @@ const WhySection3 = () => {
             height={800}
             className="w-full aspect-square object-cover shadow-2xl"
           />
-          <div className="absolute -bottom-8 -right-8 bg-gray-900 p-12 hidden md:block max-w-xs">
+          <div className="absolute -bottom-8 -right-8 bg-[#1E3448] p-12 hidden md:block max-w-xs">
             <p className="font-headline font-black text-4xl text-white">100%</p>
             <p className="text-gray-400 font-label text-[0.6875rem] uppercase tracking-widest mt-2">
               Focus on Precision
