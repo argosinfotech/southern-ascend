@@ -3,8 +3,8 @@ const TrustBar3 = () => {
     <section className="bg-white py-10 px-6 md:px-12 border-y border-gray-100">
       <div className="max-w-[1920px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
         <div className="flex flex-col items-center md:items-start">
-          <span className="text-secondary font-headline font-black text-xl mb-1">AS9100:D</span>
-          <span className="text-gray-500 font-label text-[0.6875rem] uppercase tracking-widest">Certified Quality</span>
+          <span className="text-[#1E3448] font-headline font-black text-xl mb-1">AS9100:D</span>
+          <span className="text-gray-400 font-label text-[0.6875rem] uppercase tracking-widest">Certified Quality</span>
         </div>
         <div className="flex flex-col items-center md:items-start">
           <span className="text-secondary font-headline font-black text-xl mb-1">ISO 9001:2015</span>
