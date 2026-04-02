@@ -41,7 +41,7 @@ const HeaderLight = () => {
   }, []);
 
   return (
-    <header className={`fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm transition-shadow duration-300 ${scrolled ? "shadow-sm border-b border-gray-200" : ""}`}>
+    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-[#FAF8F5]/95 backdrop-blur-sm shadow-sm border-b border-gray-200" : "bg-transparent"}`}>
       <div className="flex justify-between items-center px-6 md:px-12 py-6 max-w-[1920px] mx-auto">
         <div className="flex items-center gap-3">
           <img src={logo} alt="Gould Southern logo" className="h-8 w-8 object-contain" />
