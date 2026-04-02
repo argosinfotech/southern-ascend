@@ -1,26 +1,26 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
+import TrustBar from "@/components/TrustBar";
 import CapabilitiesSection from "@/components/CapabilitiesSection";
-import TrustSection from "@/components/TrustSection";
+import WhySection from "@/components/WhySection";
 import IndustriesSection from "@/components/IndustriesSection";
-import SolutionsSection from "@/components/SolutionsSection";
 import CertificationsSection from "@/components/CertificationsSection";
 import StephenGouldSection from "@/components/StephenGouldSection";
-import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-background text-foreground">
       <Header />
-      <HeroSection />
-      <CapabilitiesSection />
-      <TrustSection />
-      <IndustriesSection />
-      <SolutionsSection />
-      <CertificationsSection />
-      <StephenGouldSection />
-      <ContactSection />
+      <main className="pt-24">
+        <HeroSection />
+        <TrustBar />
+        <CapabilitiesSection />
+        <WhySection />
+        <IndustriesSection />
+        <CertificationsSection />
+        <StephenGouldSection />
+      </main>
       <Footer />
     </div>
   );
