@@ -25,8 +25,7 @@ const Footer = () => {
             GOULD SOUTHERN
           </div>
           <p className="text-primary/60 text-sm leading-relaxed mb-8 max-w-xs">
-            Industrial Kitting & Specialized Packaging Excellence. A Subsidiary
-            of Stephen Gould.
+            Industrial Kitting & Specialized Packaging Excellence.
           </p>
         </div>
 
