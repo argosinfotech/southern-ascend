@@ -26,7 +26,7 @@ const StephenGouldSection3 = () => {
             through the Stephen Gould network.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-gray-900 p-6">
+            <div className="bg-[#1E3448] p-6">
               <h4 className="font-headline font-bold text-white mb-2">
                 Regional Reach
               </h4>
