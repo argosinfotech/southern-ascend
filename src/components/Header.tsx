@@ -15,18 +15,8 @@ const Header = () => {
   return (
     <header className="fixed top-0 w-full z-50 glass-header shadow-2xl shadow-background/50">
       <div className="flex justify-between items-center px-6 md:px-12 py-6 max-w-[1920px] mx-auto">
-        <div className="flex items-center gap-4">
-          <div className="text-xl font-black tracking-tighter text-primary font-headline uppercase">
-            GOULD SOUTHERN
-          </div>
-          <div className="hidden md:flex items-center gap-4">
-            <div className="h-8 w-px bg-primary/20 mx-2" />
-            <div className="flex flex-col">
-              <span className="text-[0.5rem] font-label font-bold tracking-[0.2em] text-primary/60 uppercase whitespace-nowrap mt-0.5">
-                A Stephen Gould Company
-              </span>
-            </div>
-          </div>
+        <div className="text-xl font-black tracking-tighter text-primary font-headline uppercase">
+          GOULD SOUTHERN
         </div>
 
         {/* Desktop Nav */}

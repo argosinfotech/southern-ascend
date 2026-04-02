@@ -11,12 +11,12 @@ const TrustBar = () => {
           <span className="text-on-surface-variant font-label text-[0.6875rem] uppercase tracking-widest">Global Standards</span>
         </div>
         <div className="flex flex-col items-center md:items-start">
-          <span className="text-secondary font-headline font-black text-xl mb-1">50+ YEARS</span>
-          <span className="text-on-surface-variant font-label text-[0.6875rem] uppercase tracking-widest">Industry Experience</span>
+          <span className="text-secondary font-headline font-black text-xl mb-1">AS9120:B</span>
+          <span className="text-on-surface-variant font-label text-[0.6875rem] uppercase tracking-widest">Distribution & Stockist</span>
         </div>
         <div className="flex flex-col items-center md:items-start md:border-l md:border-primary-container/50 md:pl-8">
-          <span className="text-primary font-headline font-black text-xl mb-1 uppercase tracking-tighter">Stephen Gould</span>
-          <span className="text-on-surface-variant font-label text-[0.6875rem] uppercase tracking-widest">Subsidiary Network</span>
+          <span className="text-secondary font-headline font-black text-xl mb-1">AS9100:D</span>
+          <span className="text-on-surface-variant font-label text-[0.6875rem] uppercase tracking-widest">Aviation & Defense</span>
         </div>
       </div>
     </section>
