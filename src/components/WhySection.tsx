@@ -55,7 +55,7 @@ const WhySection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          <h2 className="font-headline text-5xl font-extrabold tracking-tighter uppercase mb-12 leading-none">
+          <h2 className="font-headline text-5xl font-extrabold tracking-tighter mb-12 leading-none">
             Specialized <br />
             <span className="text-secondary">Knowledge.</span>
           </h2>

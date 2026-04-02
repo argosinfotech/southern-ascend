@@ -22,7 +22,7 @@ const CertificationsSection = () => {
         transition={{ duration: 0.5 }}
         className="relative z-10 max-w-[1920px] mx-auto text-center"
       >
-        <h2 className="font-headline text-3xl font-extrabold tracking-tighter uppercase mb-4">
+        <h2 className="font-headline text-3xl font-extrabold tracking-tighter mb-4">
           Quality Without Compromise
         </h2>
         <p className="text-primary/70 leading-relaxed max-w-3xl mx-auto">

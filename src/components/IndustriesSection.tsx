@@ -38,7 +38,7 @@ const IndustriesSection = () => {
             <span className="text-secondary font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
               Market Verticals
             </span>
-            <h2 className="font-headline text-4xl font-extrabold tracking-tighter uppercase">
+            <h2 className="font-headline text-4xl font-extrabold tracking-tighter">
               Deployed Expertise.
             </h2>
           </motion.div>
