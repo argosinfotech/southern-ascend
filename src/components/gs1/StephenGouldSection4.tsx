@@ -35,7 +35,7 @@ const StephenGouldSection3 = () => {
                 fulfillment and multi-market execution.
               </p>
             </div>
-            <div className="bg-gray-900 p-6">
+            <div className="bg-[#1E3448] p-6">
               <h4 className="font-headline font-bold text-white mb-2">
                 Scalable Support
               </h4>
