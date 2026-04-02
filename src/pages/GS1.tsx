@@ -10,7 +10,7 @@ import Footer from "@/components/gs1/Footer4";
 
 const GS1 = () => {
   return (
-    <div className="min-h-screen bg-white text-gray-900">
+    <div className="min-h-screen bg-[#F5EFE6] text-gray-900">
       <HeaderLight />
       <main className="pt-24">
         <HeroSection />

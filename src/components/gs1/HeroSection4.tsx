@@ -62,7 +62,7 @@ const HeroSection3 = () => {
           </a>
           <a
             href="#capabilities"
-            className="border border-gray-300 text-gray-900 px-8 py-4 font-headline font-bold uppercase text-sm tracking-widest hover:bg-gray-50 transition-all"
+            className="border border-[#D4C9B8] text-gray-900 px-8 py-4 font-headline font-bold uppercase text-sm tracking-widest hover:bg-[#EBE3D5] transition-all"
           >
             Explore Our Capabilities
           </a>

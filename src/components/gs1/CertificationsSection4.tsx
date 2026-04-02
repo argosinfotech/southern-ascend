@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const CertificationsSection3 = () => {
   return (
-    <section id="quality" className="py-16 px-6 md:px-12 bg-gray-900">
+    <section id="quality" className="py-16 px-6 md:px-12 bg-[#1E3448]">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

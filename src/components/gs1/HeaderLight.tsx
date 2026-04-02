@@ -105,7 +105,7 @@ const HeaderLight = () => {
 
       {/* Mobile Nav */}
       {mobileOpen && (
-        <div className="md:hidden bg-white border-t border-gray-200">
+        <div className="md:hidden bg-[#F5EFE6] border-t border-[#E8DFD1]">
           <div className="px-6 py-6 flex flex-col gap-4">
             <button
               onClick={() => setMobileCapOpen(!mobileCapOpen)}
