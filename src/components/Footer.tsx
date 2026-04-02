@@ -66,7 +66,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="max-w-[1920px] mx-auto mt-20 pt-10 border-t border-primary-container/30 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div className="max-w-[1920px] mx-auto mt-8 pt-4 border-t border-primary-container/30 flex flex-col md:flex-row justify-between items-center gap-6">
         <span className="text-primary/40 text-sm">
           © {new Date().getFullYear()} Gould Southern. All Rights Reserved.
         </span>
