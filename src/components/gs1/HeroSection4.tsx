@@ -12,7 +12,7 @@ const HeroSection3 = () => {
           height={1080}
             className="w-full h-full object-cover opacity-40"
           />
-        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/85 to-white/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#FAF8F5] via-[#FAF8F5]/85 to-[#FAF8F5]/40" />
       </div>
 
       <div className="relative z-10 max-w-4xl">
