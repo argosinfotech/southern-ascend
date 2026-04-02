@@ -17,7 +17,6 @@ const footerLinks = {
 const legalLinks = [
   { label: "Privacy Policy", href: "#" },
   { label: "Terms of Service", href: "#" },
-  { label: "Sitemap", href: "#" },
 ];
 
 const Footer4 = () => {
