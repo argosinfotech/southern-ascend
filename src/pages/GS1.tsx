@@ -12,7 +12,7 @@ const GS1 = () => {
   return (
     <div className="min-h-screen bg-[#FAF8F5] text-gray-900">
       <HeaderLight />
-      <main className="pt-24">
+      <main>
         <HeroSection />
         <TrustBar />
         <CapabilitiesSection />
