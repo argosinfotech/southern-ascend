@@ -22,7 +22,7 @@ const points = [
   },
 ];
 
-const WhySection2 = () => {
+const WhySection3 = () => {
   return (
     <section className="py-16 bg-surface-container-lowest">
       <div className="max-w-[1920px] mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
@@ -82,4 +82,4 @@ const WhySection2 = () => {
   );
 };
 
-export default WhySection2;
+export default WhySection3;

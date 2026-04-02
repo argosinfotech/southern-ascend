@@ -24,7 +24,7 @@ const capabilities = [
   },
 ];
 
-const CapabilitiesSection2 = () => {
+const CapabilitiesSection3 = () => {
   return (
     <section id="capabilities" className="py-16 px-6 md:px-12 bg-surface">
       <div className="max-w-[1920px] mx-auto">
@@ -75,4 +75,4 @@ const CapabilitiesSection2 = () => {
   );
 };
 
-export default CapabilitiesSection2;
+export default CapabilitiesSection3;

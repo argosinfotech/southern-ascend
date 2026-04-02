@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import qualityBg from "@/assets/quality-bg.jpg";
 
-const CertificationsSection2 = () => {
+const CertificationsSection3 = () => {
   return (
     <section id="quality" className="relative py-16 px-6 md:px-12 overflow-hidden">
       <div className="absolute inset-0 z-0">
@@ -35,4 +35,4 @@ const CertificationsSection2 = () => {
   );
 };
 
-export default CertificationsSection2;
+export default CertificationsSection3;

@@ -24,7 +24,7 @@ const industries = [
   },
 ];
 
-const IndustriesSection2 = () => {
+const IndustriesSection3 = () => {
   return (
     <section id="industries" className="py-16 px-6 md:px-12 bg-surface">
       <div className="max-w-[1920px] mx-auto">
@@ -79,4 +79,4 @@ const IndustriesSection2 = () => {
   );
 };
 
-export default IndustriesSection2;
+export default IndustriesSection3;

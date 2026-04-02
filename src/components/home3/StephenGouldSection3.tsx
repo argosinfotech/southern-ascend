@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin } from "lucide-react";
 
-const StephenGouldSection2 = () => {
+const StephenGouldSection3 = () => {
   return (
     <section id="about" className="py-16 px-6 md:px-12 bg-surface-container-low">
       <div className="max-w-[1920px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
@@ -94,4 +94,4 @@ const StephenGouldSection2 = () => {
   );
 };
 
-export default StephenGouldSection2;
+export default StephenGouldSection3;
