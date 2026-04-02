@@ -1,17 +1,37 @@
-import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { useState, useRef, useEffect } from "react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import logo from "@/assets/gouldsouthern-logo.png";
 
+const capabilitiesItems = [
+  { label: "Kitting & Toolkits", href: "#capabilities" },
+  { label: "Packaging & Logistics", href: "#capabilities" },
+  { label: "RFID/FOD Solutions", href: "#capabilities" },
+  { label: "Turnkey Integration", href: "#capabilities" },
+  { label: "Government Contracting", href: "#capabilities" },
+];
+
 const navItems = [
-  { label: "Capabilities", href: "#capabilities" },
   { label: "Industries", href: "#industries" },
-  { label: "Quality", href: "#quality" },
+  { label: "Certifications", href: "#quality" },
   { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [capOpen, setCapOpen] = useState(false);
+  const [mobileCapOpen, setMobileCapOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setCapOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
+  }, []);
 
   return (
     <header className="fixed top-0 w-full z-50 glass-header shadow-2xl shadow-background/50">
@@ -25,6 +45,31 @@ const Header = () => {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-10">
+          {/* Capabilities Dropdown */}
+          <div ref={dropdownRef} className="relative">
+            <button
+              onClick={() => setCapOpen(!capOpen)}
+              className="font-headline font-bold tracking-tight uppercase text-sm text-primary hover:text-secondary transition-colors duration-300 flex items-center gap-1"
+            >
+              Capabilities
+              <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${capOpen ? "rotate-180" : ""}`} />
+            </button>
+            {capOpen && (
+              <div className="absolute top-full left-0 mt-3 min-w-[220px] bg-surface-container border border-border/50 shadow-xl py-2 z-50">
+                {capabilitiesItems.map((item) => (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    onClick={() => setCapOpen(false)}
+                    className="block px-5 py-2.5 text-sm font-headline font-semibold text-primary hover:text-secondary hover:bg-surface-container-high transition-colors"
+                  >
+                    {item.label}
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
+
           {navItems.map((item) => (
             <a
               key={item.label}
@@ -58,6 +103,27 @@ const Header = () => {
       {mobileOpen && (
         <div className="md:hidden bg-background border-t border-border">
           <div className="px-6 py-6 flex flex-col gap-4">
+            <button
+              onClick={() => setMobileCapOpen(!mobileCapOpen)}
+              className="font-headline font-bold tracking-tight uppercase text-sm text-primary hover:text-secondary py-2 flex items-center gap-1 text-left"
+            >
+              Capabilities
+              <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${mobileCapOpen ? "rotate-180" : ""}`} />
+            </button>
+            {mobileCapOpen && (
+              <div className="pl-4 flex flex-col gap-2">
+                {capabilitiesItems.map((item) => (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    onClick={() => { setMobileOpen(false); setMobileCapOpen(false); }}
+                    className="font-headline font-semibold text-sm text-on-surface-variant hover:text-secondary py-1"
+                  >
+                    {item.label}
+                  </a>
+                ))}
+              </div>
+            )}
             {navItems.map((item) => (
               <a
                 key={item.label}
