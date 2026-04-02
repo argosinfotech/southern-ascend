@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 const StephenGouldSection = () => {
   return (
-    <section id="about" className="py-32 px-6 md:px-12 bg-surface-container-low">
+    <section id="about" className="py-16 px-6 md:px-12 bg-surface-container-low">
       <div className="max-w-[1920px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
         {/* Left: Stephen Gould info */}
         <motion.div

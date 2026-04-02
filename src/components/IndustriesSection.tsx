@@ -26,7 +26,7 @@ const industries = [
 
 const IndustriesSection = () => {
   return (
-    <section id="industries" className="py-32 px-6 md:px-12 bg-surface">
+    <section id="industries" className="py-16 px-6 md:px-12 bg-surface">
       <div className="max-w-[1920px] mx-auto">
         <div className="flex justify-between items-end mb-20">
           <motion.div
