@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/gouldsouthern-logo.png";
 
 const navItems = [
   { label: "Capabilities", href: "#capabilities" },
