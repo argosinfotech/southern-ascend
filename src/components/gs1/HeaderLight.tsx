@@ -67,7 +67,7 @@ const HeaderLight = () => {
                     key={item.label}
                     href={item.href}
                     onClick={() => setCapOpen(false)}
-                    className="block px-5 py-2.5 text-sm font-headline font-semibold text-gray-700 hover:text-secondary hover:bg-gray-50 transition-colors"
+                    className="block px-5 py-2.5 text-sm font-headline font-semibold text-gray-700 hover:text-secondary hover:bg-[#EBE3D5] transition-colors"
                   >
                     {item.label}
                   </a>
