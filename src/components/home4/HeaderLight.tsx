@@ -21,7 +21,14 @@ const HeaderLight = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [capOpen, setCapOpen] = useState(false);
   const [mobileCapOpen, setMobileCapOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 10);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   useEffect(() => {
     const handler = (e: MouseEvent) => {
@@ -34,7 +41,7 @@ const HeaderLight = () => {
   }, []);
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm border-b border-gray-200">
+    <header className={`fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm transition-shadow duration-300 ${scrolled ? "shadow-sm border-b border-gray-200" : ""}`}>
       <div className="flex justify-between items-center px-6 md:px-12 py-6 max-w-[1920px] mx-auto">
         <div className="flex items-center gap-3">
           <img src={logo} alt="Gould Southern logo" className="h-8 w-8 object-contain" />
