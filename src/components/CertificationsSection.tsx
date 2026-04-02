@@ -12,7 +12,7 @@ const CertificationsSection = () => {
       >
         <div className="md:w-1/2">
           <h2 className="font-headline text-3xl font-extrabold tracking-tighter uppercase mb-4">
-            Zero Compromise Quality.
+            Quality Without Compromise
           </h2>
           <p className="text-primary/70 leading-relaxed">
             Our facilities are audited to the most rigorous standards in global
