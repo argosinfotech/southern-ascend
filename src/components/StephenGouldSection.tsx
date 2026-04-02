@@ -17,7 +17,7 @@ const StephenGouldSection = () => {
             Strategic Partnership
           </span>
           <h2 className="font-headline text-4xl font-extrabold tracking-tighter uppercase mb-8">
-            Independent by Approach. <br />Backed by a Powerful Network.
+            Specialized Service with Expanded Reach
           </h2>
           <p className="text-on-surface-variant text-lg leading-relaxed mb-8 max-w-3xl">
             Gould Southern combines the responsiveness of a specialized
