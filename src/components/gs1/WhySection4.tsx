@@ -41,9 +41,9 @@ const WhySection3 = () => {
             height={800}
             className="w-full aspect-square object-cover shadow-2xl"
           />
-          <div className="absolute -bottom-8 -right-8 bg-[#1E3448] p-12 hidden md:block max-w-xs">
-            <p className="font-headline font-black text-4xl text-white">100%</p>
-            <p className="text-gray-400 font-label text-[0.6875rem] uppercase tracking-widest mt-2">
+          <div className="absolute -bottom-8 -right-8 bg-white border border-[#D4C9B8] p-12 hidden md:block max-w-xs shadow-lg">
+            <p className="font-headline font-black text-4xl text-secondary">100%</p>
+            <p className="text-gray-500 font-label text-[0.6875rem] uppercase tracking-widest mt-2">
               Focus on Precision
             </p>
           </div>
