@@ -63,7 +63,7 @@ const IndustriesSection3 = () => {
                 height={1000}
                 className="w-full h-full object-cover brightness-90 group-hover:brightness-100 group-hover:scale-105 transition-all duration-700"
               />
-              <div className="absolute inset-0 p-10 flex flex-col justify-end bg-gradient-to-t from-black/80 via-black/30 to-transparent">
+              <div className="absolute inset-0 p-10 flex flex-col justify-end bg-gradient-to-t from-black/60 via-black/20 to-transparent">
                 <h3 className="font-headline font-bold text-2xl uppercase mb-4 text-white">
                   {ind.title}
                 </h3>
