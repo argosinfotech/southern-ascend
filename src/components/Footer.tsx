@@ -10,14 +10,13 @@ const footerLinks = {
     { label: "AS9100:D", href: "#quality" },
     { label: "ISO 9001:2015", href: "#quality" },
     { label: "AS9120:B", href: "#quality" },
-    { label: "AS9100:D Aviation & Defense", href: "#quality" },
+    { label: "AS9100:D", href: "#quality" },
   ],
 };
 
 const legalLinks = [
   { label: "Privacy Policy", href: "#" },
   { label: "Terms of Service", href: "#" },
-  { label: "Sitemap", href: "#" },
 ];
 
 const Footer = () => {
