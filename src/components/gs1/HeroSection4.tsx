@@ -20,7 +20,7 @@ const HeroSection3 = () => {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="inline-block bg-[#F5EFE6] text-gray-700 font-label text-[0.6875rem] uppercase tracking-[0.2em] px-3 py-1 mb-8"
+          className="inline-block bg-[#FAF8F5] text-gray-700 font-label text-[0.6875rem] uppercase tracking-[0.2em] px-3 py-1 mb-8"
         >
           Industrial Excellence
         </motion.span>
@@ -62,7 +62,7 @@ const HeroSection3 = () => {
           </a>
           <a
             href="#capabilities"
-            className="border border-[#D4C9B8] text-gray-900 px-8 py-4 font-headline font-bold uppercase text-sm tracking-widest hover:bg-[#EBE3D5] transition-all"
+            className="border border-[#D4C9B8] text-gray-900 px-8 py-4 font-headline font-bold uppercase text-sm tracking-widest hover:bg-[#F5F2EE] transition-all"
           >
             Explore Our Capabilities
           </a>

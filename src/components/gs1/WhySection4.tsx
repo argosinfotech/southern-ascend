@@ -24,7 +24,7 @@ const points = [
 
 const WhySection3 = () => {
   return (
-    <section className="py-16 bg-[#F5EFE6]">
+    <section className="py-16 bg-[#FAF8F5]">
       <div className="max-w-[1920px] mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
