@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/gouldsouthern-logo.png";
 
 const navItems = [
   { label: "Capabilities", href: "#capabilities" },
@@ -15,8 +16,11 @@ const Header = () => {
   return (
     <header className="fixed top-0 w-full z-50 glass-header shadow-2xl shadow-background/50">
       <div className="flex justify-between items-center px-6 md:px-12 py-6 max-w-[1920px] mx-auto">
-        <div className="text-xl font-black tracking-tighter text-primary font-headline uppercase">
-          GOULD SOUTHERN
+        <div className="flex items-center gap-3">
+          <img src={logo} alt="Gould Southern logo" className="h-8 w-8 object-contain" />
+          <span className="text-xl font-black tracking-tighter text-primary font-headline uppercase">
+            GOULD SOUTHERN
+          </span>
         </div>
 
         {/* Desktop Nav */}
