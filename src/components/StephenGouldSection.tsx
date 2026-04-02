@@ -29,20 +29,20 @@ const StephenGouldSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-surface-container-highest p-6">
               <h4 className="font-headline font-bold text-white mb-2">
-                40+ Locations
+                Regional Reach
               </h4>
               <p className="text-on-surface-variant text-sm">
-                Access to a sprawling North American footprint for regional
-                fulfillment and rapid scale.
+                A broad North American network helps support regional
+                fulfillment and multi-market execution.
               </p>
             </div>
             <div className="bg-surface-container-highest p-6">
               <h4 className="font-headline font-bold text-white mb-2">
-                Infinite Resource
+                Scalable Support
               </h4>
               <p className="text-on-surface-variant text-sm">
-                Leverage group procurement and massive manufacturing capacity on
-                demand.
+                Flexible sourcing, production, and logistics capabilities help
+                meet changing volume and timeline needs.
               </p>
             </div>
           </div>
