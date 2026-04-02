@@ -42,7 +42,7 @@ const IndustriesSection3 = () => {
               Deployed Expertise.
             </h2>
           </motion.div>
-          <div className="hidden md:block w-1/3 h-[2px] bg-[#D4C9B8] mb-4" />
+          <div className="hidden md:block w-1/3 h-[2px] bg-[#1E3448]/20 mb-4" />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
