@@ -1,20 +1,24 @@
 const footerLinks = {
-  Expertise: [
-    { label: "Capabilities", href: "#capabilities" },
-    { label: "Industries", href: "#industries" },
-    { label: "Quality Systems", href: "#quality" },
+  Capabilities: [
+    { label: "Kitting & Toolkits", href: "#capabilities" },
+    { label: "Packaging & Logistics", href: "#capabilities" },
+    { label: "RFID/FOD Solutions", href: "#capabilities" },
+    { label: "Turnkey Integration", href: "#capabilities" },
+    { label: "Government Contracting", href: "#capabilities" },
   ],
-  Standards: [
+  Certifications: [
+    { label: "AS9100:D", href: "#quality" },
     { label: "ISO 9001:2015", href: "#quality" },
-    { label: "AS9100D Certified", href: "#quality" },
-    { label: "Military Specs", href: "#quality" },
-  ],
-  Legal: [
-    { label: "Privacy Policy", href: "#" },
-    { label: "Terms of Service", href: "#" },
-    { label: "Sitemap", href: "#" },
+    { label: "AS9120:B", href: "#quality" },
+    { label: "AS9100:D Aviation & Defense", href: "#quality" },
   ],
 };
+
+const legalLinks = [
+  { label: "Privacy Policy", href: "#" },
+  { label: "Terms of Service", href: "#" },
+  { label: "Sitemap", href: "#" },
+];
 
 const Footer = () => {
   return (
@@ -45,12 +49,39 @@ const Footer = () => {
             ))}
           </div>
         ))}
+
+        <div className="space-y-4">
+          <h4 className="font-headline font-bold text-sm uppercase tracking-widest text-secondary mb-6">
+            Address
+          </h4>
+          <div className="text-primary/60 text-sm leading-relaxed space-y-1">
+            <p>Gould Southern</p>
+            <p>2940 Old Norcross Road</p>
+            <p>Duluth, GA 30096</p>
+          </div>
+          <div className="text-primary/60 text-sm leading-relaxed space-y-1 pt-4">
+            <p className="font-semibold text-primary/80">Customer Service Center</p>
+            <p>Phone: <a href="tel:8005489085" className="hover:text-secondary transition-colors">800.548.9085</a></p>
+            <p>Email: <a href="mailto:info@gouldsouthern.com" className="hover:text-secondary transition-colors">info@gouldsouthern.com</a></p>
+          </div>
+        </div>
       </div>
 
       <div className="max-w-[1920px] mx-auto mt-20 pt-10 border-t border-primary-container/30 flex flex-col md:flex-row justify-between items-center gap-6">
         <span className="text-primary/40 text-sm">
           © {new Date().getFullYear()} Gould Southern. All Rights Reserved.
         </span>
+        <div className="flex gap-6">
+          {legalLinks.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              className="text-primary/40 hover:text-secondary text-sm transition-colors duration-300"
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
       </div>
     </footer>
   );
