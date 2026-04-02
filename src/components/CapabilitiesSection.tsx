@@ -39,7 +39,7 @@ const CapabilitiesSection = () => {
             <span className="text-secondary font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
               Core Systems
             </span>
-            <h2 className="font-headline text-4xl font-extrabold tracking-tighter uppercase mb-6">
+            <h2 className="font-headline text-4xl font-extrabold tracking-tighter mb-6">
               Engineered <br />Execution.
             </h2>
             <p className="text-on-surface-variant leading-relaxed">

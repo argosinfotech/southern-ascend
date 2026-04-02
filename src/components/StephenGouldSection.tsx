@@ -16,7 +16,7 @@ const StephenGouldSection = () => {
           <span className="text-secondary font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
             Strategic Partnership
           </span>
-          <h2 className="font-headline text-4xl font-extrabold tracking-tighter uppercase mb-8">
+          <h2 className="font-headline text-4xl font-extrabold tracking-tighter mb-8">
             Specialized Service with Expanded Reach
           </h2>
           <p className="text-on-surface-variant text-lg leading-relaxed mb-8 max-w-3xl">
