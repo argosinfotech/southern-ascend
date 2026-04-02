@@ -63,11 +63,11 @@ const IndustriesSection3 = () => {
                 height={1000}
                 className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
               />
-              <div className="absolute inset-0 p-10 flex flex-col justify-end bg-gradient-to-t from-black/40 via-black/10 to-transparent">
-                <h3 className="font-headline font-bold text-2xl uppercase mb-4 text-white">
+              <div className="absolute inset-x-0 bottom-0 p-10">
+                <h3 className="font-headline font-bold text-2xl uppercase mb-4 text-white drop-shadow-lg">
                   {ind.title}
                 </h3>
-                <p className="text-gray-300 text-sm translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                <p className="text-white/90 text-sm drop-shadow-md translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
                   {ind.description}
                 </p>
               </div>
