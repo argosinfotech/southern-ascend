@@ -28,13 +28,13 @@ const CapabilitiesSection2 = () => {
   return (
     <section id="capabilities" className="py-16 px-6 md:px-12 bg-surface">
       <div className="max-w-[1920px] mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="md:col-span-5 mb-12"
+            className="md:col-span-5"
           >
             <span className="text-secondary font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
               Core Systems
