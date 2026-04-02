@@ -14,18 +14,17 @@ const StephenGouldSection = () => {
           className="lg:col-span-8"
         >
           <span className="text-secondary font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
-            Global Strength, Local Focus
+            Strategic Partnership
           </span>
           <h2 className="font-headline text-4xl font-extrabold tracking-tighter uppercase mb-8">
-            Part of the <br />Stephen Gould Network.
+            Independent by Approach. <br />Backed by a Powerful Network.
           </h2>
           <p className="text-on-surface-variant text-lg leading-relaxed mb-8 max-w-3xl">
-            Gould Southern operates as a specialized execution arm within the
-            Stephen Gould ecosystem. This gives our clients the personal
-            attention and deep technical expertise of a boutique engineering
-            firm, reinforced by the world-class resources, logistics
-            infrastructure, and financial stability of a global leader in
-            industrial packaging.
+            Gould Southern combines the responsiveness of a specialized
+            packaging partner with the advantages of a broader strategic
+            network. Clients get direct access to a team focused on execution,
+            backed by expanded sourcing, logistics, and operational support
+            through the Stephen Gould network.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-surface-container-highest p-6">
