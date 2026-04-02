@@ -44,7 +44,7 @@ const WhySection3 = () => {
           <div className="absolute -bottom-8 -right-8 bg-gray-900 p-12 hidden md:block max-w-xs">
             <p className="font-headline font-black text-4xl text-white">100%</p>
             <p className="text-gray-400 font-label text-[0.6875rem] uppercase tracking-widest mt-2">
-              Focus on Accuracy
+              Focus on Precision
             </p>
           </div>
         </motion.div>
