@@ -20,40 +20,6 @@ const CertificationsSection = () => {
             integrity of your assets.
           </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          <div className="bg-background/40 backdrop-blur-md p-8 border border-white/5 text-center">
-            <span className="block text-secondary font-black text-2xl mb-2">
-              AS9100:D
-            </span>
-            <span className="text-xs uppercase tracking-widest text-white/60">
-              Aviation
-            </span>
-          </div>
-          <div className="bg-background/40 backdrop-blur-md p-8 border border-white/5 text-center">
-            <span className="block text-secondary font-black text-2xl mb-2">
-              ISO 9001
-            </span>
-            <span className="text-xs uppercase tracking-widest text-white/60">
-              Quality Mgmt
-            </span>
-          </div>
-          <div className="bg-background/40 backdrop-blur-md p-8 border border-white/5 text-center">
-            <span className="block text-secondary font-black text-2xl mb-2">
-              AS9120:B
-            </span>
-            <span className="text-xs uppercase tracking-widest text-white/60">
-              Distribution & Stockist
-            </span>
-          </div>
-          <div className="bg-background/40 backdrop-blur-md p-8 border border-white/5 text-center">
-            <span className="block text-secondary font-black text-2xl mb-2">
-              AS9100:D
-            </span>
-            <span className="text-xs uppercase tracking-widest text-white/60">
-              Aviation & Defense
-            </span>
-          </div>
-        </div>
       </motion.div>
     </section>
   );
