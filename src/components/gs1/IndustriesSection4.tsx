@@ -61,7 +61,7 @@ const IndustriesSection3 = () => {
                 loading="lazy"
                 width={800}
                 height={1000}
-                className="w-full h-full object-cover brightness-90 group-hover:brightness-100 group-hover:scale-105 transition-all duration-700"
+                className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
               />
               <div className="absolute inset-0 p-10 flex flex-col justify-end bg-gradient-to-t from-black/40 via-black/10 to-transparent">
                 <h3 className="font-headline font-bold text-2xl uppercase mb-4 text-white">
