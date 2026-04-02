@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const navItems = [
   { label: "Capabilities", href: "#capabilities" },
   { label: "Industries", href: "#industries" },
+  { label: "Quality", href: "#quality" },
   { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];
@@ -13,46 +13,44 @@ const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-surface-dark/95 backdrop-blur-md border-b border-surface-slate">
-      <div className="container flex items-center justify-between h-16 md:h-20">
-        {/* Logo */}
-        <a href="/" className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded bg-accent-warm flex items-center justify-center">
-            <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5" stroke="currentColor" strokeWidth="2">
-              <path d="M12 2L2 7l10 5 10-5-10-5z" fill="hsl(0 0% 100%)" stroke="none" />
-              <path d="M2 17l10 5 10-5" stroke="hsl(0 0% 100%)" />
-              <path d="M2 12l10 5 10-5" stroke="hsl(0 0% 100%)" />
-            </svg>
+    <header className="fixed top-0 w-full z-50 glass-header shadow-2xl shadow-background/50">
+      <div className="flex justify-between items-center px-6 md:px-12 py-6 max-w-[1920px] mx-auto">
+        <div className="flex items-center gap-4">
+          <div className="text-xl font-black tracking-tighter text-primary font-headline uppercase">
+            GOULD SOUTHERN
           </div>
-          <div>
-            <span className="text-lg font-display font-bold text-primary-foreground tracking-tight">
-              Gould Southern
-            </span>
-            <span className="hidden md:block text-[10px] uppercase tracking-[0.2em] text-surface-dark-fg/60">
-              A Stephen Gould Company
-            </span>
+          <div className="hidden md:flex items-center gap-4">
+            <div className="h-8 w-px bg-primary/20 mx-2" />
+            <div className="flex flex-col">
+              <span className="text-[0.5rem] font-label font-bold tracking-[0.2em] text-primary/60 uppercase whitespace-nowrap mt-0.5">
+                A Stephen Gould Company
+              </span>
+            </div>
           </div>
-        </a>
+        </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-10">
           {navItems.map((item) => (
             <a
               key={item.label}
               href={item.href}
-              className="text-sm font-medium text-surface-dark-fg/80 hover:text-primary-foreground transition-colors duration-200 tracking-wide uppercase"
+              className="font-headline font-bold tracking-tight uppercase text-sm text-primary hover:text-secondary transition-colors duration-300"
             >
               {item.label}
             </a>
           ))}
-          <Button variant="accent" size="sm" asChild>
-            <a href="#contact">Talk to Our Team</a>
-          </Button>
+          <a
+            href="#contact"
+            className="bg-secondary text-on-secondary-container px-6 py-3 font-headline font-bold uppercase text-xs tracking-widest hover:brightness-110 active:scale-95 transition-all"
+          >
+            Talk to Our Team
+          </a>
         </nav>
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-primary-foreground"
+          className="md:hidden text-primary"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
@@ -60,23 +58,29 @@ const Header = () => {
         </button>
       </div>
 
+      <div className="bg-gradient-to-b from-primary-container to-transparent h-px w-full absolute bottom-0" />
+
       {/* Mobile Nav */}
       {mobileOpen && (
-        <div className="md:hidden bg-surface-dark border-t border-surface-slate">
-          <div className="container py-6 flex flex-col gap-4">
+        <div className="md:hidden bg-background border-t border-border">
+          <div className="px-6 py-6 flex flex-col gap-4">
             {navItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
                 onClick={() => setMobileOpen(false)}
-                className="text-sm font-medium text-surface-dark-fg/80 hover:text-primary-foreground py-2 uppercase tracking-wide"
+                className="font-headline font-bold tracking-tight uppercase text-sm text-primary hover:text-secondary py-2"
               >
                 {item.label}
               </a>
             ))}
-            <Button variant="accent" asChild className="mt-2">
-              <a href="#contact" onClick={() => setMobileOpen(false)}>Talk to Our Team</a>
-            </Button>
+            <a
+              href="#contact"
+              onClick={() => setMobileOpen(false)}
+              className="bg-secondary text-on-secondary-container px-6 py-3 font-headline font-bold uppercase text-xs tracking-widest text-center mt-2"
+            >
+              Talk to Our Team
+            </a>
           </div>
         </div>
       )}
