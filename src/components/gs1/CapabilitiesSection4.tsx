@@ -57,7 +57,7 @@ const CapabilitiesSection3 = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.08 }}
-                className="bg-[#F5EFE6] p-8 border-l-2 border-secondary hover:bg-[#EBE3D5] transition-colors group"
+                className="bg-[#FAF8F5] p-8 border-l-2 border-secondary hover:bg-[#F5F2EE] transition-colors group"
               >
                 <cap.icon className="text-secondary mb-6 w-8 h-8" />
                 <h3 className="font-headline font-bold uppercase tracking-tight text-xl mb-4 text-gray-900">
