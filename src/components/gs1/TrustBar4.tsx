@@ -11,8 +11,8 @@ const TrustBar3 = () => {
           <span className="text-gray-400 font-label text-[0.6875rem] uppercase tracking-widest">Global Standards</span>
         </div>
         <div className="flex flex-col items-center md:items-start">
-          <span className="text-secondary font-headline font-black text-xl mb-1">AS9120:B</span>
-          <span className="text-gray-500 font-label text-[0.6875rem] uppercase tracking-widest">Distribution & Stockist</span>
+          <span className="text-[#1E3448] font-headline font-black text-xl mb-1">AS9120:B</span>
+          <span className="text-gray-400 font-label text-[0.6875rem] uppercase tracking-widest">Distribution & Stockist</span>
         </div>
         <div className="flex flex-col items-center md:items-start md:border-l md:border-[#D4C9B8] md:pl-8">
           <span className="text-secondary font-headline font-black text-xl mb-1">AS9100:D</span>
