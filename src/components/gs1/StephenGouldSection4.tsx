@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 const StephenGouldSection3 = () => {
   return (
-    <section id="about" className="py-16 px-6 md:px-12 bg-[#EBE3D5]">
+    <section id="about" className="py-16 px-6 md:px-12 bg-[#F5EFE6]">
       <div className="max-w-[1920px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

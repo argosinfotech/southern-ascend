@@ -10,7 +10,7 @@ const HeroSection3 = () => {
           alt="High-tech manufacturing facility"
           width={1920}
           height={1080}
-          className="w-full h-full object-cover opacity-15 grayscale"
+          className="w-full h-full object-cover opacity-30"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#F5EFE6] via-[#F5EFE6]/90 to-[#F5EFE6]/60" />
       </div>
