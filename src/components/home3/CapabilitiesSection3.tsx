@@ -26,7 +26,7 @@ const capabilities = [
 
 const CapabilitiesSection3 = () => {
   return (
-    <section id="capabilities" className="py-16 px-6 md:px-12 bg-surface">
+    <section id="capabilities" className="py-16 px-6 md:px-12 bg-white">
       <div className="max-w-[1920px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
           <motion.div
@@ -39,10 +39,10 @@ const CapabilitiesSection3 = () => {
             <span className="text-secondary font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
               Core Systems
             </span>
-            <h2 className="font-headline text-4xl font-extrabold tracking-tighter uppercase mb-6">
+            <h2 className="font-headline text-4xl font-extrabold tracking-tighter uppercase mb-6 text-gray-900">
               Engineered <br />Execution.
             </h2>
-            <p className="text-on-surface-variant leading-relaxed">
+            <p className="text-gray-600 leading-relaxed">
               Our integrated approach combines specialized design with turnkey
               fulfillment to ensure every component arrives verified and ready
               for deployment.
@@ -57,13 +57,13 @@ const CapabilitiesSection3 = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.08 }}
-                className="bg-surface-container-low p-8 border-l-2 border-secondary hover:bg-surface-container-high transition-colors group"
+                className="bg-gray-50 p-8 border-l-2 border-secondary hover:bg-gray-100 transition-colors group"
               >
                 <cap.icon className="text-secondary mb-6 w-8 h-8" />
-                <h3 className="font-headline font-bold uppercase tracking-tight text-xl mb-4">
+                <h3 className="font-headline font-bold uppercase tracking-tight text-xl mb-4 text-gray-900">
                   {cap.title}
                 </h3>
-                <p className="text-on-surface-variant text-sm leading-relaxed">
+                <p className="text-gray-600 text-sm leading-relaxed">
                   {cap.description}
                 </p>
               </motion.div>
