@@ -26,7 +26,7 @@ const capabilities = [
 
 const CapabilitiesSection3 = () => {
   return (
-    <section id="capabilities" className="py-16 px-6 md:px-12 bg-white">
+    <section id="capabilities" className="py-16 px-6 md:px-12 bg-[#F5EFE6]">
       <div className="max-w-[1920px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
           <motion.div
