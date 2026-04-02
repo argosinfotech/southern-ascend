@@ -3,7 +3,7 @@ import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection3 = () => {
   return (
-    <section className="relative min-h-[700px] flex items-center px-6 md:px-12 py-16 overflow-hidden">
+    <section className="relative min-h-[700px] flex items-center px-6 md:px-12 py-16 overflow-hidden bg-white">
       <div className="absolute inset-0 z-0">
         <img
           src={heroBg}
@@ -12,7 +12,7 @@ const HeroSection3 = () => {
           height={1080}
           className="w-full h-full object-cover opacity-30"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#F5EFE6] via-[#F5EFE6]/90 to-[#F5EFE6]/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-white/60" />
       </div>
 
       <div className="relative z-10 max-w-4xl">
@@ -20,7 +20,7 @@ const HeroSection3 = () => {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="inline-block bg-[#EBE3D5] text-gray-700 font-label text-[0.6875rem] uppercase tracking-[0.2em] px-3 py-1 mb-8"
+          className="inline-block bg-[#F5EFE6] text-gray-700 font-label text-[0.6875rem] uppercase tracking-[0.2em] px-3 py-1 mb-8"
         >
           Industrial Excellence
         </motion.span>
