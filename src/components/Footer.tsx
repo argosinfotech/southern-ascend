@@ -21,7 +21,7 @@ const legalLinks = [
 
 const Footer = () => {
   return (
-    <footer className="bg-surface-container-lowest border-t border-primary-container py-20 px-6 md:px-12">
+    <footer className="bg-surface-container-lowest border-t border-primary-container pt-20 pb-8 px-6 md:px-12">
       <div className="max-w-[1920px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
         <div>
           <div className="font-headline font-bold text-primary text-xl mb-6 uppercase tracking-tighter">
