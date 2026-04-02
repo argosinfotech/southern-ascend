@@ -27,10 +27,10 @@ const StephenGouldSection3 = () => {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-[#1E3448] p-6 rounded">
-              <h4 className="font-headline font-bold text-gray-900 mb-2">
+              <h4 className="font-headline font-bold text-white mb-2">
                 Regional Reach
               </h4>
-              <p className="text-gray-600 text-sm">
+              <p className="text-gray-300 text-sm">
                 A broad North American network helps support regional
                 fulfillment and multi-market execution.
               </p>
