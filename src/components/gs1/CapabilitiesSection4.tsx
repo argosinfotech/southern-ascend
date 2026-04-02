@@ -36,7 +36,7 @@ const CapabilitiesSection3 = () => {
             transition={{ duration: 0.5 }}
             className="md:col-span-5"
           >
-            <span className="text-secondary font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
+            <span className="text-[#1E3448] font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
               Core Systems
             </span>
             <h2 className="font-headline text-4xl font-extrabold tracking-tighter uppercase mb-6 text-gray-900">

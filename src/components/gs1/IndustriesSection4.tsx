@@ -35,14 +35,14 @@ const IndustriesSection3 = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <span className="text-secondary font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
+            <span className="text-[#1E3448] font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
               Market Verticals
             </span>
             <h2 className="font-headline text-4xl font-extrabold tracking-tighter uppercase text-gray-900">
               Deployed Expertise.
             </h2>
           </motion.div>
-          <div className="hidden md:block w-1/3 h-[2px] bg-[#D4C9B8] mb-4" />
+          <div className="hidden md:block w-1/3 h-[2px] bg-[#1E3448]/20 mb-4" />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

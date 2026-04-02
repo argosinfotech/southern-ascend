@@ -12,7 +12,7 @@ const StephenGouldSection3 = () => {
           transition={{ duration: 0.5 }}
           className="lg:col-span-8"
         >
-          <span className="text-secondary font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
+           <span className="text-[#1E3448] font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
             Strategic Partnership
           </span>
           <h2 className="font-headline text-4xl font-extrabold tracking-tighter uppercase mb-8 text-gray-900">
@@ -26,20 +26,20 @@ const StephenGouldSection3 = () => {
             through the Stephen Gould network.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white border border-[#D4C9B8] p-6">
-              <h4 className="font-headline font-bold text-gray-900 mb-2">
+            <div className="bg-[#1E3448] p-6 rounded">
+              <h4 className="font-headline font-bold text-white mb-2">
                 Regional Reach
               </h4>
-              <p className="text-gray-600 text-sm">
+              <p className="text-gray-300 text-sm">
                 A broad North American network helps support regional
                 fulfillment and multi-market execution.
               </p>
             </div>
-            <div className="bg-white border border-[#D4C9B8] p-6">
-              <h4 className="font-headline font-bold text-gray-900 mb-2">
+            <div className="bg-[#1E3448] p-6 rounded">
+              <h4 className="font-headline font-bold text-white mb-2">
                 Scalable Support
               </h4>
-              <p className="text-gray-600 text-sm">
+              <p className="text-gray-300 text-sm">
                 Flexible sourcing, production, and logistics capabilities help
                 meet changing volume and timeline needs.
               </p>
