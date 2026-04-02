@@ -12,7 +12,7 @@ const StephenGouldSection3 = () => {
           transition={{ duration: 0.5 }}
           className="lg:col-span-8"
         >
-          <span className="text-secondary font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
+           <span className="text-[#1E3448] font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
             Strategic Partnership
           </span>
           <h2 className="font-headline text-4xl font-extrabold tracking-tighter uppercase mb-8 text-gray-900">
