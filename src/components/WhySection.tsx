@@ -39,7 +39,7 @@ const WhySection = () => {
             loading="lazy"
             width={800}
             height={800}
-            className="w-full aspect-square object-cover shadow-2xl"
+            className="w-full aspect-square object-cover shadow-2xl brightness-90"
           />
           <div className="absolute -bottom-8 -right-8 machined-texture p-12 hidden md:block max-w-xs">
             <p className="font-headline font-black text-4xl text-white">0%</p>
