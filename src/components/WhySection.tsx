@@ -42,9 +42,9 @@ const WhySection = () => {
             className="w-full aspect-square object-cover shadow-2xl brightness-90"
           />
           <div className="absolute -bottom-8 -right-8 machined-texture p-12 hidden md:block max-w-xs">
-            <p className="font-headline font-black text-4xl text-white">0%</p>
+            <p className="font-headline font-black text-4xl text-white">100%</p>
             <p className="text-primary font-label text-[0.6875rem] uppercase tracking-widest mt-2">
-              Tolerance for Error
+              Focus on Accuracy
             </p>
           </div>
         </motion.div>
