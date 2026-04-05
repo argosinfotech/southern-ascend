@@ -69,10 +69,6 @@ export default {
         "on-secondary-container": "hsl(var(--on-secondary-container))",
         tertiary: "hsl(var(--tertiary))",
         "on-tertiary": "hsl(var(--on-tertiary))",
-        "brand-blue": {
-          DEFAULT: "hsl(var(--brand-blue))",
-          foreground: "hsl(var(--brand-blue-foreground))",
-        },
         outline: "hsl(var(--outline))",
         "outline-variant": "hsl(var(--outline-variant))",
         sidebar: {
