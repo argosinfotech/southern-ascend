@@ -9,6 +9,7 @@ import Home3 from "./pages/Home3.tsx";
 import Home4 from "./pages/Home4.tsx";
 import GS1 from "./pages/GS1.tsx";
 import GSF1 from "./pages/GSF1.tsx";
+import GSF2 from "./pages/GSF2.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
