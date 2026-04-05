@@ -53,7 +53,7 @@ const CapabilitiesSection = () => {
             </p>
           </motion.div>
 
-          <div className="md:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-px bg-[#E8E2D9]">
+          <div className="md:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5">
             {capabilities.map((cap, i) => (
               <motion.div
                 key={cap.title}
@@ -61,10 +61,10 @@ const CapabilitiesSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.5, delay: i * 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
-                className="bg-[#FAF8F5] p-10 group hover:bg-white transition-all duration-500 relative rounded-lg"
+                className="bg-[#FAF8F5] border border-[#E8E2D9] p-10 group hover:bg-white hover:shadow-lg hover:border-secondary/20 transition-all duration-500 relative rounded-lg overflow-hidden"
               >
                 {/* Subtle top accent on hover */}
-                <div className="absolute top-0 left-0 right-0 h-[2px] bg-secondary scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+                <div className="absolute top-0 left-0 right-0 h-[2px] bg-secondary scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-t-lg" />
                 <cap.icon className="text-[#1E3448]/30 group-hover:text-secondary mb-6 w-7 h-7 transition-colors duration-500" />
                 <h3 className="font-headline font-bold uppercase tracking-tight text-lg mb-3 text-gray-900">
                   {cap.title}
