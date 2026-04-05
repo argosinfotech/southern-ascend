@@ -11,7 +11,7 @@ const HeroSection = () => {
 
   const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
   const bgScale = useTransform(scrollYProgress, [0, 1], [1, 1.1]);
-  const overlayOpacity = useTransform(scrollYProgress, [0, 0.5], [0.3, 0.6]);
+  
 
   return (
     <section
@@ -33,16 +33,8 @@ const HeroSection = () => {
       </motion.div>
 
       {/* Cinematic multi-layer overlay */}
-      <div className="absolute inset-0 z-[1] bg-gradient-to-r from-[#1E3448]/90 via-[#1E3448]/70 to-[#1E3448]/30" />
-      <div className="absolute inset-0 z-[2] bg-gradient-to-t from-[#1E3448]/80 via-transparent to-[#1E3448]/20" />
-      <motion.div
-        className="absolute inset-0 z-[3] bg-[#1E3448]"
-        style={{ opacity: overlayOpacity }}
-      />
-      {/* Subtle vignette */}
-      <div className="absolute inset-0 z-[4]" style={{
-        background: "radial-gradient(ellipse at 30% 50%, transparent 0%, rgba(30,52,72,0.4) 100%)"
-      }} />
+      <div className="absolute inset-0 z-[1] bg-gradient-to-r from-[#1E3448]/80 via-[#1E3448]/50 to-transparent" />
+      <div className="absolute inset-0 z-[2] bg-gradient-to-t from-[#1E3448]/60 via-transparent to-transparent" />
 
       {/* Bottom gradient fade to next section */}
       <div className="absolute bottom-0 left-0 right-0 h-32 z-[5] bg-gradient-to-t from-[#FAF8F5] to-transparent" />
