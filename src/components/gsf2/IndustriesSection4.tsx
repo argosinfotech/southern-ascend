@@ -41,7 +41,7 @@ const IndustriesSection = () => {
             <span className="text-[#1E3448]/60 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
               Market Verticals
             </span>
-            <h2 className="font-headline text-4xl md:text-5xl font-extrabold tracking-tighter uppercase text-gray-900">
+            <h2 className="font-headline text-4xl md:text-5xl font-extrabold tracking-tighter uppercase text-brand-blue">
               Deployed Expertise.
             </h2>
             <div className="w-12 h-[3px] bg-secondary mt-5" />

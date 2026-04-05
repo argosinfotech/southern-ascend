@@ -86,7 +86,7 @@ const WhySection = () => {
           <span className="text-[#1E3448]/60 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
             Why Us
           </span>
-          <h2 className="font-headline text-4xl md:text-5xl font-extrabold tracking-tighter uppercase mb-6 leading-none text-gray-900">
+          <h2 className="font-headline text-4xl md:text-5xl font-extrabold tracking-tighter uppercase mb-6 leading-none text-brand-blue">
             Specialized <br />
             <span className="text-secondary">Knowledge.</span>
           </h2>
