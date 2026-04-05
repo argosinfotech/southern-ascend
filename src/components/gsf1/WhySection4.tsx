@@ -45,7 +45,7 @@ const WhySection = () => {
           transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
           className="relative"
         >
-          <div className="relative overflow-hidden shadow-2xl">
+          <div className="relative overflow-hidden shadow-2xl rounded-lg">
             <motion.img
               src={whyImage}
               alt="Precision industrial components on a dark workbench"
@@ -65,7 +65,7 @@ const WhySection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="absolute -bottom-6 -right-6 bg-white border border-[#E8E2D9] p-10 hidden md:block max-w-[200px] shadow-xl"
+            className="absolute -bottom-6 -right-6 bg-white border border-[#E8E2D9] p-10 hidden md:block max-w-[200px] shadow-xl rounded-lg"
           >
             <p className="font-headline font-black text-4xl text-secondary">100%</p>
             <p className="text-gray-400 font-label text-[0.6875rem] uppercase tracking-widest mt-2">

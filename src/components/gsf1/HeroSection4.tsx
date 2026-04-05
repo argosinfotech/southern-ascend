@@ -88,7 +88,7 @@ const HeroSection = () => {
         >
           <a
             href="#contact"
-            className="bg-secondary text-white px-8 py-4 font-headline font-bold uppercase text-sm tracking-widest hover:brightness-110 hover:shadow-lg hover:shadow-secondary/20 transition-all duration-300"
+            className="bg-secondary text-white px-8 py-4 font-headline font-bold uppercase text-sm tracking-widest hover:brightness-110 hover:shadow-lg hover:shadow-secondary/20 transition-all duration-300 rounded-md"
           >
             Request a Consultation
           </a>

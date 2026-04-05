@@ -37,7 +37,7 @@ const StephenGouldSection = () => {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.7, delay: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
           id="contact"
-          className="lg:col-span-5 bg-white p-10 md:p-12 shadow-xl relative group"
+          className="lg:col-span-5 bg-white p-10 md:p-12 shadow-xl relative group rounded-lg"
         >
           {/* Top accent bar */}
           <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-secondary via-secondary to-secondary/60" />
@@ -52,7 +52,7 @@ const StephenGouldSection = () => {
           </p>
           <ul className="space-y-5 mb-10">
             <li className="flex items-center gap-4 group/item">
-              <div className="w-10 h-10 bg-[#FAF8F5] flex items-center justify-center group-hover/item:bg-secondary/10 transition-colors duration-300">
+              <div className="w-10 h-10 bg-[#FAF8F5] flex items-center justify-center group-hover/item:bg-secondary/10 transition-colors duration-300 rounded-md">
                 <Mail className="w-4 h-4 text-secondary" />
               </div>
               <span className="text-sm font-label tracking-wide uppercase text-gray-600">
@@ -60,7 +60,7 @@ const StephenGouldSection = () => {
               </span>
             </li>
             <li className="flex items-center gap-4 group/item">
-              <div className="w-10 h-10 bg-[#FAF8F5] flex items-center justify-center group-hover/item:bg-secondary/10 transition-colors duration-300">
+              <div className="w-10 h-10 bg-[#FAF8F5] flex items-center justify-center group-hover/item:bg-secondary/10 transition-colors duration-300 rounded-md">
                 <Phone className="w-4 h-4 text-secondary" />
               </div>
               <span className="text-sm font-label tracking-wide uppercase text-gray-600">
@@ -68,7 +68,7 @@ const StephenGouldSection = () => {
               </span>
             </li>
             <li className="flex items-center gap-4 group/item">
-              <div className="w-10 h-10 bg-[#FAF8F5] flex items-center justify-center group-hover/item:bg-secondary/10 transition-colors duration-300">
+              <div className="w-10 h-10 bg-[#FAF8F5] flex items-center justify-center group-hover/item:bg-secondary/10 transition-colors duration-300 rounded-md">
                 <MapPin className="w-4 h-4 text-secondary" />
               </div>
               <span className="text-sm font-label tracking-wide uppercase text-gray-600">
@@ -78,7 +78,7 @@ const StephenGouldSection = () => {
           </ul>
           <a
             href="mailto:sales@gouldsouthern.com"
-            className="block w-full bg-secondary text-white py-4 font-headline font-bold uppercase text-xs tracking-[0.2em] hover:brightness-110 hover:shadow-lg hover:shadow-secondary/20 transition-all duration-300 text-center"
+            className="block w-full bg-secondary text-white py-4 font-headline font-bold uppercase text-xs tracking-[0.2em] hover:brightness-110 hover:shadow-lg hover:shadow-secondary/20 transition-all duration-300 text-center rounded-md"
           >
             Initiate Consultation
           </a>
