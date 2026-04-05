@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 
 const CertificationsSection = () => {
   return (
-    <section id="quality" className="relative py-24 px-6 md:px-12 bg-[#1E3448] overflow-hidden">
+    <section id="quality" className="relative py-24 px-6 md:px-12 bg-[#082a40] overflow-hidden">
       {/* Atmospheric layers */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#1E3448] via-[#1a2f42] to-[#15283a]" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#082a40] via-[#062336] to-[#041c2e]" />
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-secondary/30 to-transparent" />
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
