@@ -11,7 +11,7 @@ const HeroSection = () => {
 
   const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
   const bgScale = useTransform(scrollYProgress, [0, 1], [1, 1.1]);
-  const overlayOpacity = useTransform(scrollYProgress, [0, 0.5], [0.3, 0.6]);
+  
 
   return (
     <section
