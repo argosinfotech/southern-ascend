@@ -61,7 +61,7 @@ const CapabilitiesSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.5, delay: i * 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
-                className="bg-[#FAF8F5] p-10 group hover:bg-white transition-all duration-500 relative"
+                className="bg-[#FAF8F5] p-10 group hover:bg-white transition-all duration-500 relative rounded-lg"
               >
                 {/* Subtle top accent on hover */}
                 <div className="absolute top-0 left-0 right-0 h-[2px] bg-secondary scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />

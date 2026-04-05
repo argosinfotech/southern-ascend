@@ -68,7 +68,7 @@ const HeaderLight = () => {
               <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${capOpen ? "rotate-180" : ""}`} />
             </button>
             {capOpen && (
-              <div className="absolute top-full left-0 mt-3 min-w-[220px] bg-white border border-[#E8DFD1] shadow-xl py-2 z-50">
+              <div className="absolute top-full left-0 mt-3 min-w-[220px] bg-white border border-[#E8DFD1] shadow-xl py-2 z-50 rounded-lg">
                 {capabilitiesItems.map((item) => (
                   <a
                     key={item.label}
