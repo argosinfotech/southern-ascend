@@ -65,7 +65,7 @@ const CapabilitiesSection = () => {
               >
                 {/* Subtle top accent on hover */}
                 <div className="absolute top-0 left-0 right-0 h-[2px] bg-secondary scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-t-lg" />
-                <cap.icon className="text-[#1E3448]/30 group-hover:text-secondary mb-6 w-7 h-7 transition-colors duration-500" />
+                <cap.icon className="text-secondary mb-6 w-7 h-7" />
                 <h3 className="font-headline font-bold uppercase tracking-tight text-lg mb-3 text-gray-900">
                   {cap.title}
                 </h3>
