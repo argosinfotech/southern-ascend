@@ -49,9 +49,7 @@ const HeaderLight = () => {
       <div className="flex justify-between items-center px-6 md:px-12 py-5 max-w-[1920px] mx-auto">
         <div className="flex items-center gap-3">
           <img src={logo} alt="Gould Southern logo" className="h-8 w-8 object-contain" />
-          <span className={`text-xl font-black tracking-tighter font-headline uppercase transition-colors duration-500 ${
-            scrolled ? "text-gray-900" : "text-white"
-          }`}>
+          <span className="text-xl font-black tracking-tighter font-headline uppercase text-gray-900">
             GOULD SOUTHERN
           </span>
         </div>
@@ -60,9 +58,7 @@ const HeaderLight = () => {
           <div ref={dropdownRef} className="relative">
             <button
               onClick={() => setCapOpen(!capOpen)}
-              className={`font-headline font-bold tracking-tight uppercase text-sm hover:text-secondary transition-colors duration-300 flex items-center gap-1 ${
-                scrolled ? "text-gray-900" : "text-white/90"
-              }`}
+              className="font-headline font-bold tracking-tight uppercase text-sm text-gray-900 hover:text-secondary transition-colors duration-300 flex items-center gap-1"
             >
               Capabilities
               <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${capOpen ? "rotate-180" : ""}`} />
@@ -87,9 +83,7 @@ const HeaderLight = () => {
             <a
               key={item.label}
               href={item.href}
-              className={`font-headline font-bold tracking-tight uppercase text-sm hover:text-secondary transition-colors duration-300 ${
-                scrolled ? "text-gray-900" : "text-white/90"
-              }`}
+              className="font-headline font-bold tracking-tight uppercase text-sm text-gray-900 hover:text-secondary transition-colors duration-300"
             >
               {item.label}
             </a>
@@ -103,7 +97,7 @@ const HeaderLight = () => {
         </nav>
 
         <button
-          className={`md:hidden transition-colors duration-300 ${scrolled ? "text-gray-900" : "text-white"}`}
+          className="md:hidden text-gray-900"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
