@@ -23,13 +23,13 @@ const legalLinks = [
 
 const Footer = () => {
   return (
-    <footer className="relative bg-[#1E3448] pt-24 pb-8 px-6 md:px-12 overflow-hidden">
+    <footer className="relative bg-[#082a40] pt-24 pb-8 px-6 md:px-12 overflow-hidden">
       {/* Top accent line */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-secondary/40 to-transparent" />
 
       {/* Subtle atmospheric glow */}
       <div className="absolute bottom-0 left-0 right-0 h-48" style={{
-        background: "radial-gradient(ellipse at 50% 100%, rgba(30,52,72,0.8) 0%, transparent 70%)"
+        background: "radial-gradient(ellipse at 50% 100%, rgba(8,42,64,0.8) 0%, transparent 70%)"
       }} />
 
       <motion.div
