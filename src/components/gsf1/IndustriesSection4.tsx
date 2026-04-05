@@ -24,53 +24,68 @@ const industries = [
   },
 ];
 
-const IndustriesSection3 = () => {
+const IndustriesSection = () => {
   return (
-    <section id="industries" className="py-16 px-6 md:px-12 bg-white">
-      <div className="max-w-[1920px] mx-auto">
-        <div className="flex justify-between items-end mb-20">
+    <section id="industries" className="relative py-28 px-6 md:px-12 bg-white overflow-hidden">
+      {/* Top gradient bleed */}
+      <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-[#FAF8F5] to-transparent" />
+
+      <div className="max-w-[1920px] mx-auto relative z-10">
+        <div className="flex justify-between items-end mb-16">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
           >
-            <span className="text-[#1E3448] font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
+            <span className="text-[#1E3448]/60 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
               Market Verticals
             </span>
-            <h2 className="font-headline text-4xl font-extrabold tracking-tighter uppercase text-gray-900">
+            <h2 className="font-headline text-4xl md:text-5xl font-extrabold tracking-tighter uppercase text-gray-900">
               Deployed Expertise.
             </h2>
+            <div className="w-12 h-[3px] bg-secondary mt-5" />
           </motion.div>
-          <div className="hidden md:block w-1/3 h-[2px] bg-[#1E3448]/20 mb-4" />
+          <div className="hidden md:block w-1/3 h-px bg-gradient-to-l from-[#D4C9B8]/60 to-transparent mb-4" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {industries.map((ind, i) => (
             <motion.div
               key={ind.title}
-              initial={{ opacity: 0, y: 24 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: i * 0.1 }}
-              className="relative group overflow-hidden h-[500px]"
+              viewport={{ once: true, margin: "-60px" }}
+              transition={{ duration: 0.6, delay: i * 0.12, ease: [0.25, 0.46, 0.45, 0.94] }}
+              className="relative group overflow-hidden h-[520px] cursor-pointer"
             >
+              {/* Image with zoom on hover */}
               <img
                 src={ind.image}
                 alt={ind.title}
                 loading="lazy"
                 width={800}
                 height={1000}
-                className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
+                className="w-full h-full object-cover transition-transform duration-[800ms] ease-out group-hover:scale-110"
               />
-              <div className="absolute inset-x-0 bottom-0 p-10 bg-gradient-to-t from-white/90 via-white/60 to-transparent">
-                <h3 className="font-headline font-bold text-2xl uppercase mb-4 text-gray-900">
+
+              {/* Multi-layer overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1E3448]/80 via-[#1E3448]/20 to-transparent transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-[#1E3448]/0 group-hover:bg-[#1E3448]/30 transition-all duration-500" />
+
+              {/* Content */}
+              <div className="absolute inset-x-0 bottom-0 p-8 md:p-10">
+                <div className="w-8 h-[2px] bg-secondary mb-4 transition-all duration-500 group-hover:w-12" />
+                <h3 className="font-headline font-bold text-2xl uppercase mb-3 text-white">
                   {ind.title}
                 </h3>
-                <p className="text-gray-600 text-sm translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                <p className="text-white/70 text-sm leading-relaxed translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out">
                   {ind.description}
                 </p>
               </div>
+
+              {/* Top-right accent */}
+              <div className="absolute top-6 right-6 w-3 h-3 border border-white/20 group-hover:border-secondary/60 transition-colors duration-500" />
             </motion.div>
           ))}
         </div>
@@ -79,4 +94,4 @@ const IndustriesSection3 = () => {
   );
 };
 
-export default IndustriesSection3;
+export default IndustriesSection;
