@@ -41,27 +41,34 @@ const HeaderLight = () => {
   }, []);
 
   return (
-    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-[#FAF8F5]/95 backdrop-blur-sm shadow-sm border-b border-gray-200" : "bg-transparent"}`}>
-      <div className="flex justify-between items-center px-6 md:px-12 py-6 max-w-[1920px] mx-auto">
+    <header className={`fixed top-0 w-full z-50 transition-all duration-500 ${
+      scrolled 
+        ? "bg-[#FAF8F5]/95 backdrop-blur-md shadow-sm" 
+        : "bg-transparent"
+    }`}>
+      <div className="flex justify-between items-center px-6 md:px-12 py-5 max-w-[1920px] mx-auto">
         <div className="flex items-center gap-3">
           <img src={logo} alt="Gould Southern logo" className="h-8 w-8 object-contain" />
-          <span className="text-xl font-black tracking-tighter text-gray-900 font-headline uppercase">
+          <span className={`text-xl font-black tracking-tighter font-headline uppercase transition-colors duration-500 ${
+            scrolled ? "text-gray-900" : "text-white"
+          }`}>
             GOULD SOUTHERN
           </span>
         </div>
 
-        {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-10">
           <div ref={dropdownRef} className="relative">
             <button
               onClick={() => setCapOpen(!capOpen)}
-              className="font-headline font-bold tracking-tight uppercase text-sm text-gray-900 hover:text-secondary transition-colors duration-300 flex items-center gap-1"
+              className={`font-headline font-bold tracking-tight uppercase text-sm hover:text-secondary transition-colors duration-300 flex items-center gap-1 ${
+                scrolled ? "text-gray-900" : "text-white/90"
+              }`}
             >
               Capabilities
               <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${capOpen ? "rotate-180" : ""}`} />
             </button>
             {capOpen && (
-              <div className="absolute top-full left-0 mt-3 min-w-[220px] bg-white border border-[#E8DFD1] shadow-lg py-2 z-50">
+              <div className="absolute top-full left-0 mt-3 min-w-[220px] bg-white border border-[#E8DFD1] shadow-xl py-2 z-50">
                 {capabilitiesItems.map((item) => (
                   <a
                     key={item.label}
@@ -80,22 +87,23 @@ const HeaderLight = () => {
             <a
               key={item.label}
               href={item.href}
-              className="font-headline font-bold tracking-tight uppercase text-sm text-gray-900 hover:text-secondary transition-colors duration-300"
+              className={`font-headline font-bold tracking-tight uppercase text-sm hover:text-secondary transition-colors duration-300 ${
+                scrolled ? "text-gray-900" : "text-white/90"
+              }`}
             >
               {item.label}
             </a>
           ))}
           <a
             href="#contact"
-            className="bg-secondary text-white px-6 py-3 font-headline font-bold uppercase text-xs tracking-widest hover:brightness-110 active:scale-95 transition-all"
+            className="bg-secondary text-white px-6 py-3 font-headline font-bold uppercase text-xs tracking-widest hover:brightness-110 hover:shadow-lg hover:shadow-secondary/20 active:scale-95 transition-all duration-300"
           >
             Talk to Our Team
           </a>
         </nav>
 
-        {/* Mobile Toggle */}
         <button
-          className="md:hidden text-gray-900"
+          className={`md:hidden transition-colors duration-300 ${scrolled ? "text-gray-900" : "text-white"}`}
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
@@ -103,7 +111,6 @@ const HeaderLight = () => {
         </button>
       </div>
 
-      {/* Mobile Nav */}
       {mobileOpen && (
         <div className="md:hidden bg-white border-t border-gray-200">
           <div className="px-6 py-6 flex flex-col gap-4">
