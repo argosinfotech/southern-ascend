@@ -1,26 +1,34 @@
 import { motion } from "framer-motion";
 import { Package, Wrench, Plane, Radio } from "lucide-react";
+import capPackaging from "@/assets/cap-packaging.jpg";
+import capKitting from "@/assets/cap-kitting.jpg";
+import capAerospace from "@/assets/cap-aerospace.jpg";
+import capRfid from "@/assets/cap-rfid.jpg";
 
 const capabilities = [
   {
     icon: Package,
     title: "Custom Packaging",
     description: "Protective solutions engineered for high-value sensitive components.",
+    image: capPackaging,
   },
   {
     icon: Wrench,
     title: "Kitting & Toolkits",
     description: "Streamlined assembly of complex toolsets and mission-ready kits.",
+    image: capKitting,
   },
   {
     icon: Plane,
     title: "Aerospace & Military",
     description: "Compliant logistics tailored for defense and government support.",
+    image: capAerospace,
   },
   {
     icon: Radio,
     title: "RFID / FOD Solutions",
     description: "Automated asset tracking and Foreign Object Debris prevention.",
+    image: capRfid,
   },
 ];
 
@@ -61,17 +69,37 @@ const CapabilitiesSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.5, delay: i * 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
-                className="bg-[#FAF8F5] border border-[#E8E2D9] p-10 group hover:bg-white hover:shadow-lg hover:border-secondary/20 transition-all duration-500 relative rounded-lg overflow-hidden"
+                className="bg-[#FAF8F5] border border-[#E8E2D9] group hover:shadow-lg hover:border-secondary/20 transition-all duration-500 relative rounded-lg overflow-hidden flex flex-col"
               >
                 {/* Subtle top accent on hover */}
-                <div className="absolute top-0 left-0 right-0 h-[2px] bg-secondary scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-t-lg" />
-                <cap.icon className="text-secondary mb-6 w-7 h-7" />
-                <h3 className="font-headline font-bold uppercase tracking-tight text-lg mb-3 text-gray-900">
-                  {cap.title}
-                </h3>
-                <p className="text-gray-500 text-sm leading-relaxed">
-                  {cap.description}
-                </p>
+                <div className="absolute top-0 left-0 right-0 h-[2px] bg-secondary scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-t-lg z-20" />
+
+                {/* Image header */}
+                <div className="relative h-40 overflow-hidden">
+                  <img
+                    src={cap.image}
+                    alt={cap.title}
+                    width={1024}
+                    height={768}
+                    loading="lazy"
+                    className="w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700"
+                  />
+                  {/* Cream overlay to blend with palette */}
+                  <div className="absolute inset-0 bg-gradient-to-b from-[#FAF8F5]/40 via-[#FAF8F5]/20 to-[#FAF8F5]" />
+                </div>
+
+                {/* Content */}
+                <div className="p-8 pt-6 relative -mt-6 z-10">
+                  <div className="inline-flex items-center justify-center w-12 h-12 rounded-md bg-white border border-[#E8E2D9] mb-5 shadow-sm">
+                    <cap.icon className="text-secondary w-6 h-6" />
+                  </div>
+                  <h3 className="font-headline font-bold uppercase tracking-tight text-lg mb-3 text-gray-900">
+                    {cap.title}
+                  </h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">
+                    {cap.description}
+                  </p>
+                </div>
               </motion.div>
             ))}
           </div>
