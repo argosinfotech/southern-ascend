@@ -11,6 +11,7 @@ import GS1 from "./pages/GS1.tsx";
 import GSF1 from "./pages/GSF1.tsx";
 import GSF2 from "./pages/GSF2.tsx";
 import GSF3 from "./pages/GSF3.tsx";
+import GSF4 from "./pages/GSF4.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/gsf1" element={<GSF1 />} />
           <Route path="/gsf2" element={<GSF2 />} />
           <Route path="/gsf3" element={<GSF3 />} />
+          <Route path="/gsf4" element={<GSF4 />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
