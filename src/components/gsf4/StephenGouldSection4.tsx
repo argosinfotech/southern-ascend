@@ -18,7 +18,7 @@ const StephenGouldSection = () => {
           <span className="text-[#1E3448]/60 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
             Strategic Partnership
           </span>
-          <h2 className="font-headline text-4xl md:text-5xl font-extrabold tracking-tighter uppercase mb-6 text-gray-900 leading-none">
+          <h2 className="font-headline text-4xl md:text-5xl font-extrabold tracking-tighter uppercase mb-6 text-[#1E3448] leading-none">
             Specialized Service with Expanded Reach
           </h2>
           <div className="w-12 h-[3px] bg-secondary mb-8" />
@@ -42,7 +42,7 @@ const StephenGouldSection = () => {
           {/* Top accent bar */}
           <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-secondary via-secondary to-secondary/60" />
 
-          <h3 className="font-headline font-bold text-xl uppercase mb-2 text-gray-900">
+          <h3 className="font-headline font-bold text-xl uppercase mb-2 text-[#1E3448]">
             Connect with Us
           </h3>
           <div className="w-8 h-[2px] bg-secondary/40 mb-6" />

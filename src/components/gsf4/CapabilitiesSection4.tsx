@@ -74,7 +74,7 @@ const CapabilitiesSection = () => {
           <span className="text-[#1E3448]/60 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
             Core Systems
           </span>
-          <h2 className="font-headline text-4xl md:text-5xl font-extrabold tracking-tighter uppercase mb-6 text-gray-900 leading-none">
+          <h2 className="font-headline text-4xl md:text-5xl font-extrabold tracking-tighter uppercase mb-6 text-[#1E3448] leading-none">
             Engineered Execution.
           </h2>
           <div className="w-12 h-[3px] bg-secondary mb-6" />
@@ -88,7 +88,8 @@ const CapabilitiesSection = () => {
         {/* Alternating image / text rows */}
         <div className="space-y-20 md:space-y-28">
           {capabilities.map((cap, i) => {
-            const reverse = i % 2 === 1;
+            // Flipped: first row starts with TEXT on the left, IMAGE on the right
+            const reverse = i % 2 === 0;
             return (
               <div
                 key={cap.title}
@@ -129,7 +130,7 @@ const CapabilitiesSection = () => {
                   <span className="text-[#1E3448]/50 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-3">
                     {String(i + 1).padStart(2, "0")} — Capability
                   </span>
-                  <h3 className="font-headline text-3xl md:text-4xl font-extrabold tracking-tighter uppercase mb-4 text-gray-900 leading-none">
+                  <h3 className="font-headline text-3xl md:text-4xl font-extrabold tracking-tighter uppercase mb-4 text-[#1E3448] leading-none">
                     {cap.title}
                   </h3>
                   <p className="text-gray-500 text-base leading-relaxed mb-6">

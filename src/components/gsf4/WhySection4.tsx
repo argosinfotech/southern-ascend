@@ -86,7 +86,7 @@ const WhySection = () => {
           <span className="text-[#1E3448]/60 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
             Why Us
           </span>
-          <h2 className="font-headline text-4xl md:text-5xl font-extrabold tracking-tighter uppercase mb-6 leading-none text-gray-900">
+          <h2 className="font-headline text-4xl md:text-5xl font-extrabold tracking-tighter uppercase mb-6 leading-none text-[#1E3448]">
             Specialized <br />
             <span className="text-secondary">Knowledge.</span>
           </h2>
@@ -106,7 +106,7 @@ const WhySection = () => {
                   {point.num}
                 </span>
                 <div>
-                  <h4 className="font-headline font-bold uppercase tracking-widest text-sm mb-2 text-gray-900 group-hover:text-secondary transition-colors duration-300">
+                  <h4 className="font-headline font-bold uppercase tracking-widest text-sm mb-2 text-[#1E3448] group-hover:text-secondary transition-colors duration-300">
                     {point.title}
                   </h4>
                   <p className="text-gray-500 text-sm leading-relaxed">
