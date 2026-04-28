@@ -6,12 +6,6 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import Home2 from "./pages/Home2.tsx";
 import Home3 from "./pages/Home3.tsx";
-import OldHome3 from "./pages/OldHome3.tsx";
-import Home4 from "./pages/Home4.tsx";
-import GS1 from "./pages/GS1.tsx";
-import GSF1 from "./pages/GSF1.tsx";
-import GSF2 from "./pages/GSF2.tsx";
-import GSF3 from "./pages/GSF3.tsx";
 import Home1 from "./pages/Home1.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
@@ -25,16 +19,9 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/home1" element={<Home1 />} />
           <Route path="/home2" element={<Home2 />} />
           <Route path="/home3" element={<Home3 />} />
-          <Route path="/oldhome3" element={<OldHome3 />} />
-          <Route path="/home4" element={<Home4 />} />
-          <Route path="/gs1" element={<GS1 />} />
-          <Route path="/gsf1" element={<GSF1 />} />
-          <Route path="/gsf2" element={<GSF2 />} />
-          <Route path="/gsf3" element={<GSF3 />} />
-          <Route path="/gsf4" element={<Home1 />} />
-          <Route path="/home1" element={<Home1 />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
