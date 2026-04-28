@@ -58,32 +58,69 @@ const capabilities = [
 
 const CapabilitiesSection = () => {
   return (
-    <section id="capabilities" className="relative py-24 px-6 md:px-12 bg-white overflow-hidden">
-      {/* Top gradient bleed from previous section */}
-      <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-[#FAF8F5] to-transparent z-0" />
+    <>
+      {/* DARK INTRO BAND — Engineered Execution */}
+      <section id="capabilities" className="relative px-6 md:px-12 py-20 md:py-24 bg-[#0B2238] overflow-hidden">
+        {/* Atmospheric layers */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0B2238] via-[#0A1E32] to-[#06182A]" />
+        <div
+          className="absolute inset-0 opacity-60"
+          style={{
+            background:
+              "radial-gradient(ellipse 80% 60% at 50% 100%, rgba(56,120,170,0.18) 0%, transparent 70%)",
+          }}
+        />
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-secondary/30 to-transparent" />
 
-      <div className="max-w-[1920px] mx-auto relative z-10">
-        {/* Section header — full width, above the rows */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-80px" }}
-          transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
-          className="max-w-3xl mb-20"
-        >
-          <span className="text-[#1E3448]/60 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
-            Core Systems
-          </span>
-          <h2 className="font-headline text-4xl md:text-5xl font-extrabold tracking-tighter uppercase mb-6 text-[#1E3448] leading-none">
-            Engineered Execution.
-          </h2>
-          <div className="w-12 h-[3px] bg-secondary mb-6" />
-          <p className="text-gray-500 leading-relaxed text-lg">
-            Our integrated approach combines specialized design with turnkey
-            fulfillment to ensure every component arrives verified and ready
-            for deployment.
-          </p>
-        </motion.div>
+        <div className="max-w-[1920px] mx-auto relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
+            className="max-w-3xl mb-16"
+          >
+            <span className="text-white/50 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
+              Core Systems
+            </span>
+            <h2 className="font-headline text-4xl md:text-5xl font-extrabold tracking-tighter uppercase mb-6 text-white leading-none">
+              Engineered Execution.
+            </h2>
+            <div className="w-12 h-[3px] bg-secondary mb-6" />
+            <p className="text-white/60 leading-relaxed text-lg">
+              Our integrated approach combines specialized design with turnkey
+              fulfillment to ensure every component arrives verified and ready
+              for deployment.
+            </p>
+          </motion.div>
+
+          {/* 4 capability mini-cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/10 border border-white/10 rounded-lg overflow-hidden">
+            {capabilities.map((cap, i) => (
+              <motion.div
+                key={cap.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-40px" }}
+                transition={{ duration: 0.5, delay: 0.1 + i * 0.08, ease: [0.25, 0.46, 0.45, 0.94] }}
+                className="bg-[#0B2238] p-7 group hover:bg-[#0E2A44] transition-colors duration-300"
+              >
+                <cap.icon className="text-secondary w-6 h-6 mb-5" />
+                <h3 className="font-headline font-extrabold text-white text-base uppercase tracking-tight mb-3">
+                  {cap.title}
+                </h3>
+                <p className="text-white/55 text-sm leading-relaxed">
+                  {cap.description}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* LIGHT — Alternating image / text rows */}
+      <section className="relative py-24 px-6 md:px-12 bg-white overflow-hidden">
+        <div className="max-w-[1920px] mx-auto relative z-10">
 
         {/* Alternating image / text rows */}
         <div className="space-y-20 md:space-y-28">
@@ -153,8 +190,9 @@ const CapabilitiesSection = () => {
             );
           })}
         </div>
-      </div>
-    </section>
+        </div>
+      </section>
+    </>
   );
 };
 
