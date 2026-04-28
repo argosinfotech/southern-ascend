@@ -1,18 +1,18 @@
-import HeaderLight from "@/components/gsf2/HeaderLight";
-import HeroSection from "@/components/gsf2/HeroSection4";
-import TrustBar from "@/components/gsf2/TrustBar4";
-import CapabilitiesSection from "@/components/gsf2/CapabilitiesSection4";
-import WhySection from "@/components/gsf2/WhySection4";
-import IndustriesSection from "@/components/gsf2/IndustriesSection4";
-import CertificationsSection from "@/components/gsf2/CertificationsSection4";
-import StephenGouldSection from "@/components/gsf2/StephenGouldSection4";
-import Footer from "@/components/gsf2/Footer4";
+import Header from "@/components/Header";
+import HeroSection from "@/components/home2/HeroSection2";
+import TrustBar from "@/components/TrustBar";
+import CapabilitiesSection from "@/components/home2/CapabilitiesSection2";
+import WhySection from "@/components/home2/WhySection2";
+import IndustriesSection from "@/components/home2/IndustriesSection2";
+import CertificationsSection from "@/components/home2/CertificationsSection2";
+import StephenGouldSection from "@/components/home2/StephenGouldSection2";
+import Footer from "@/components/Footer";
 
-const GSF2 = () => {
+const Home2 = () => {
   return (
-    <div className="min-h-screen bg-[#FAF8F5] text-gray-900">
-      <HeaderLight />
-      <main>
+    <div className="min-h-screen bg-background text-foreground">
+      <Header />
+      <main className="pt-24">
         <HeroSection />
         <TrustBar />
         <CapabilitiesSection />
@@ -26,4 +26,4 @@ const GSF2 = () => {
   );
 };
 
-export default GSF2;
+export default Home2;
