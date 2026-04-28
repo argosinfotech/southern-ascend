@@ -1,14 +1,14 @@
 import Header from "@/components/Header";
-import HeroSection from "@/components/home3/HeroSection3";
-import TrustBar from "@/components/home3/TrustBar3";
-import CapabilitiesSection from "@/components/home3/CapabilitiesSection3";
-import WhySection from "@/components/home3/WhySection3";
-import IndustriesSection from "@/components/home3/IndustriesSection3";
-import CertificationsSection from "@/components/home3/CertificationsSection3";
-import StephenGouldSection from "@/components/home3/StephenGouldSection3";
-import Footer from "@/components/home3/Footer3";
+import HeroSection from "@/components/oldhome3/HeroSection3";
+import TrustBar from "@/components/oldhome3/TrustBar3";
+import CapabilitiesSection from "@/components/oldhome3/CapabilitiesSection3";
+import WhySection from "@/components/oldhome3/WhySection3";
+import IndustriesSection from "@/components/oldhome3/IndustriesSection3";
+import CertificationsSection from "@/components/oldhome3/CertificationsSection3";
+import StephenGouldSection from "@/components/oldhome3/StephenGouldSection3";
+import Footer from "@/components/oldhome3/Footer3";
 
-const Home3 = () => {
+const OldHome3 = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900">
       <Header />
@@ -26,4 +26,4 @@ const Home3 = () => {
   );
 };
 
-export default Home3;
+export default OldHome3;
