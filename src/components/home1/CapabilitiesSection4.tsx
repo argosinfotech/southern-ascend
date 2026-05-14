@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Package, Wrench, Plane, Radio, Check } from "lucide-react";
 import capPackaging from "@/assets/cap-packaging.jpg";
 import capKitting from "@/assets/cap-kitting.jpg";
-import capAerospace from "@/assets/cap-compliant-logistics.png";
+import capAerospace from "@/assets/cap-compliant-logistics-v2.png";
 import capRfid from "@/assets/cap-rfid.jpg";
 
 const capabilities = [
