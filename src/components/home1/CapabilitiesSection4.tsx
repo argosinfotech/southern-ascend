@@ -32,8 +32,7 @@ const capabilities = [
   },
   {
     icon: Plane,
-    title: "Aerospace & Military",
-    description: "Compliant logistics tailored for defense and government support.",
+    title: "Compliant Logistics",
     image: capAerospace,
     points: [
       "AS9100D and ISO 9001 governed processes end-to-end",
