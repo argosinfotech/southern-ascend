@@ -9,6 +9,7 @@ import Home3 from "./pages/Home3.tsx";
 import Home4 from "./pages/Home4.tsx";
 import Home1 from "./pages/Home1.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import PasswordGate from "./components/PasswordGate.tsx";
 
 const queryClient = new QueryClient();
 
@@ -17,6 +18,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      <PasswordGate>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home1 />} />
@@ -29,6 +31,7 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
+      </PasswordGate>
     </TooltipProvider>
   </QueryClientProvider>
 );
