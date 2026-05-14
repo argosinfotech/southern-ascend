@@ -142,7 +142,7 @@ const HeaderLight = () => {
             <a
               href="#contact"
               onClick={() => setMobileOpen(false)}
-              className="bg-secondary text-white px-6 py-3 font-headline font-bold uppercase text-xs tracking-widest text-center mt-2"
+              className="bg-secondary text-white px-6 py-3 rounded-md font-headline font-bold uppercase text-xs tracking-widest text-center mt-2"
             >
               Talk to Our Team
             </a>
