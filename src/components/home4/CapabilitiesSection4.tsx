@@ -94,7 +94,7 @@ const CapabilitiesSection = () => {
           </div>
         </div>
       </section>
-    </section>
+    </>
   );
 };
 
