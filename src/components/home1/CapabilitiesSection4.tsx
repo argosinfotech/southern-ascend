@@ -109,9 +109,8 @@ const CapabilitiesSection = () => {
                       width={1024}
                       height={768}
                       loading="lazy"
-                      className="w-full aspect-[4/3] object-cover opacity-80 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-700"
+                      className="w-full aspect-[4/3] object-cover group-hover:scale-[1.02] transition-all duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#FAF8F5]/30 via-transparent to-transparent" />
                   </div>
                 </motion.div>
 
