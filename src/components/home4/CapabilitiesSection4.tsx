@@ -4,6 +4,7 @@ import capPackaging from "@/assets/cap-packaging.jpg";
 import capKitting from "@/assets/cap-kitting.jpg";
 import capAerospace from "@/assets/cap-compliant-logistics-v2.png";
 import capRfid from "@/assets/cap-rfid.jpg";
+import earthBg from "@/assets/earth-horizon-bg.jpg";
 
 const capabilities = [
   {
@@ -32,7 +33,8 @@ const capabilities = [
   },
   {
     icon: Plane,
-    title: "Compliant Logistics",
+    title: "Aerospace & Military",
+    description: "Compliant logistics tailored for defense and government support.",
     image: capAerospace,
     points: [
       "AS9100D and ISO 9001 governed processes end-to-end",
@@ -59,17 +61,23 @@ const CapabilitiesSection = () => {
   return (
     <>
       {/* DARK INTRO BAND — Engineered Execution */}
-      <section id="capabilities" className="relative px-6 md:px-12 py-20 md:py-24 bg-[#0B2238] overflow-hidden">
-        {/* Atmospheric layers */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0B2238] via-[#0A1E32] to-[#06182A]" />
-        <div
-          className="absolute inset-0 opacity-60"
-          style={{
-            background:
-              "radial-gradient(ellipse 80% 60% at 50% 100%, rgba(56,120,170,0.18) 0%, transparent 70%)",
-          }}
-        />
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-secondary/30 to-transparent" />
+      <section id="capabilities" className="relative px-6 md:px-12 py-24 md:py-32 bg-[#082A40] overflow-hidden">
+        {/* Earth horizon background */}
+        <div className="absolute inset-0">
+          <img
+            src={earthBg}
+            alt=""
+            aria-hidden="true"
+            width={1920}
+            height={1080}
+            loading="lazy"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        {/* Color wash + readability overlays */}
+        <div className="absolute inset-0 bg-[#082A40]/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#082A40] via-[#082A40]/60 to-[#082A40]/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#082A40]/40 via-transparent to-[#082A40]/60" />
 
         <div className="max-w-[1920px] mx-auto relative z-10">
           <motion.div
@@ -77,7 +85,7 @@ const CapabilitiesSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
-            className="max-w-3xl mb-16"
+            className="max-w-3xl mb-20"
           >
             <span className="text-white/50 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
               Core Systems
@@ -93,8 +101,8 @@ const CapabilitiesSection = () => {
             </p>
           </motion.div>
 
-          {/* 4 capability mini-cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/10 border border-white/10 rounded-lg overflow-hidden">
+          {/* 4 capability columns with vertical dotted dividers */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
             {capabilities.map((cap, i) => (
               <motion.div
                 key={cap.title}
@@ -102,13 +110,15 @@ const CapabilitiesSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-40px" }}
                 transition={{ duration: 0.5, delay: 0.1 + i * 0.08, ease: [0.25, 0.46, 0.45, 0.94] }}
-                className="bg-[#0B2238] p-7 group hover:bg-[#0E2A44] transition-colors duration-300"
+                className={`px-6 md:px-8 py-6 ${
+                  i > 0 ? "lg:border-l lg:border-dashed lg:border-white/20" : ""
+                }`}
               >
-                <cap.icon className="text-secondary w-6 h-6 mb-5" />
-                <h3 className="font-headline font-extrabold text-white text-base uppercase tracking-tight mb-3">
+                <cap.icon className="text-secondary w-7 h-7 mb-8" strokeWidth={1.75} />
+                <h3 className="font-headline font-extrabold text-white text-lg md:text-xl uppercase tracking-tight mb-5">
                   {cap.title}
                 </h3>
-                <p className="text-white/55 text-sm leading-relaxed">
+                <p className="text-white/65 text-sm leading-relaxed">
                   {cap.description}
                 </p>
               </motion.div>
