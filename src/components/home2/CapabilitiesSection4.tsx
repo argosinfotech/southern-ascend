@@ -14,7 +14,7 @@ const capabilities = [
   },
   {
     icon: Plane,
-    title: "Aerospace & Military",
+    title: "Compliant Logistics",
     description: "Compliant logistics tailored for defense and government support.",
   },
   {
