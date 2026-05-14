@@ -1,9 +1,5 @@
 import { motion } from "framer-motion";
-import { Package, Wrench, Plane, Radio, Check } from "lucide-react";
-import capPackaging from "@/assets/cap-packaging.jpg";
-import capKitting from "@/assets/cap-kitting.jpg";
-import capAerospace from "@/assets/cap-compliant-logistics-v2.png";
-import capRfid from "@/assets/cap-rfid.jpg";
+import { Package, Wrench, Plane, Radio } from "lucide-react";
 import earthBg from "@/assets/earth-horizon-bg.jpg";
 
 const capabilities = [
@@ -11,49 +7,21 @@ const capabilities = [
     icon: Package,
     title: "Custom Packaging",
     description: "Protective solutions engineered for high-value sensitive components.",
-    image: capPackaging,
-    points: [
-      "ESD-safe and climate-controlled enclosures for sensitive electronics",
-      "Custom foam, fixtures and inserts engineered per component geometry",
-      "Reusable and returnable systems for closed-loop programs",
-      "Validated drop, vibration and shock testing on request",
-    ],
   },
   {
     icon: Wrench,
     title: "Kitting & Toolkits",
     description: "Streamlined assembly of complex toolsets and mission-ready kits.",
-    image: capKitting,
-    points: [
-      "Mission-ready toolkits assembled to exact build-of-materials",
-      "Serialized component traceability from receipt to deployment",
-      "Shadowboard layouts and FOD-controlled tool accountability",
-      "Scalable from prototype kits to recurring production runs",
-    ],
   },
   {
     icon: Plane,
     title: "Aerospace & Military",
     description: "Compliant logistics tailored for defense and government support.",
-    image: capAerospace,
-    points: [
-      "AS9100D and ISO 9001 governed processes end-to-end",
-      "ITAR-aware handling for controlled defense components",
-      "MIL-SPEC packaging, marking and barcoding compliance",
-      "Secure storage and managed release for program timelines",
-    ],
   },
   {
     icon: Radio,
     title: "RFID / FOD Solutions",
     description: "Automated asset tracking and Foreign Object Debris prevention.",
-    image: capRfid,
-    points: [
-      "RFID-tagged kits with automated check-in / check-out workflows",
-      "FOD-prevention shadowboards and tethered tool systems",
-      "Real-time visibility across distributed inventory locations",
-      "Integrates with existing ERP and MES platforms",
-    ],
   },
 ];
 
