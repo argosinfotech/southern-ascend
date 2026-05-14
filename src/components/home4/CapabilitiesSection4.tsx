@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Package, Wrench, Plane, Radio } from "lucide-react";
+import { Package, Wrench, Plane, Radio, ArrowRight } from "lucide-react";
 import earthBg from "@/assets/earth-horizon-bg.jpg";
 
 const capabilities = [
