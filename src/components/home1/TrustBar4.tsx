@@ -9,7 +9,7 @@ const certs = [
 
 const TrustBar = () => {
   return (
-    <section className="relative bg-[#1E3448] py-10 px-6 md:px-12">
+    <section className="relative bg-[#082A40] py-10 px-6 md:px-12">
       <div className="max-w-[1920px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
         {certs.map((cert, i) => (
           <motion.div
