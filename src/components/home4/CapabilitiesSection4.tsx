@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Package, Wrench, Plane, Radio } from "lucide-react";
+import { Package, Wrench, Plane, Radio, ArrowRight } from "lucide-react";
 import earthBg from "@/assets/earth-horizon-bg.jpg";
 
 const capabilities = [
@@ -89,6 +89,12 @@ const CapabilitiesSection = () => {
                 <p className="text-white/65 text-sm leading-relaxed">
                   {cap.description}
                 </p>
+                <a
+                  href="#"
+                  className="inline-flex items-center gap-1.5 mt-5 text-secondary text-sm font-medium hover:text-secondary/80 transition-colors"
+                >
+                  Learn More <ArrowRight className="w-4 h-4" />
+                </a>
               </motion.div>
             ))}
           </div>
