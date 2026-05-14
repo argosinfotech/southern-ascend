@@ -56,7 +56,7 @@ const WhySection = () => {
               style={{ y: imageY }}
             />
             {/* Image overlay for depth */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#1E3448]/40 via-transparent to-[#1E3448]/10" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#082A40]/40 via-transparent to-[#082A40]/10" />
           </div>
 
           {/* Floating stat card */}
@@ -83,10 +83,10 @@ const WhySection = () => {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.7, delay: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
         >
-          <span className="text-[#1E3448]/60 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
+          <span className="text-[#082A40]/60 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
             Why Us
           </span>
-          <h2 className="font-headline text-4xl md:text-5xl font-extrabold tracking-tighter uppercase mb-6 leading-none text-[#1E3448]">
+          <h2 className="font-headline text-4xl md:text-5xl font-extrabold tracking-tighter uppercase mb-6 leading-none text-[#082A40]">
             Specialized <br />
             <span className="text-secondary">Knowledge.</span>
           </h2>
@@ -106,7 +106,7 @@ const WhySection = () => {
                   {point.num}
                 </span>
                 <div>
-                  <h4 className="font-headline font-bold uppercase tracking-widest text-sm mb-2 text-[#1E3448] group-hover:text-secondary transition-colors duration-300">
+                  <h4 className="font-headline font-bold uppercase tracking-widest text-sm mb-2 text-[#082A40] group-hover:text-secondary transition-colors duration-300">
                     {point.title}
                   </h4>
                   <p className="text-gray-500 text-sm leading-relaxed">

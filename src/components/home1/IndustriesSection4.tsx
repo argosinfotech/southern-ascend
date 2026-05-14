@@ -38,10 +38,10 @@ const IndustriesSection = () => {
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
           >
-            <span className="text-[#1E3448]/60 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
+            <span className="text-[#082A40]/60 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
               Market Verticals
             </span>
-            <h2 className="font-headline text-4xl md:text-5xl font-extrabold tracking-tighter uppercase text-[#1E3448]">
+            <h2 className="font-headline text-4xl md:text-5xl font-extrabold tracking-tighter uppercase text-[#082A40]">
               Deployed Expertise.
             </h2>
             <div className="w-12 h-[3px] bg-secondary mt-5" />
@@ -70,8 +70,8 @@ const IndustriesSection = () => {
               />
 
               {/* Multi-layer overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#1E3448]/80 via-[#1E3448]/20 to-transparent transition-opacity duration-500" />
-              <div className="absolute inset-0 bg-[#1E3448]/0 group-hover:bg-[#1E3448]/30 transition-all duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#082A40]/80 via-[#082A40]/20 to-transparent transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-[#082A40]/0 group-hover:bg-[#082A40]/30 transition-all duration-500" />
 
               {/* Content */}
               <div className="absolute inset-x-0 bottom-0 p-8 md:p-10">

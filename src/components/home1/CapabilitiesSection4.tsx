@@ -70,10 +70,10 @@ const CapabilitiesSection = () => {
           transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
           className="max-w-3xl mb-20"
         >
-          <span className="text-[#1E3448]/60 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
+          <span className="text-[#082A40]/60 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
             Core Systems
           </span>
-          <h2 className="font-headline text-4xl md:text-5xl font-extrabold tracking-tighter uppercase mb-6 text-[#1E3448] leading-none">
+          <h2 className="font-headline text-4xl md:text-5xl font-extrabold tracking-tighter uppercase mb-6 text-[#082A40] leading-none">
             Engineered Execution.
           </h2>
           <div className="w-12 h-[3px] bg-secondary mb-6" />
@@ -126,10 +126,10 @@ const CapabilitiesSection = () => {
                   <div className="inline-flex items-center justify-center w-12 h-12 rounded-md bg-white border border-[#E8E2D9] mb-5 shadow-sm">
                     <cap.icon className="text-secondary w-6 h-6" />
                   </div>
-                  <span className="text-[#1E3448]/50 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-3">
+                  <span className="text-[#082A40]/50 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-3">
                     {String(i + 1).padStart(2, "0")} — Capability
                   </span>
-                  <h3 className="font-headline text-3xl md:text-4xl font-extrabold tracking-tighter uppercase mb-4 text-[#1E3448] leading-none">
+                  <h3 className="font-headline text-3xl md:text-4xl font-extrabold tracking-tighter uppercase mb-4 text-[#082A40] leading-none">
                     {cap.title}
                   </h3>
                   <p className="text-gray-500 text-base leading-relaxed mb-6">
