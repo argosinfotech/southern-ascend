@@ -3,7 +3,7 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import logo from "@/assets/gouldsouthern-logo.png";
 
 const capabilitiesItems = [
-  { label: "Kitting & Toolkits", href: "#capabilities" },
+  { label: "Kitting & Toolkits", href: "/kitting-toolkits" },
   { label: "Packaging & Logistics", href: "#capabilities" },
   { label: "RFID/FOD Solutions", href: "#capabilities" },
   { label: "Turnkey Integration", href: "#capabilities" },
