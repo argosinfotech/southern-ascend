@@ -47,12 +47,12 @@ const HeaderLight = () => {
         : "bg-transparent"
     }`}>
       <div className="flex justify-between items-center px-6 md:px-12 py-5 max-w-[1920px] mx-auto">
-        <div className="flex items-center gap-3">
+        <a href="/" className="flex items-center gap-3">
           <img src={logo} alt="Gould Southern logo" className="h-8 w-8 object-contain" />
           <span className="text-xl font-black tracking-tighter font-headline uppercase text-gray-900">
             GOULD SOUTHERN
           </span>
-        </div>
+        </a>
 
         <nav className="hidden md:flex items-center gap-10">
           <div ref={dropdownRef} className="relative">
