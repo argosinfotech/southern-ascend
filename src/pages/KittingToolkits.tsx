@@ -4,8 +4,9 @@ import HeaderLight from "@/components/home4/HeaderLight";
 import Footer from "@/components/home4/Footer4";
 import earthBg from "@/assets/earth-horizon-bg.jpg";
 import shadowBoardImg from "@/assets/kitting-shadow-board.jpg";
-import aerospaceImg from "@/assets/kitting-aerospace.jpg";
 import mobileCribImg from "@/assets/kitting-mobile-crib.jpg";
+import aerospaceEngine from "@/assets/gs-aerospace-engine.jpg.asset.json";
+import wrenchesBanner from "@/assets/gs-kitting-wrenches.jpg.asset.json";
 
 const capabilities = [
   {
@@ -282,10 +283,10 @@ const KittingToolkits = () => {
               className="relative"
             >
               <img
-                src={aerospaceImg}
-                alt="Aerospace technician using an RFID-tracked custom tool cabinet in a hangar"
+                src={aerospaceEngine.url}
+                alt="Aerospace engine assembly — representative of programs Gould Southern supports"
                 loading="lazy"
-                width={1536}
+                width={1920}
                 height={1024}
                 className="w-full h-auto rounded-lg shadow-2xl object-cover"
               />
