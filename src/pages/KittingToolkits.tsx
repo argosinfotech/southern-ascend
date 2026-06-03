@@ -1,12 +1,8 @@
 import { motion } from "framer-motion";
-import { Check, Layers, Tag, ScanLine, QrCode, Package, Boxes, ArrowRight } from "lucide-react";
+import { Check, Layers, Tag, ScanLine, QrCode, Package, Boxes, ArrowRight, Image } from "lucide-react";
 import HeaderLight from "@/components/home4/HeaderLight";
 import Footer from "@/components/home4/Footer4";
 import earthBg from "@/assets/earth-horizon-bg.jpg";
-import shadowBoardImg from "@/assets/kitting-shadow-board.jpg";
-import mobileCribImg from "@/assets/kitting-mobile-crib.jpg";
-import aerospaceEngine from "@/assets/gs-aerospace-engine.jpg.asset.json";
-import wrenchesBanner from "@/assets/gs-kitting-wrenches.jpg.asset.json";
 
 const capabilities = [
   {
