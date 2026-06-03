@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { z } from "zod";
 import { toast } from "sonner";
-import { MapPin, Phone, Printer, Mail, ArrowRight, Map as MapIcon } from "lucide-react";
+import { MapPin, Phone, Printer, Mail, ArrowRight, Map as MapIcon, type LucideIcon } from "lucide-react";
 import HeaderLight from "@/components/home4/HeaderLight";
 import Footer from "@/components/home4/Footer4";
 import earthBg from "@/assets/earth-horizon-bg.jpg";
@@ -317,7 +317,7 @@ const InfoItem = ({
   label,
   children,
 }: {
-  icon: React.ComponentType<{ className?: string; strokeWidth?: number }>;
+  icon: LucideIcon;
   label: string;
   children: React.ReactNode;
 }) => (
