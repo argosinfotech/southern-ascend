@@ -7,7 +7,7 @@ const capabilitiesItems = [
   { label: "Packaging & Logistics", href: "#capabilities" },
   { label: "RFID/FOD Solutions", href: "#capabilities" },
   { label: "Turnkey Integration", href: "#capabilities" },
-  { label: "Government Contracting", href: "#capabilities" },
+  { label: "Government Contracting", href: "/government-contracting" },
 ];
 
 const navItems = [
