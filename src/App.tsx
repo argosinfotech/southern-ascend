@@ -9,6 +9,7 @@ import Home3 from "./pages/Home3.tsx";
 import Home4 from "./pages/Home4.tsx";
 import Home1 from "./pages/Home1.tsx";
 import KittingToolkits from "./pages/KittingToolkits.tsx";
+import Certifications from "./pages/Certifications.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import PasswordGate from "./components/PasswordGate.tsx";
 
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/home3" element={<Home3 />} />
           <Route path="/home4" element={<Home4 />} />
           <Route path="/kitting-toolkits" element={<KittingToolkits />} />
+          <Route path="/certifications" element={<Certifications />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
