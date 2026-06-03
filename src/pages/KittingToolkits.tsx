@@ -3,6 +3,9 @@ import { Check, Layers, Tag, ScanLine, QrCode, Package, Boxes, ArrowRight } from
 import HeaderLight from "@/components/home4/HeaderLight";
 import Footer from "@/components/home4/Footer4";
 import earthBg from "@/assets/earth-horizon-bg.jpg";
+import shadowBoardImg from "@/assets/kitting-shadow-board.jpg";
+import aerospaceImg from "@/assets/kitting-aerospace.jpg";
+import mobileCribImg from "@/assets/kitting-mobile-crib.jpg";
 
 const capabilities = [
   {
@@ -93,7 +96,8 @@ const KittingToolkits = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-r from-[#FAF8F5] via-[#FAF8F5]/85 to-[#FAF8F5]/40" />
           </div>
-          <div className="relative z-10 max-w-[1920px] mx-auto w-full">
+          <div className="relative z-10 max-w-[1920px] mx-auto w-full grid lg:grid-cols-2 gap-12 items-center">
+            <div>
             <motion.span
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
@@ -123,18 +127,35 @@ const KittingToolkits = () => {
               teams audit-ready — from single hand-held kits to fully equipped
               mobile tool cribs.
             </motion.p>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.96 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+              className="hidden lg:block relative"
+            >
+              <img
+                src={shadowBoardImg}
+                alt="Custom shadow board tool kit in a rugged case with precision-cut foam"
+                width={1536}
+                height={1024}
+                className="w-full h-auto rounded-lg shadow-2xl object-cover"
+              />
+              <div className="absolute inset-0 rounded-lg ring-1 ring-[#1E3448]/10 pointer-events-none" />
+            </motion.div>
           </div>
         </section>
 
         {/* WHAT WE BUILD */}
         <section className="px-6 md:px-12 py-20 md:py-24 bg-[#FAF8F5] border-t border-[#E8E2D9]">
           <div className="max-w-[1920px] mx-auto">
+            <div className="grid lg:grid-cols-[1fr_auto] gap-12 items-end mb-14">
             <motion.div
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.6 }}
-              className="max-w-3xl mb-14"
+              className="max-w-3xl"
             >
               <span className="text-gray-500 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
                 Capabilities
@@ -150,6 +171,19 @@ const KittingToolkits = () => {
                 fully inspected, ready-to-deploy product.
               </p>
             </motion.div>
+            <motion.img
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.6, delay: 0.15 }}
+              src={mobileCribImg}
+              alt="Mobile tool crib cabinet with custom kitted drawers"
+              loading="lazy"
+              width={1024}
+              height={1024}
+              className="hidden lg:block w-[320px] h-[320px] object-cover rounded-lg shadow-lg"
+            />
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {capabilities.map((cap, i) => (
@@ -204,7 +238,7 @@ const KittingToolkits = () => {
 
         {/* FOD PREVENTION */}
         <section className="px-6 md:px-12 py-20 md:py-24 bg-[#FAF8F5]">
-          <div className="max-w-[1920px] mx-auto">
+          <div className="max-w-[1920px] mx-auto grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -245,8 +279,17 @@ const KittingToolkits = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.6, delay: 0.15 }}
-              className="mt-12 bg-white border-l-4 border-secondary rounded-r-lg p-8 md:p-10 max-w-4xl shadow-sm"
+              className="relative"
             >
+              <img
+                src={aerospaceImg}
+                alt="Aerospace technician using an RFID-tracked custom tool cabinet in a hangar"
+                loading="lazy"
+                width={1536}
+                height={1024}
+                className="w-full h-auto rounded-lg shadow-2xl object-cover"
+              />
+              <div className="mt-8 bg-white border-l-4 border-secondary rounded-r-lg p-8 md:p-10 shadow-sm">
               <h3 className="font-headline text-2xl md:text-3xl font-extrabold uppercase tracking-tight text-[#1E3448] mb-4">
                 Aerospace & Military Applications
               </h3>
@@ -258,6 +301,7 @@ const KittingToolkits = () => {
                 can be standardized across multiple facilities or customized for
                 task-specific deployments.
               </p>
+              </div>
             </motion.div>
           </div>
         </section>
