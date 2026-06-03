@@ -215,6 +215,11 @@ const KittingToolkits = () => {
         </section>
 
         {/* STAT STRIP */}
+        <div
+          aria-hidden="true"
+          className="w-full h-24 md:h-32 bg-cover bg-center"
+          style={{ backgroundImage: `url(${wrenchesBanner.url})` }}
+        />
         <section className="px-6 md:px-12 py-16 bg-[#082A40]">
           <div className="max-w-[1920px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((s, i) => (
