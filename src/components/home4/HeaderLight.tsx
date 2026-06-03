@@ -12,7 +12,7 @@ const capabilitiesItems = [
 
 const navItems = [
   { label: "Industries", href: "#industries" },
-  { label: "Certifications", href: "#quality" },
+  { label: "Certifications", href: "/certifications" },
   { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];
