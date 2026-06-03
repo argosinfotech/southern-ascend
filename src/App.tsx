@@ -11,6 +11,7 @@ import Home1 from "./pages/Home1.tsx";
 import KittingToolkits from "./pages/KittingToolkits.tsx";
 import Certifications from "./pages/Certifications.tsx";
 import GovernmentContracting from "./pages/GovernmentContracting.tsx";
+import Industries from "./pages/Industries.tsx";
 import About from "./pages/About.tsx";
 import Contact from "./pages/Contact.tsx";
 import NotFound from "./pages/NotFound.tsx";
@@ -35,6 +36,7 @@ const App = () => (
           <Route path="/kitting-toolkits" element={<KittingToolkits />} />
           <Route path="/certifications" element={<Certifications />} />
           <Route path="/government-contracting" element={<GovernmentContracting />} />
+          <Route path="/industries" element={<Industries />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
