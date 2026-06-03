@@ -27,7 +27,7 @@ const App = () => (
       <PasswordGate>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home1 />} />
+          <Route path="/" element={<Home4 />} />
           <Route path="/home1" element={<Home1 />} />
           <Route path="/old" element={<Index />} />
           <Route path="/home2" element={<Home2 />} />
