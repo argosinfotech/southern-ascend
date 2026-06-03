@@ -129,15 +129,12 @@ const KittingToolkits = () => {
               initial={{ opacity: 0, scale: 0.96 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="hidden lg:block relative"
+              className="hidden lg:flex items-center justify-center relative bg-[#E8E2D9] rounded-lg shadow-2xl min-h-[400px]"
             >
-              <img
-                src={shadowBoardImg}
-                alt="Custom shadow board tool kit in a rugged case with precision-cut foam"
-                width={1536}
-                height={1024}
-                className="w-full h-auto rounded-lg shadow-2xl object-cover"
-              />
+              <div className="text-center">
+                <Image className="w-12 h-12 text-gray-400 mx-auto mb-3" strokeWidth={1.5} />
+                <span className="text-gray-400 font-label text-sm uppercase tracking-widest">Shadow Board Image</span>
+              </div>
               <div className="absolute inset-0 rounded-lg ring-1 ring-[#1E3448]/10 pointer-events-none" />
             </motion.div>
           </div>
@@ -168,18 +165,18 @@ const KittingToolkits = () => {
                 fully inspected, ready-to-deploy product.
               </p>
             </motion.div>
-            <motion.img
+            <motion.div
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.6, delay: 0.15 }}
-              src={mobileCribImg}
-              alt="Mobile tool crib cabinet with custom kitted drawers"
-              loading="lazy"
-              width={1024}
-              height={1024}
-              className="hidden lg:block w-[320px] h-[320px] object-cover rounded-lg shadow-lg"
-            />
+              className="hidden lg:flex w-[320px] h-[320px] bg-[#E8E2D9] rounded-lg shadow-lg items-center justify-center"
+            >
+              <div className="text-center">
+                <Image className="w-10 h-10 text-gray-400 mx-auto mb-2" strokeWidth={1.5} />
+                <span className="text-gray-400 font-label text-xs uppercase tracking-widest">Mobile Crib Image</span>
+              </div>
+            </motion.div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -213,9 +210,10 @@ const KittingToolkits = () => {
         {/* STAT STRIP */}
         <div
           aria-hidden="true"
-          className="w-full h-24 md:h-32 bg-cover bg-center"
-          style={{ backgroundImage: `url(${wrenchesBanner.url})` }}
-        />
+          className="w-full h-24 md:h-32 bg-[#E8E2D9] flex items-center justify-center"
+        >
+          <span className="text-gray-400 font-label text-xs uppercase tracking-widest">Banner Image</span>
+        </div>
         <section className="px-6 md:px-12 py-16 bg-[#082A40]">
           <div className="max-w-[1920px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((s, i) => (
@@ -283,14 +281,12 @@ const KittingToolkits = () => {
               transition={{ duration: 0.6, delay: 0.15 }}
               className="relative"
             >
-              <img
-                src={aerospaceEngine.url}
-                alt="Aerospace engine assembly — representative of programs Gould Southern supports"
-                loading="lazy"
-                width={1920}
-                height={1024}
-                className="w-full h-auto rounded-lg shadow-2xl object-cover"
-              />
+              <div className="w-full h-auto aspect-video bg-[#E8E2D9] rounded-lg shadow-2xl flex items-center justify-center min-h-[300px]">
+                <div className="text-center">
+                  <Image className="w-12 h-12 text-gray-400 mx-auto mb-3" strokeWidth={1.5} />
+                  <span className="text-gray-400 font-label text-sm uppercase tracking-widest">Aerospace Engine Image</span>
+                </div>
+              </div>
               <div className="mt-8 bg-white border-l-4 border-secondary rounded-r-lg p-8 md:p-10 shadow-sm">
               <h3 className="font-headline text-2xl md:text-3xl font-extrabold uppercase tracking-tight text-[#1E3448] mb-4">
                 Aerospace & Military Applications
