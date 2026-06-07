@@ -228,6 +228,7 @@ const Industries = () => {
           ]}
           tags={["Custom Tool Kits", "Shadow Boards", "FOD Control", "RFID Tracking", "Laser Etching"]}
           photoLabel="Aerospace / Aircraft Photography"
+          photoSrc={industryAerospace}
         />
 
         <WhiteSplit
@@ -240,6 +241,7 @@ const Industries = () => {
           ]}
           tags={["MIL-Spec Kitting", "Turnkey Assembly", "Rugged Cases", "Mobile Tool Cribs"]}
           photoLabel="Defense / Military Photography"
+          photoSrc={industryDefense}
         />
 
         <DarkSplit
@@ -252,6 +254,7 @@ const Industries = () => {
           ]}
           tags={["GSA Schedule", "DOD E-Mall", "DLA", "MRO Distribution", "Small Business"]}
           photoLabel="Government / Federal Photography"
+          photoSrc={whySectionImg}
           reversed
         />
 
@@ -265,6 +268,7 @@ const Industries = () => {
           ]}
           tags={["Shadow Boards", "Lean Integration", "Cabinet Systems", "Tool Accountability"]}
           photoLabel="Manufacturing Floor Photography"
+          photoSrc={industryIndustrial}
           reversed
         />
 
@@ -278,6 +282,7 @@ const Industries = () => {
           ]}
           tags={["FOD Prevention", "Outage Kitting", "Rugged Systems", "Tool Imaging"]}
           photoLabel="Energy / Power Plant Photography"
+          photoSrc={qualityBg}
         />
 
         <WhiteSplit
@@ -290,6 +295,7 @@ const Industries = () => {
           ]}
           tags={["Marine-Grade Cases", "RFID Tracking", "Multi-Zone Control", "FOD Prevention"]}
           photoLabel="Shipyard / Marine Photography"
+          photoSrc={capPackaging}
         />
 
         {/* DARK BAND */}
