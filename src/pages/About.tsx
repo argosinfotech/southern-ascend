@@ -85,7 +85,6 @@ const advantages = [
   "Access to 40+ fulfillment locations across North America.",
   "300+ supplier partners for virtually any tool or component requirement.",
   "GSA Schedule contract holder serving DOD E-Mall, DLA, and federal agencies.",
-  "Privately held since 1939 with the financial stability of a half-billion-dollar organization.",
 ];
 
 const About = () => {
