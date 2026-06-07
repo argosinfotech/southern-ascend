@@ -5,6 +5,7 @@ import {
 import HeaderLight from "@/components/home4/HeaderLight";
 import Footer from "@/components/home4/Footer4";
 import earthBg from "@/assets/earth-horizon-bg.jpg";
+import capPackaging from "@/assets/cap-packaging.jpg";
 
 const credentials = [
   { code: "GSA Schedule", label: "GS-06F-0047S" },
@@ -196,11 +197,13 @@ const GovernmentContracting = () => {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="bg-[#0E3A55] min-h-[300px] flex items-center justify-center"
+              className="relative bg-[#0E3A55] min-h-[300px] flex items-center justify-center overflow-hidden"
             >
-              <div className="text-center">
-                <Image className="w-12 h-12 text-white/30 mx-auto mb-3" strokeWidth={1.5} />
-                <span className="text-white/40 font-label text-xs uppercase tracking-widest">
+              <img src={capPackaging} alt="Warehouse fulfillment" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#082A40]/85 via-[#082A40]/60 to-[#082A40]/85" />
+              <div className="relative text-center">
+                <Image className="w-10 h-10 text-white/30 mx-auto mb-3" strokeWidth={1.5} />
+                <span className="text-white/60 font-label text-xs uppercase tracking-widest">
                   Warehouse / Fulfillment Photography
                 </span>
               </div>

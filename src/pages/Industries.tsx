@@ -6,6 +6,12 @@ import {
 import HeaderLight from "@/components/home4/HeaderLight";
 import Footer from "@/components/home4/Footer4";
 import earthBg from "@/assets/earth-horizon-bg.jpg";
+import industryAerospace from "@/assets/industry-aerospace.jpg";
+import industryDefense from "@/assets/industry-defense.jpg";
+import industryIndustrial from "@/assets/industry-industrial.jpg";
+import whySectionImg from "@/assets/why-section.jpg";
+import qualityBg from "@/assets/quality-bg.jpg";
+import capPackaging from "@/assets/cap-packaging.jpg";
 
 const overview = [
   { icon: Plane, label: "Aerospace", desc: "Commercial aviation, aircraft manufacturing, MRO facilities", href: "#aerospace" },
@@ -32,19 +38,26 @@ type SplitProps = {
   paragraphs: string[];
   tags: string[];
   photoLabel: string;
+  photoSrc?: string;
   reversed?: boolean;
 };
 
-const DarkSplit = ({ id, eyebrow, title, paragraphs, tags, photoLabel, reversed }: SplitProps) => (
+const DarkSplit = ({ id, eyebrow, title, paragraphs, tags, photoLabel, photoSrc, reversed }: SplitProps) => (
   <section id={id} className="bg-[#082A40]">
     <div className={`grid lg:grid-cols-2 min-h-[520px] ${reversed ? "lg:[direction:rtl]" : ""}`}>
       <motion.div
         initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6 }}
-        className="bg-[#0E3A55] min-h-[300px] flex items-center justify-center lg:[direction:ltr]"
+        className="relative bg-[#0E3A55] min-h-[300px] flex items-center justify-center lg:[direction:ltr] overflow-hidden"
       >
-        <div className="text-center px-6">
-          <Image className="w-12 h-12 text-white/30 mx-auto mb-3" strokeWidth={1.5} />
-          <span className="text-white/40 font-label text-xs uppercase tracking-widest">{photoLabel}</span>
+        {photoSrc && (
+          <>
+            <img src={photoSrc} alt={photoLabel} loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-br from-[#082A40]/85 via-[#082A40]/60 to-[#082A40]/85" />
+          </>
+        )}
+        <div className="relative text-center px-6">
+          <Image className="w-10 h-10 text-white/30 mx-auto mb-3" strokeWidth={1.5} />
+          <span className="text-white/60 font-label text-xs uppercase tracking-widest">{photoLabel}</span>
         </div>
       </motion.div>
       <motion.div
@@ -77,10 +90,11 @@ type WhiteProps = {
   paragraphs: string[];
   tags: string[];
   photoLabel: string;
+  photoSrc?: string;
   reversed?: boolean;
 };
 
-const WhiteSplit = ({ id, eyebrow, title, paragraphs, tags, photoLabel, reversed }: WhiteProps) => (
+const WhiteSplit = ({ id, eyebrow, title, paragraphs, tags, photoLabel, photoSrc, reversed }: WhiteProps) => (
   <section id={id} className="px-6 md:px-12 py-20 md:py-24 bg-white border-b border-[#E8E2D9]">
     <div className={`max-w-[1920px] mx-auto grid lg:grid-cols-2 gap-12 lg:gap-16 items-center ${reversed ? "lg:[direction:rtl]" : ""}`}>
       <motion.div
@@ -105,12 +119,17 @@ const WhiteSplit = ({ id, eyebrow, title, paragraphs, tags, photoLabel, reversed
       </motion.div>
       <motion.div
         initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6 }}
-        className="bg-[#FAF8F5] border border-[#E8E2D9] rounded-lg min-h-[340px] flex items-center justify-center lg:[direction:ltr]"
+        className="relative bg-[#FAF8F5] border border-[#E8E2D9] rounded-lg min-h-[340px] flex items-center justify-center lg:[direction:ltr] overflow-hidden"
       >
-        <div className="text-center px-6">
-          <Image className="w-12 h-12 text-gray-300 mx-auto mb-3" strokeWidth={1.5} />
-          <span className="text-gray-400 font-label text-xs uppercase tracking-widest">{photoLabel}</span>
-        </div>
+        {photoSrc && (
+          <img src={photoSrc} alt={photoLabel} loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+        )}
+        {!photoSrc && (
+          <div className="text-center px-6">
+            <Image className="w-12 h-12 text-gray-300 mx-auto mb-3" strokeWidth={1.5} />
+            <span className="text-gray-400 font-label text-xs uppercase tracking-widest">{photoLabel}</span>
+          </div>
+        )}
       </motion.div>
     </div>
   </section>
@@ -209,6 +228,7 @@ const Industries = () => {
           ]}
           tags={["Custom Tool Kits", "Shadow Boards", "FOD Control", "RFID Tracking", "Laser Etching"]}
           photoLabel="Aerospace / Aircraft Photography"
+          photoSrc={industryAerospace}
         />
 
         <WhiteSplit
@@ -221,6 +241,7 @@ const Industries = () => {
           ]}
           tags={["MIL-Spec Kitting", "Turnkey Assembly", "Rugged Cases", "Mobile Tool Cribs"]}
           photoLabel="Defense / Military Photography"
+          photoSrc={industryDefense}
         />
 
         <DarkSplit
@@ -233,6 +254,7 @@ const Industries = () => {
           ]}
           tags={["GSA Schedule", "DOD E-Mall", "DLA", "MRO Distribution", "Small Business"]}
           photoLabel="Government / Federal Photography"
+          photoSrc={whySectionImg}
           reversed
         />
 
@@ -246,6 +268,7 @@ const Industries = () => {
           ]}
           tags={["Shadow Boards", "Lean Integration", "Cabinet Systems", "Tool Accountability"]}
           photoLabel="Manufacturing Floor Photography"
+          photoSrc={industryIndustrial}
           reversed
         />
 
@@ -259,6 +282,7 @@ const Industries = () => {
           ]}
           tags={["FOD Prevention", "Outage Kitting", "Rugged Systems", "Tool Imaging"]}
           photoLabel="Energy / Power Plant Photography"
+          photoSrc={qualityBg}
         />
 
         <WhiteSplit
@@ -271,6 +295,7 @@ const Industries = () => {
           ]}
           tags={["Marine-Grade Cases", "RFID Tracking", "Multi-Zone Control", "FOD Prevention"]}
           photoLabel="Shipyard / Marine Photography"
+          photoSrc={capPackaging}
         />
 
         {/* DARK BAND */}

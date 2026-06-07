@@ -5,6 +5,8 @@ import {
 import HeaderLight from "@/components/home4/HeaderLight";
 import Footer from "@/components/home4/Footer4";
 import earthBg from "@/assets/earth-horizon-bg.jpg";
+import whySectionImg from "@/assets/why-section.jpg";
+import capKitting from "@/assets/cap-kitting.jpg";
 
 const stats = [
   { num: "1974", label: "Year Founded" },
@@ -182,13 +184,8 @@ const About = () => {
                   Based in Duluth, Georgia, our team brings deep domain expertise in aerospace, defense, and industrial operations, with direct access to the sourcing, logistics, and fulfillment capabilities of the broader Stephen Gould network.
                 </p>
               </div>
-              <div className="bg-[#E8E2D9] border border-[#DDD4C5] rounded-lg min-h-[360px] flex items-center justify-center">
-                <div className="text-center">
-                  <Image className="w-12 h-12 text-gray-400 mx-auto mb-3" strokeWidth={1.5} />
-                  <span className="text-gray-500 font-label text-xs uppercase tracking-widest">
-                    Facility / Team Photography
-                  </span>
-                </div>
+              <div className="relative bg-[#E8E2D9] border border-[#DDD4C5] rounded-lg min-h-[360px] overflow-hidden">
+                <img src={whySectionImg} alt="Facility / Team" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
               </div>
             </div>
           </div>
@@ -252,11 +249,13 @@ const About = () => {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="bg-[#0E3A55] min-h-[300px] flex items-center justify-center"
+              className="relative bg-[#0E3A55] min-h-[300px] flex items-center justify-center overflow-hidden"
             >
-              <div className="text-center">
-                <Image className="w-12 h-12 text-white/30 mx-auto mb-3" strokeWidth={1.5} />
-                <span className="text-white/40 font-label text-xs uppercase tracking-widest">
+              <img src={capKitting} alt="Workshop production" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#082A40]/85 via-[#082A40]/60 to-[#082A40]/85" />
+              <div className="relative text-center">
+                <Image className="w-10 h-10 text-white/30 mx-auto mb-3" strokeWidth={1.5} />
+                <span className="text-white/60 font-label text-xs uppercase tracking-widest">
                   Workshop / Production Photography
                 </span>
               </div>
