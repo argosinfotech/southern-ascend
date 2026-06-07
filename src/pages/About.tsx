@@ -352,10 +352,10 @@ const About = () => {
               Stability You Can Count On
             </span>
             <h2 className="font-headline text-3xl md:text-5xl font-extrabold tracking-tighter uppercase text-white mb-6">
-              Privately Held. Family Led.
+              Privately Held. Operator Owned.
             </h2>
             <p className="text-white/60 leading-relaxed text-base">
-              The Stephen Gould Corporation has been privately held by the same family since 1939. No outside investors. No quarterly pressure. Just a long-term commitment to doing right by customers, built over eight decades and counting.
+              The Stephen Gould Corporation has been privately held by the same ownership since 1939. No outside investors. No quarterly pressure. Just a long-term commitment to doing right by customers, built over eight decades and counting.
             </p>
           </motion.div>
         </section>
