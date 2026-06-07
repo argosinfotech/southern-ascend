@@ -337,28 +337,6 @@ const About = () => {
           </div>
         </section>
 
-        {/* DARK BAND: PRIVATELY HELD */}
-        <section className="relative px-6 md:px-12 py-20 bg-[#061E2E] text-center overflow-hidden">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-1 bg-secondary" />
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="relative z-10 max-w-3xl mx-auto"
-          >
-            <span className="text-secondary font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
-              Stability You Can Count On
-            </span>
-            <h2 className="font-headline text-3xl md:text-5xl font-extrabold tracking-tighter uppercase text-white mb-6">
-              Privately Held. Family Led.
-            </h2>
-            <p className="text-white/60 leading-relaxed text-base">
-              The Stephen Gould Corporation has been privately held by the same family since 1939. No outside investors. No quarterly pressure. Just a long-term commitment to doing right by customers, built over eight decades and counting.
-            </p>
-          </motion.div>
-        </section>
-
       </main>
       <Footer />
     </div>
