@@ -5,13 +5,13 @@ import {
 import HeaderLight from "@/components/home4/HeaderLight";
 import Footer from "@/components/home4/Footer4";
 import earthBg from "@/assets/earth-horizon-bg.jpg";
-import capPackaging from "@/assets/cap-packaging.jpg";
+import secureCage from "@/assets/gs-secure-cage.jpg.asset.json";
 
 const credentials = [
   { code: "GSA Schedule", label: "GS-06F-0047S" },
-  { code: "DOD E-Mall", label: "Approved Vendor" },
-  { code: "DLA", label: "Defense Logistics Agency" },
-  { code: "Small Business", label: "CCR Registered" },
+  { code: "ITAR", label: "DDTC Registered" },
+  { code: "CMMC L1", label: "L2 Targeted Q1 2027" },
+  { code: "AS9100:D", label: "ISO 9001:2015 Certified" },
 ];
 
 const capabilities = [
@@ -77,6 +77,27 @@ const advantages = [
   "Distributor agreements with 17+ major manufacturers on government contracts.",
   "AS9100:D and ISO 9001:2015 certified quality management with full traceability.",
   "Custom FOD control kits and safety solutions engineered for defense applications.",
+];
+
+const caseStudies = [
+  {
+    eyebrow: "Federal Defense Partner",
+    title: "Scaled Tool Delivery",
+    body: "Partnered with a federal defense production facility to deliver nearly 40,000 tools. Purchase orders expanded to include toolkit design, custom foam, quality control, and turnkey shipping solutions.",
+  },
+  {
+    eyebrow: "Leading Prime Defense Contractor",
+    title: "Custom Tool Kits",
+    body: "Delivered comprehensive, custom tool kits engineered to the customer's exact specifications. All tools built to print, with independent third-party inspections for quality and blueprint adherence.",
+  },
+];
+
+const federalSupport = [
+  "Flexible sourcing and production to maintain consistent supply under short lead times.",
+  "Secure, compliant facilities aligned with standard federal contracting security frameworks.",
+  "Rapid fulfillment protocols with contingency routing to meet DoD responsiveness standards.",
+  "Active DDTC registration with a fully implemented ITAR compliance program.",
+  "CMMC Level 1 certified, with a formal POA&M advancing to CMMC Level 2 by Q1 2027.",
 ];
 
 const GovernmentContracting = () => {
@@ -199,12 +220,12 @@ const GovernmentContracting = () => {
               transition={{ duration: 0.6 }}
               className="relative bg-[#0E3A55] min-h-[300px] flex items-center justify-center overflow-hidden"
             >
-              <img src={capPackaging} alt="Warehouse fulfillment" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+              <img src={secureCage.url} alt="Secure access-controlled storage" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-br from-[#082A40]/85 via-[#082A40]/60 to-[#082A40]/85" />
               <div className="relative text-center">
                 <Image className="w-10 h-10 text-white/30 mx-auto mb-3" strokeWidth={1.5} />
                 <span className="text-white/60 font-label text-xs uppercase tracking-widest">
-                  Warehouse / Fulfillment Photography
+                  Secure / Compliant Facilities
                 </span>
               </div>
             </motion.div>
