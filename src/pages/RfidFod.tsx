@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
-import { Radio, ShieldCheck, ScanLine, Workflow, ArrowRight, Image, Check } from "lucide-react";
+import { Radio, ShieldCheck, ScanLine, Workflow, ArrowRight, Check } from "lucide-react";
 import HeaderLight from "@/components/home4/HeaderLight";
 import Footer from "@/components/home4/Footer4";
 import earthBg from "@/assets/earth-horizon-bg.jpg";
 import rfidSockets from "@/assets/gs-rfid-sockets.jpg.asset.json";
+import aerospaceEngine from "@/assets/gs-aerospace-engine.jpg.asset.json";
 
 const capabilities = [
   {
@@ -204,11 +205,14 @@ const RfidFod = () => {
               transition={{ duration: 0.6, delay: 0.15 }}
               className="relative"
             >
-              <div className="w-full h-auto aspect-video bg-[#E8E2D9] rounded-lg shadow-2xl flex items-center justify-center min-h-[300px]">
-                <div className="text-center">
-                  <Image className="w-12 h-12 text-gray-400 mx-auto mb-3" strokeWidth={1.5} />
-                  <span className="text-gray-400 font-label text-sm uppercase tracking-widest">Aerospace Engine Image</span>
-                </div>
+              <div className="w-full aspect-video bg-[#E8E2D9] rounded-lg shadow-2xl overflow-hidden relative">
+                <img
+                  src={aerospaceEngine.url}
+                  alt="Aerospace engine assembly requiring FOD-controlled tooling"
+                  className="absolute inset-0 w-full h-full object-cover"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 ring-1 ring-[#1E3448]/10 rounded-lg pointer-events-none" />
               </div>
               <div className="mt-8 bg-[#FAF8F5] border-l-4 border-secondary rounded-r-lg p-8 md:p-10 shadow-sm">
                 <h3 className="font-headline text-2xl md:text-3xl font-extrabold uppercase tracking-tight text-[#1E3448] mb-4">
