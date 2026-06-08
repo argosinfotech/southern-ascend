@@ -3,6 +3,7 @@ import { Radio, ShieldCheck, ScanLine, Workflow, ArrowRight, Image, Check } from
 import HeaderLight from "@/components/home4/HeaderLight";
 import Footer from "@/components/home4/Footer4";
 import earthBg from "@/assets/earth-horizon-bg.jpg";
+import rfidSockets from "@/assets/gs-rfid-sockets.jpg.asset.json";
 
 const capabilities = [
   {
@@ -93,12 +94,14 @@ const RfidFod = () => {
               initial={{ opacity: 0, scale: 0.96 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="hidden lg:flex items-center justify-center relative bg-[#E8E2D9] rounded-lg shadow-2xl min-h-[400px]"
+              className="hidden lg:flex items-center justify-center relative bg-[#E8E2D9] rounded-lg shadow-2xl min-h-[400px] overflow-hidden"
             >
-              <div className="text-center">
-                <Image className="w-12 h-12 text-gray-400 mx-auto mb-3" strokeWidth={1.5} />
-                <span className="text-gray-400 font-label text-sm uppercase tracking-widest">RFID System Image</span>
-              </div>
+              <img
+                src={rfidSockets.url}
+                alt="RFID-tagged sockets on shadowboard"
+                className="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+              />
               <div className="absolute inset-0 rounded-lg ring-1 ring-[#1E3448]/10 pointer-events-none" />
             </motion.div>
           </div>

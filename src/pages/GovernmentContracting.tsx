@@ -5,13 +5,13 @@ import {
 import HeaderLight from "@/components/home4/HeaderLight";
 import Footer from "@/components/home4/Footer4";
 import earthBg from "@/assets/earth-horizon-bg.jpg";
-import capPackaging from "@/assets/cap-packaging.jpg";
+import secureCage from "@/assets/gs-secure-cage.jpg.asset.json";
 
 const credentials = [
   { code: "GSA Schedule", label: "GS-06F-0047S" },
-  { code: "DOD E-Mall", label: "Approved Vendor" },
-  { code: "DLA", label: "Defense Logistics Agency" },
-  { code: "Small Business", label: "CCR Registered" },
+  { code: "ITAR", label: "DDTC Registered" },
+  { code: "CMMC L1", label: "L2 Targeted Q1 2027" },
+  { code: "AS9100:D", label: "ISO 9001:2015 Certified" },
 ];
 
 const capabilities = [
@@ -77,6 +77,27 @@ const advantages = [
   "Distributor agreements with 17+ major manufacturers on government contracts.",
   "AS9100:D and ISO 9001:2015 certified quality management with full traceability.",
   "Custom FOD control kits and safety solutions engineered for defense applications.",
+];
+
+const caseStudies = [
+  {
+    eyebrow: "Federal Defense Partner",
+    title: "Scaled Tool Delivery",
+    body: "Partnered with a federal defense production facility to deliver nearly 40,000 tools. Purchase orders expanded to include toolkit design, custom foam, quality control, and turnkey shipping solutions.",
+  },
+  {
+    eyebrow: "Leading Prime Defense Contractor",
+    title: "Custom Tool Kits",
+    body: "Delivered comprehensive, custom tool kits engineered to the customer's exact specifications. All tools built to print, with independent third-party inspections for quality and blueprint adherence.",
+  },
+];
+
+const federalSupport = [
+  "Flexible sourcing and production to maintain consistent supply under short lead times.",
+  "Secure, compliant facilities aligned with standard federal contracting security frameworks.",
+  "Rapid fulfillment protocols with contingency routing to meet DoD responsiveness standards.",
+  "Active DDTC registration with a fully implemented ITAR compliance program.",
+  "CMMC Level 1 certified, with a formal POA&M advancing to CMMC Level 2 by Q1 2027.",
 ];
 
 const GovernmentContracting = () => {
@@ -199,12 +220,12 @@ const GovernmentContracting = () => {
               transition={{ duration: 0.6 }}
               className="relative bg-[#0E3A55] min-h-[300px] flex items-center justify-center overflow-hidden"
             >
-              <img src={capPackaging} alt="Warehouse fulfillment" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+              <img src={secureCage.url} alt="Secure access-controlled storage" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-br from-[#082A40]/85 via-[#082A40]/60 to-[#082A40]/85" />
               <div className="relative text-center">
                 <Image className="w-10 h-10 text-white/30 mx-auto mb-3" strokeWidth={1.5} />
                 <span className="text-white/60 font-label text-xs uppercase tracking-widest">
-                  Warehouse / Fulfillment Photography
+                  Secure / Compliant Facilities
                 </span>
               </div>
             </motion.div>
@@ -291,6 +312,65 @@ const GovernmentContracting = () => {
                 </motion.div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* SUPPORTING FEDERAL PARTNERS */}
+        <section className="px-6 md:px-12 py-20 md:py-24 bg-[#FAF8F5] border-t border-[#E8E2D9]">
+          <div className="max-w-[1920px] mx-auto grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.6 }}
+            >
+              <span className="text-gray-500 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
+                Supporting Federal Partners
+              </span>
+              <h2 className="font-headline text-3xl md:text-5xl font-extrabold tracking-tighter uppercase text-[#1E3448] mb-6">
+                Responsive. Secure. <span className="text-secondary">Mission-Ready.</span>
+              </h2>
+              <div className="w-12 h-[3px] bg-secondary mb-6" />
+              <p className="text-gray-600 leading-relaxed text-lg mb-8">
+                Federal customers operate under short lead times and uncertain markets. Our facilities, compliance posture, and fulfillment protocols are built to meet DoD responsiveness standards without trade-offs on security or quality.
+              </p>
+              <ul className="space-y-4">
+                {federalSupport.map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <div className="shrink-0 w-6 h-6 rounded-md bg-secondary/10 flex items-center justify-center mt-0.5">
+                      <Check className="w-3.5 h-3.5 text-secondary" strokeWidth={3} />
+                    </div>
+                    <p className="text-gray-700 leading-relaxed text-[0.95rem]">{item}</p>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="space-y-6"
+            >
+              <span className="text-gray-500 font-label text-[0.6875rem] uppercase tracking-[0.3em] block">
+                A Record Of Success
+              </span>
+              {caseStudies.map((cs) => (
+                <div
+                  key={cs.title}
+                  className="bg-white border-l-4 border-secondary rounded-r-lg p-7 md:p-8 shadow-sm"
+                >
+                  <div className="text-secondary font-label text-[0.6875rem] uppercase tracking-widest mb-2">
+                    {cs.eyebrow}
+                  </div>
+                  <h3 className="font-headline font-extrabold text-[#1E3448] text-xl uppercase tracking-tight mb-3 leading-tight">
+                    {cs.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-sm">{cs.body}</p>
+                </div>
+              ))}
+            </motion.div>
           </div>
         </section>
 

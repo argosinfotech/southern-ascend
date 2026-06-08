@@ -6,7 +6,7 @@ import {
 import HeaderLight from "@/components/home4/HeaderLight";
 import Footer from "@/components/home4/Footer4";
 import earthBg from "@/assets/earth-horizon-bg.jpg";
-import industryAerospace from "@/assets/industry-aerospace.jpg";
+import industryAerospace from "@/assets/gs-af-hangar.jpg.asset.json";
 import industryDefense from "@/assets/industry-defense.jpg";
 import industryIndustrial from "@/assets/industry-industrial.jpg";
 import whySectionImg from "@/assets/why-section.jpg";
@@ -228,7 +228,7 @@ const Industries = () => {
           ]}
           tags={["Custom Tool Kits", "Shadow Boards", "FOD Control", "RFID Tracking", "Laser Etching"]}
           photoLabel="Aerospace / Aircraft Photography"
-          photoSrc={industryAerospace}
+          photoSrc={industryAerospace.url}
         />
 
         <WhiteSplit
