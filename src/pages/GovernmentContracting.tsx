@@ -315,6 +315,65 @@ const GovernmentContracting = () => {
           </div>
         </section>
 
+        {/* SUPPORTING FEDERAL PARTNERS */}
+        <section className="px-6 md:px-12 py-20 md:py-24 bg-[#FAF8F5] border-t border-[#E8E2D9]">
+          <div className="max-w-[1920px] mx-auto grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.6 }}
+            >
+              <span className="text-gray-500 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
+                Supporting Federal Partners
+              </span>
+              <h2 className="font-headline text-3xl md:text-5xl font-extrabold tracking-tighter uppercase text-[#1E3448] mb-6">
+                Responsive. Secure. <span className="text-secondary">Mission-Ready.</span>
+              </h2>
+              <div className="w-12 h-[3px] bg-secondary mb-6" />
+              <p className="text-gray-600 leading-relaxed text-lg mb-8">
+                Federal customers operate under short lead times and uncertain markets. Our facilities, compliance posture, and fulfillment protocols are built to meet DoD responsiveness standards without trade-offs on security or quality.
+              </p>
+              <ul className="space-y-4">
+                {federalSupport.map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <div className="shrink-0 w-6 h-6 rounded-md bg-secondary/10 flex items-center justify-center mt-0.5">
+                      <Check className="w-3.5 h-3.5 text-secondary" strokeWidth={3} />
+                    </div>
+                    <p className="text-gray-700 leading-relaxed text-[0.95rem]">{item}</p>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="space-y-6"
+            >
+              <span className="text-gray-500 font-label text-[0.6875rem] uppercase tracking-[0.3em] block">
+                A Record Of Success
+              </span>
+              {caseStudies.map((cs) => (
+                <div
+                  key={cs.title}
+                  className="bg-white border-l-4 border-secondary rounded-r-lg p-7 md:p-8 shadow-sm"
+                >
+                  <div className="text-secondary font-label text-[0.6875rem] uppercase tracking-widest mb-2">
+                    {cs.eyebrow}
+                  </div>
+                  <h3 className="font-headline font-extrabold text-[#1E3448] text-xl uppercase tracking-tight mb-3 leading-tight">
+                    {cs.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-sm">{cs.body}</p>
+                </div>
+              ))}
+            </motion.div>
+          </div>
+        </section>
+
         {/* DARK BAND: TAILORED SOLUTIONS */}
         <section className="relative px-6 md:px-12 py-20 bg-[#061E2E] text-center overflow-hidden">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-1 bg-secondary" />
