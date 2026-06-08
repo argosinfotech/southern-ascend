@@ -3,8 +3,8 @@ import { Radio, ShieldCheck, ScanLine, Workflow, ArrowRight, Check } from "lucid
 import HeaderLight from "@/components/home4/HeaderLight";
 import Footer from "@/components/home4/Footer4";
 import earthBg from "@/assets/earth-horizon-bg.jpg";
-import rfidSockets from "@/assets/gs-rfid-sockets.jpg.asset.json";
-import aerospaceEngine from "@/assets/gs-aerospace-engine.jpg.asset.json";
+import rfidHero from "@/assets/rfid-hero.jpg.asset.json";
+import rfidScanner from "@/assets/rfid-scanner.jpg.asset.json";
 
 const capabilities = [
   {
@@ -98,8 +98,8 @@ const RfidFod = () => {
               className="hidden lg:flex items-center justify-center relative bg-[#E8E2D9] rounded-lg shadow-2xl min-h-[400px] overflow-hidden"
             >
               <img
-                src={rfidSockets.url}
-                alt="RFID-tagged sockets on shadowboard"
+                src={rfidHero.url}
+                alt="RFID-tagged aerospace tools arranged in a FOD-controlled shadowboard"
                 className="absolute inset-0 w-full h-full object-cover"
                 loading="lazy"
               />
@@ -207,8 +207,8 @@ const RfidFod = () => {
             >
               <div className="w-full aspect-video bg-[#E8E2D9] rounded-lg shadow-2xl overflow-hidden relative">
                 <img
-                  src={aerospaceEngine.url}
-                  alt="Aerospace engine assembly requiring FOD-controlled tooling"
+                  src={rfidScanner.url}
+                  alt="Handheld RFID scanner reading tagged tools in a mission-ready kit case"
                   className="absolute inset-0 w-full h-full object-cover"
                   loading="lazy"
                 />
