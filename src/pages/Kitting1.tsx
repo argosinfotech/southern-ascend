@@ -146,7 +146,6 @@ const KittingToolkits = () => {
         {/* WHAT WE BUILD */}
         <section className="px-6 md:px-12 py-20 md:py-24 bg-[#FAF8F5] border-t border-[#E8E2D9]">
           <div className="max-w-[1920px] mx-auto">
-            <div className="grid lg:grid-cols-[1fr_auto] gap-12 items-end mb-14">
             <motion.div
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -161,26 +160,13 @@ const KittingToolkits = () => {
                 What We <span className="text-secondary">Build</span>
               </h2>
               <div className="w-12 h-[3px] bg-secondary mb-6" />
-              <p className="text-gray-600 leading-relaxed text-lg">
+              <p className="text-gray-600 leading-relaxed text-lg mb-14">
                 Every kit is purpose-built around your tooling requirements,
                 compliance standards, and workspace constraints. We handle
                 layout, fabrication, imaging, and final assembly — delivering a
                 fully inspected, ready-to-deploy product.
               </p>
             </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.6, delay: 0.15 }}
-              className="hidden lg:flex w-[320px] h-[320px] bg-[#E8E2D9] rounded-lg shadow-lg items-center justify-center"
-            >
-              <div className="text-center">
-                <Image className="w-10 h-10 text-gray-400 mx-auto mb-2" strokeWidth={1.5} />
-                <span className="text-gray-400 font-label text-xs uppercase tracking-widest">Mobile Crib Image</span>
-              </div>
-            </motion.div>
-            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {capabilities.map((cap, i) => (
