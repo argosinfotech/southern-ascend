@@ -9,6 +9,8 @@ import Home3 from "./pages/Home3.tsx";
 import Home4 from "./pages/Home4.tsx";
 import Home1 from "./pages/Home1.tsx";
 import KittingToolkits from "./pages/KittingToolkits.tsx";
+import Kitting1 from "./pages/Kitting1.tsx";
+
 import Certifications from "./pages/Certifications.tsx";
 import GovernmentContracting from "./pages/GovernmentContracting.tsx";
 import Industries from "./pages/Industries.tsx";
