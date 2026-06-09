@@ -182,7 +182,7 @@ const Certifications = () => {
               className="relative bg-[#0E3A55] min-h-[300px] flex items-center justify-center overflow-hidden"
             >
               <img src={qualityBg} alt="Facility inspection" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-br from-[#082A40]/85 via-[#082A40]/60 to-[#082A40]/85" />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#082A40]/40 via-[#082A40]/20 to-[#082A40]/40" />
               <div className="relative text-center">
                 <Image className="w-10 h-10 text-white/30 mx-auto mb-3" strokeWidth={1.5} />
                 <span className="text-white/60 font-label text-xs uppercase tracking-widest">
