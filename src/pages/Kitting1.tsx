@@ -211,7 +211,7 @@ const KittingToolkits = () => {
         </section>
 
         {/* STAT STRIP */}
-        <section className="px-6 md:px-12 py-16 bg-[#082A40]">
+        <section className="px-6 md:px-12 py-16 bg-[#0A1F2E]">
           <div className="max-w-[1920px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((s, i) => (
               <motion.div
@@ -234,7 +234,7 @@ const KittingToolkits = () => {
         </section>
 
         {/* ADVANTAGE */}
-        <section className="px-6 md:px-12 py-20 md:py-24 bg-gradient-to-b from-[#0A1F2E] to-[#13314A]">
+        <section className="px-6 md:px-12 py-20 md:py-24 bg-[#13314A]">
           <div className="max-w-[1920px] mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 24 }}
