@@ -10,6 +10,7 @@ import Home4 from "./pages/Home4.tsx";
 import Home1 from "./pages/Home1.tsx";
 import KittingToolkits from "./pages/KittingToolkits.tsx";
 import Kitting1 from "./pages/Kitting1.tsx";
+import Kitting2 from "./pages/Kitting2.tsx";
 
 import Certifications from "./pages/Certifications.tsx";
 import GovernmentContracting from "./pages/GovernmentContracting.tsx";
@@ -38,6 +39,7 @@ const App = () => (
           <Route path="/home4" element={<Home4 />} />
           <Route path="/kitting-toolkits" element={<KittingToolkits />} />
           <Route path="/kitting1" element={<Kitting1 />} />
+          <Route path="/kitting2" element={<Kitting2 />} />
           <Route path="/certifications" element={<Certifications />} />
           <Route path="/government-contracting" element={<GovernmentContracting />} />
           <Route path="/industries" element={<Industries />} />
