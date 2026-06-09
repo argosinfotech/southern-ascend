@@ -50,15 +50,14 @@ const DarkSplit = ({ id, eyebrow, title, paragraphs, tags, photoLabel, photoSrc,
         className="relative bg-[#0E3A55] min-h-[300px] flex items-center justify-center lg:[direction:ltr] overflow-hidden"
       >
         {photoSrc && (
-          <>
-            <img src={photoSrc} alt={photoLabel} loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-br from-[#082A40]/85 via-[#082A40]/60 to-[#082A40]/85" />
-          </>
+          <img src={photoSrc} alt={photoLabel} loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
         )}
-        <div className="relative text-center px-6">
-          <Image className="w-10 h-10 text-white/30 mx-auto mb-3" strokeWidth={1.5} />
-          <span className="text-white/60 font-label text-xs uppercase tracking-widest">{photoLabel}</span>
-        </div>
+        {!photoSrc && (
+          <div className="relative text-center px-6">
+            <Image className="w-10 h-10 text-white/30 mx-auto mb-3" strokeWidth={1.5} />
+            <span className="text-white/60 font-label text-xs uppercase tracking-widest">{photoLabel}</span>
+          </div>
+        )}
       </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-80px" }} transition={{ duration: 0.6 }}
