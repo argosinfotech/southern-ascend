@@ -234,7 +234,7 @@ const KittingToolkits = () => {
         </section>
 
         {/* ADVANTAGE */}
-        <section className="px-6 md:px-12 py-20 md:py-24 bg-white border-t border-[#E8E2D9]">
+        <section className="px-6 md:px-12 py-20 md:py-24 bg-[#082A40]">
           <div className="max-w-[1920px] mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 24 }}
@@ -243,14 +243,14 @@ const KittingToolkits = () => {
               transition={{ duration: 0.6 }}
               className="max-w-3xl mb-14"
             >
-              <span className="text-gray-500 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
+              <span className="text-white/50 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
                 Why Gould Southern
               </span>
-              <h2 className="font-headline text-3xl md:text-5xl font-extrabold tracking-tighter uppercase text-[#1E3448] mb-6">
+              <h2 className="font-headline text-3xl md:text-5xl font-extrabold tracking-tighter uppercase text-white mb-6">
                 The Gould Southern <span className="text-secondary">Advantage</span>
               </h2>
               <div className="w-12 h-[3px] bg-secondary mb-6" />
-              <p className="text-gray-600 leading-relaxed text-lg">
+              <p className="text-white/70 leading-relaxed text-lg">
                 You work directly with a focused engineering team that knows
                 your program inside and out — with the procurement scale,
                 logistics network, and financial stability of the Stephen Gould
@@ -268,10 +268,10 @@ const KittingToolkits = () => {
                   transition={{ duration: 0.4, delay: i * 0.05 }}
                   className="flex items-start gap-4"
                 >
-                  <div className="shrink-0 w-8 h-8 rounded-md bg-secondary/10 flex items-center justify-center mt-0.5">
+                  <div className="shrink-0 w-8 h-8 rounded-md bg-secondary/20 flex items-center justify-center mt-0.5">
                     <Check className="w-4 h-4 text-secondary" strokeWidth={3} />
                   </div>
-                  <p className="text-gray-700 leading-relaxed text-[0.95rem]">{adv}</p>
+                  <p className="text-white/80 leading-relaxed text-[0.95rem]">{adv}</p>
                 </motion.div>
               ))}
             </div>
@@ -279,11 +279,7 @@ const KittingToolkits = () => {
         </section>
 
         {/* CTA BAND */}
-        <section className="relative px-6 md:px-12 py-20 md:py-24 bg-[#082A40] overflow-hidden">
-          <div className="absolute inset-0">
-            <img src={earthBg} alt="" aria-hidden="true" className="w-full h-full object-cover opacity-20" />
-            <div className="absolute inset-0 bg-[#082A40]/80" />
-          </div>
+        <section className="relative px-6 md:px-12 py-20 md:py-24 bg-[#F5F0E8] overflow-hidden border-t border-[#E8E2D9]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -291,10 +287,10 @@ const KittingToolkits = () => {
             transition={{ duration: 0.6 }}
             className="relative z-10 max-w-3xl mx-auto text-center"
           >
-            <h2 className="font-headline text-3xl md:text-5xl font-extrabold tracking-tighter uppercase text-white mb-5">
+            <h2 className="font-headline text-3xl md:text-5xl font-extrabold tracking-tighter uppercase text-[#1E3448] mb-5">
               Let's Engineer <span className="text-secondary">Your Kit</span>
             </h2>
-            <p className="text-white/60 leading-relaxed text-lg mb-10 max-w-xl mx-auto">
+            <p className="text-gray-600 leading-relaxed text-lg mb-10 max-w-xl mx-auto">
               Tell us about your tooling requirements, compliance standards, and
               deployment environment. We'll design a solution around them.
             </p>
