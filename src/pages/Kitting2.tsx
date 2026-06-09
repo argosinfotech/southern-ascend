@@ -215,9 +215,9 @@ const Kitting2 = () => {
           </div>
         </section>
 
-        {/* CAPABILITIES — ALTERNATING BLUE SPLITS */}
-        {capabilities.map((c) => (
-          <DarkSplit key={c.id} {...c} />
+        {/* CAPABILITIES — ALTERNATING DARK / LIGHT SPLITS */}
+        {capabilities.map((c, i) => (
+          <SplitSection key={c.id} {...c} variant={i % 2 === 0 ? "dark" : "light"} />
         ))}
 
         {/* ADVANTAGE — TWO-COLUMN CHECKS ON WHITE */}
