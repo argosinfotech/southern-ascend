@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Check, Layers, Tag, ScanLine, QrCode, Package, Boxes, ArrowRight, Image as ImageIcon } from "lucide-react";
+import { Check, Layers, Tag, ScanLine, QrCode, Package, Boxes, ArrowRight, type LucideIcon } from "lucide-react";
 import HeaderLight from "@/components/home4/HeaderLight";
 import Footer from "@/components/home4/Footer4";
 import earthBg from "@/assets/earth-horizon-bg.jpg";
@@ -14,7 +14,7 @@ import capRfid from "@/assets/cap-rfid.jpg";
 type SplitProps = {
   id: string;
   eyebrow: string;
-  icon: React.ComponentType<{ className?: string; strokeWidth?: number }>;
+  icon: LucideIcon;
   title: React.ReactNode;
   body: string;
   items: string[];
