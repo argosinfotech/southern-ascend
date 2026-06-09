@@ -10,7 +10,7 @@ import industryAerospace from "@/assets/gs-af-hangar.jpg.asset.json";
 import industryDefense from "@/assets/industry-defense.jpg";
 import industryIndustrial from "@/assets/industry-industrial.jpg";
 import whySectionImg from "@/assets/why-section.jpg";
-import qualityBg from "@/assets/quality-bg.jpg";
+import industryEnergy from "@/assets/industry-energy-light.jpg";
 import capPackaging from "@/assets/cap-packaging.jpg";
 
 const overview = [
@@ -281,7 +281,7 @@ const Industries = () => {
           ]}
           tags={["FOD Prevention", "Outage Kitting", "Rugged Systems", "Tool Imaging"]}
           photoLabel="Energy / Power Plant Photography"
-          photoSrc={qualityBg}
+          photoSrc={industryEnergy}
         />
 
         <WhiteSplit
