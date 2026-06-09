@@ -22,48 +22,52 @@ type SplitProps = {
   photoSrc: string;
   photoLabel: string;
   reversed?: boolean;
+  variant?: "dark" | "light";
 };
 
-const DarkSplit = ({ id, eyebrow, icon: Icon, title, body, items, tags, photoSrc, photoLabel, reversed }: SplitProps) => (
-  <section id={id} className="bg-[#082A40]">
-    <div className={`grid lg:grid-cols-2 min-h-[520px] ${reversed ? "lg:[direction:rtl]" : ""}`}>
-      <motion.div
-        initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6 }}
-        className="relative bg-[#0E3A55] min-h-[320px] flex items-center justify-center lg:[direction:ltr] overflow-hidden"
-      >
-        <img src={photoSrc} alt={photoLabel} loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-80px" }} transition={{ duration: 0.6 }}
-        className="px-6 md:px-16 py-16 md:py-20 flex flex-col justify-center lg:[direction:ltr]"
-      >
-        <div className="flex items-center gap-3 mb-5">
-          <Icon className="w-6 h-6 text-secondary" strokeWidth={1.75} />
-          <span className="text-white/50 font-label text-[0.6875rem] uppercase tracking-[0.3em]">{eyebrow}</span>
-        </div>
-        <h2 className="font-headline text-3xl md:text-5xl font-extrabold tracking-tighter uppercase text-white leading-[1.05] mb-6">
-          {title}
-        </h2>
-        <p className="text-white/70 leading-relaxed text-base mb-6">{body}</p>
-        <ul className="space-y-2.5 mb-6">
-          {items.map((it) => (
-            <li key={it} className="flex items-start gap-3 text-white/80 text-sm leading-relaxed">
-              <Check className="w-4 h-4 text-secondary mt-1 shrink-0" strokeWidth={3} />
-              <span>{it}</span>
-            </li>
-          ))}
-        </ul>
-        <div className="flex flex-wrap gap-2 mt-1">
-          {tags.map((t) => (
-            <span key={t} className="text-secondary text-[0.6875rem] font-bold uppercase tracking-wider bg-secondary/10 border border-secondary/30 rounded px-3 py-1.5">
-              {t}
-            </span>
-          ))}
-        </div>
-      </motion.div>
-    </div>
-  </section>
-);
+const SplitSection = ({ id, eyebrow, icon: Icon, title, body, items, tags, photoSrc, photoLabel, reversed, variant = "dark" }: SplitProps) => {
+  const isDark = variant === "dark";
+  return (
+    <section id={id} className={isDark ? "bg-[#082A40]" : "bg-[#FAF8F5] border-y border-[#E8E2D9]"}>
+      <div className={`grid lg:grid-cols-2 min-h-[520px] ${reversed ? "lg:[direction:rtl]" : ""}`}>
+        <motion.div
+          initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6 }}
+          className={`relative min-h-[320px] flex items-center justify-center lg:[direction:ltr] overflow-hidden ${isDark ? "bg-[#0E3A55]" : "bg-[#E8E2D9]"}`}
+        >
+          <img src={photoSrc} alt={photoLabel} loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-80px" }} transition={{ duration: 0.6 }}
+          className="px-6 md:px-16 py-16 md:py-20 flex flex-col justify-center lg:[direction:ltr]"
+        >
+          <div className="flex items-center gap-3 mb-5">
+            <Icon className="w-6 h-6 text-secondary" strokeWidth={1.75} />
+            <span className={`font-label text-[0.6875rem] uppercase tracking-[0.3em] ${isDark ? "text-white/50" : "text-gray-500"}`}>{eyebrow}</span>
+          </div>
+          <h2 className={`font-headline text-3xl md:text-5xl font-extrabold tracking-tighter uppercase leading-[1.05] mb-6 ${isDark ? "text-white" : "text-[#1E3448]"}`}>
+            {title}
+          </h2>
+          <p className={`leading-relaxed text-base mb-6 ${isDark ? "text-white/70" : "text-gray-600"}`}>{body}</p>
+          <ul className="space-y-2.5 mb-6">
+            {items.map((it) => (
+              <li key={it} className={`flex items-start gap-3 text-sm leading-relaxed ${isDark ? "text-white/80" : "text-gray-700"}`}>
+                <Check className="w-4 h-4 text-secondary mt-1 shrink-0" strokeWidth={3} />
+                <span>{it}</span>
+              </li>
+            ))}
+          </ul>
+          <div className="flex flex-wrap gap-2 mt-1">
+            {tags.map((t) => (
+              <span key={t} className="text-secondary text-[0.6875rem] font-bold uppercase tracking-wider bg-secondary/10 border border-secondary/30 rounded px-3 py-1.5">
+                {t}
+              </span>
+            ))}
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
 
 const capabilities: SplitProps[] = [
   {
