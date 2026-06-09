@@ -108,7 +108,7 @@ const Certifications = () => {
 
         {/* CERT SHOWCASE */}
         <section className="px-6 md:px-12 -mt-10 relative z-10">
-          <div className="max-w-[1920px] mx-auto grid grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="max-w-[1920px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
             {certs.map((c, i) => (
               <motion.div
                 key={c.code + i}
@@ -116,13 +116,13 @@ const Certifications = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-40px" }}
                 transition={{ duration: 0.5, delay: i * 0.08 }}
-                className="bg-white border border-[#E8E2D9] rounded-lg p-7 text-center hover:border-secondary/40 hover:shadow-lg transition-all"
+                className="bg-white border border-[#E8E2D9] rounded-lg p-6 sm:p-7 text-center hover:border-secondary/40 hover:shadow-lg transition-all"
               >
-                <div className="w-14 h-14 mx-auto mb-4 rounded-lg bg-secondary/10 flex items-center justify-center">
-                  <c.icon className="w-7 h-7 text-secondary" strokeWidth={1.75} />
+                <div className="w-12 h-12 sm:w-14 sm:h-14 mx-auto mb-3 sm:mb-4 rounded-lg bg-secondary/10 flex items-center justify-center">
+                  <c.icon className="w-6 h-6 sm:w-7 sm:h-7 text-secondary" strokeWidth={1.75} />
                 </div>
-                <div className="font-headline font-extrabold text-[#1E3448] text-xl tracking-tight mb-1">{c.code}</div>
-                <div className="text-gray-500 font-label text-[0.6875rem] uppercase tracking-widest">{c.label}</div>
+                <div className="font-headline font-extrabold text-[#1E3448] text-lg sm:text-xl md:text-2xl tracking-tight mb-1">{c.code}</div>
+                <div className="text-gray-500 font-label text-xs sm:text-[0.6875rem] uppercase tracking-widest">{c.label}</div>
               </motion.div>
             ))}
           </div>
