@@ -3,7 +3,7 @@ import { Check, ShieldCheck, Globe2, Boxes, Award, FileCheck2, TrendingDown, Mai
 import HeaderLight from "@/components/home4/HeaderLight";
 import Footer from "@/components/home4/Footer4";
 import earthBg from "@/assets/earth-horizon-bg.jpg";
-import qualityBg from "@/assets/quality-bg.jpg";
+import qualityBg from "@/assets/quality-bg-light.jpg";
 
 const certs = [
   { code: "AS9100:D", label: "Certified Quality", icon: ShieldCheck },
@@ -182,7 +182,6 @@ const Certifications = () => {
               className="relative bg-[#0E3A55] min-h-[300px] flex items-center justify-center overflow-hidden"
             >
               <img src={qualityBg} alt="Facility inspection" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
-              <div className="absolute inset-0 bg-white/25" />
               <div className="relative text-center">
                 <Image className="w-10 h-10 text-white/30 mx-auto mb-3" strokeWidth={1.5} />
                 <span className="text-white/60 font-label text-xs uppercase tracking-widest">
