@@ -4,6 +4,7 @@ import HeaderLight from "@/components/home4/HeaderLight";
 import Footer from "@/components/home4/Footer4";
 import earthBg from "@/assets/earth-horizon-bg.jpg";
 import drillsShadowboard from "@/assets/gs-drills-shadowboard.jpg.asset.json";
+import shadowBoardHero from "@/assets/shadow-board-drills-hero.png.asset.json";
 
 const capabilities = [
   {
@@ -68,14 +69,25 @@ const stats = [
 ];
 
 const advantages = [
-  "Kits range from small hand-held units to stationary cabinets to fully equipped mobile tool cribs.",
-  "Built to exacting weight and space specifications for transport and deployment constraints.",
-  "Access to 300+ supplier partners means virtually any tool or component can be sourced and kitted.",
-  "Standardize a single kit design across multiple locations — or customize per task, per team.",
-  "RFID-enabled access control limits kit use to authorized personnel or tracks individual items.",
-  "Turnkey delivery: we source the contents, assemble, inspect, and ship a ready-to-use product.",
-  "Daily manifest reporting gives your team full visibility into project status and timelines.",
-  "GSA Schedule contract holder (GS-06F-0047S) with 250,000+ line offerings for government procurement.",
+  { label: "Any scale.", text: "Kits range from small hand-held units to stationary cabinets to fully equipped mobile tool cribs." },
+  { label: "Any tool.", text: "Access to 300+ supplier partners means virtually any tool or component can be sourced and kitted." },
+  { label: "Controlled access.", text: "RFID-enabled access control limits kit use to authorized personnel or tracks individual items." },
+  { label: "Full visibility.", text: "Daily manifest reporting gives your team real-time insight into project status and timelines." },
+  { label: "Deployment-ready.", text: "Built to exacting weight and space specifications for transport and deployment constraints." },
+  { label: "Repeatable.", text: "Standardize a single kit design across multiple locations — or customize per task, per team." },
+  { label: "Turnkey delivery.", text: "We source the contents, assemble, inspect, and ship a ready-to-use product." },
+  { label: "GSA contract.", text: "Schedule contract holder (GS-06F-0047S) with 250,000+ line offerings for government procurement." },
+];
+
+const certifications = [
+  { name: "AS9100:D", emphasis: true },
+  { name: "AS9120:B", emphasis: true },
+  { name: "ISO 9001:2015", emphasis: true },
+  { name: "ISO 14001", emphasis: true },
+  { name: "ITAR Registered", emphasis: false },
+  { name: "DFARS", emphasis: false },
+  { name: "CMMC 2.0 Ready", emphasis: false },
+  { name: "GSA GS-06F-0047S", emphasis: false },
 ];
 
 const KittingToolkits = () => {
@@ -130,16 +142,30 @@ const KittingToolkits = () => {
               initial={{ opacity: 0, scale: 0.96 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="hidden lg:flex items-center justify-center relative bg-[#E8E2D9] rounded-lg shadow-2xl min-h-[400px] overflow-hidden"
+              className="hidden lg:flex items-center justify-center relative bg-[#E8E2D9] rounded-lg shadow-2xl min-h-[460px] overflow-hidden"
             >
               <img
-                src={drillsShadowboard.url}
+                src={shadowBoardHero.url}
                 alt="Pneumatic drill shadowboard kit by Gould Southern"
                 className="absolute inset-0 w-full h-full object-cover"
                 loading="lazy"
               />
               <div className="absolute inset-0 rounded-lg ring-1 ring-[#1E3448]/10 pointer-events-none" />
             </motion.div>
+          </div>
+        </section>
+
+        {/* CERTIFICATIONS STRIP */}
+        <section className="bg-[#082A40] px-6 md:px-12 py-5 border-y border-white/5">
+          <div className="max-w-[1920px] mx-auto flex flex-wrap items-center justify-center gap-x-10 gap-y-3 font-mono text-[0.8125rem] tracking-[0.18em] uppercase">
+            {certifications.map((c) => (
+              <span
+                key={c.name}
+                className={c.emphasis ? "text-white font-bold" : "text-white/50"}
+              >
+                {c.name}
+              </span>
+            ))}
           </div>
         </section>
 
@@ -258,22 +284,41 @@ const KittingToolkits = () => {
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-5 max-w-6xl">
-              {advantages.map((adv, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, x: -16 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true, margin: "-40px" }}
-                  transition={{ duration: 0.4, delay: i * 0.05 }}
-                  className="flex items-start gap-4"
-                >
-                  <div className="shrink-0 w-8 h-8 rounded-md bg-secondary/10 flex items-center justify-center mt-0.5">
-                    <Check className="w-4 h-4 text-secondary" strokeWidth={3} />
-                  </div>
-                  <p className="text-gray-700 leading-relaxed text-[0.95rem]">{adv}</p>
-                </motion.div>
-              ))}
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.97 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 0.6 }}
+                className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-xl bg-[#E8E2D9]"
+              >
+                <img
+                  src={drillsShadowboard.url}
+                  alt="Engineered shadow-board kit"
+                  className="absolute inset-0 w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </motion.div>
+              <div className="grid grid-cols-1 gap-y-6">
+                {advantages.map((adv, i) => (
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, x: -16 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true, margin: "-40px" }}
+                    transition={{ duration: 0.4, delay: i * 0.04 }}
+                    className="flex items-start gap-4"
+                  >
+                    <div className="shrink-0 w-7 h-7 rounded-md bg-secondary flex items-center justify-center mt-0.5">
+                      <Check className="w-4 h-4 text-white" strokeWidth={3} />
+                    </div>
+                    <p className="text-gray-700 leading-relaxed text-[0.95rem]">
+                      <span className="font-bold text-[#1E3448]">{adv.label}</span>{" "}
+                      {adv.text}
+                    </p>
+                  </motion.div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
