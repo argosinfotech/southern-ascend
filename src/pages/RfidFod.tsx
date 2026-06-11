@@ -109,7 +109,7 @@ const RfidFod = () => {
         </section>
 
         {/* CAPABILITIES */}
-        <section className="px-6 md:px-12 py-20 md:py-24 bg-[#FAF8F5] border-t border-[#E8E2D9]">
+        <section className="px-6 md:px-12 py-20 md:py-24 bg-[#082A40] border-t border-white/5">
           <div className="max-w-[1920px] mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 24 }}
@@ -118,14 +118,14 @@ const RfidFod = () => {
               transition={{ duration: 0.6 }}
               className="max-w-3xl mb-14"
             >
-              <span className="text-gray-500 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
+              <span className="text-white/50 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
                 Capabilities
               </span>
-              <h2 className="font-headline text-3xl md:text-5xl font-extrabold tracking-tighter uppercase text-[#1E3448] mb-6">
+              <h2 className="font-headline text-3xl md:text-5xl font-extrabold tracking-tighter uppercase text-white mb-6">
                 What We <span className="text-secondary">Deliver</span>
               </h2>
               <div className="w-12 h-[3px] bg-secondary mb-6" />
-              <p className="text-gray-600 leading-relaxed text-lg">
+              <p className="text-white/70 leading-relaxed text-lg">
                 A complete tracking and FOD-prevention stack — hardware,
                 software integration, and the kitting discipline that ties it
                 all together.
@@ -140,15 +140,15 @@ const RfidFod = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-40px" }}
                   transition={{ duration: 0.5, delay: 0.05 + i * 0.06 }}
-                  className="bg-white border border-[#E8E2D9] rounded-lg p-7 hover:border-secondary/40 hover:shadow-lg transition-all duration-300"
+                  className="bg-white/[0.04] border border-white/10 rounded-lg p-7 hover:border-secondary/50 hover:bg-white/[0.06] transition-all duration-300"
                 >
                   <cap.icon className="text-secondary w-7 h-7 mb-5" strokeWidth={1.75} />
-                  <h3 className="font-headline font-extrabold text-[#1E3448] text-lg uppercase tracking-tight mb-4 leading-tight">
+                  <h3 className="font-headline font-extrabold text-white text-lg uppercase tracking-tight mb-4 leading-tight">
                     {cap.title}
                   </h3>
                   <ul className="space-y-2">
                     {cap.items.map((item) => (
-                      <li key={item} className="flex items-start gap-2 text-gray-600 text-sm leading-relaxed">
+                      <li key={item} className="flex items-start gap-2 text-white/70 text-sm leading-relaxed">
                         <span className="block w-1.5 h-1.5 bg-secondary rounded-full mt-2 shrink-0" />
                         <span>{item}</span>
                       </li>
