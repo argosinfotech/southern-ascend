@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Check, Layers, Tag, ScanLine, QrCode, Package, Boxes, ArrowRight, Image } from "lucide-react";
+import { Check, Layers, Tag, ScanLine, QrCode, Package, Boxes, ArrowRight } from "lucide-react";
 import HeaderLight from "@/components/home4/HeaderLight";
 import Footer from "@/components/home4/Footer4";
 import earthBg from "@/assets/earth-horizon-bg.jpg";
@@ -79,17 +79,6 @@ const advantages = [
   { label: "GSA contract.", text: "Schedule contract holder (GS-06F-0047S) with 250,000+ line offerings for government procurement." },
 ];
 
-const certifications = [
-  { name: "AS9100:D", emphasis: true },
-  { name: "AS9120:B", emphasis: true },
-  { name: "ISO 9001:2015", emphasis: true },
-  { name: "ISO 14001", emphasis: true },
-  { name: "ITAR Registered", emphasis: false },
-  { name: "DFARS", emphasis: false },
-  { name: "CMMC 2.0 Ready", emphasis: false },
-  { name: "GSA GS-06F-0047S", emphasis: false },
-];
-
 const KittingToolkits = () => {
   return (
     <div className="min-h-screen bg-[#FAF8F5] text-gray-900">
@@ -155,58 +144,30 @@ const KittingToolkits = () => {
           </div>
         </section>
 
-        {/* CERTIFICATIONS STRIP */}
-        <section className="bg-[#082A40] px-6 md:px-12 py-5 border-y border-white/5">
-          <div className="max-w-[1920px] mx-auto flex flex-wrap items-center justify-center gap-x-10 gap-y-3 font-mono text-[0.8125rem] tracking-[0.18em] uppercase">
-            {certifications.map((c) => (
-              <span
-                key={c.name}
-                className={c.emphasis ? "text-white font-bold" : "text-white/50"}
-              >
-                {c.name}
-              </span>
-            ))}
-          </div>
-        </section>
-
         {/* WHAT WE BUILD */}
-        <section className="px-6 md:px-12 py-20 md:py-24 bg-[#FAF8F5] border-t border-[#E8E2D9]">
+        <section className="px-6 md:px-12 py-20 md:py-24 bg-[#082A40] border-t border-white/5">
           <div className="max-w-[1920px] mx-auto">
-            <div className="grid lg:grid-cols-[1fr_auto] gap-12 items-end mb-14">
             <motion.div
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.6 }}
-              className="max-w-3xl"
+              className="max-w-3xl mb-14"
             >
-              <span className="text-gray-500 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
+              <span className="text-white/50 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
                 Capabilities
               </span>
-              <h2 className="font-headline text-3xl md:text-5xl font-extrabold tracking-tighter uppercase text-[#1E3448] mb-6">
+              <h2 className="font-headline text-3xl md:text-5xl font-extrabold tracking-tighter uppercase text-white mb-6">
                 What We <span className="text-secondary">Build</span>
               </h2>
               <div className="w-12 h-[3px] bg-secondary mb-6" />
-              <p className="text-gray-600 leading-relaxed text-lg">
+              <p className="text-white/70 leading-relaxed text-lg">
                 Every kit is purpose-built around your tooling requirements,
                 compliance standards, and workspace constraints. We handle
                 layout, fabrication, imaging, and final assembly — delivering a
                 fully inspected, ready-to-deploy product.
               </p>
             </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.6, delay: 0.15 }}
-              className="hidden lg:flex w-[320px] h-[320px] bg-[#E8E2D9] rounded-lg shadow-lg items-center justify-center"
-            >
-              <div className="text-center">
-                <Image className="w-10 h-10 text-gray-400 mx-auto mb-2" strokeWidth={1.5} />
-                <span className="text-gray-400 font-label text-xs uppercase tracking-widest">Mobile Crib Image</span>
-              </div>
-            </motion.div>
-            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {capabilities.map((cap, i) => (
@@ -216,15 +177,15 @@ const KittingToolkits = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-40px" }}
                   transition={{ duration: 0.5, delay: 0.05 + i * 0.06 }}
-                  className="bg-white border border-[#E8E2D9] rounded-lg p-7 hover:border-secondary/40 hover:shadow-lg transition-all duration-300 group"
+                  className="bg-white/[0.04] border border-white/10 rounded-lg p-7 hover:border-secondary/50 hover:bg-white/[0.06] transition-all duration-300 group"
                 >
                   <cap.icon className="text-secondary w-7 h-7 mb-5" strokeWidth={1.75} />
-                  <h3 className="font-headline font-extrabold text-[#1E3448] text-lg uppercase tracking-tight mb-4 leading-tight">
+                  <h3 className="font-headline font-extrabold text-white text-lg uppercase tracking-tight mb-4 leading-tight">
                     {cap.title}
                   </h3>
                   <ul className="space-y-2">
                     {cap.items.map((item) => (
-                      <li key={item} className="flex items-start gap-2 text-gray-600 text-sm leading-relaxed">
+                      <li key={item} className="flex items-start gap-2 text-white/70 text-sm leading-relaxed">
                         <span className="block w-1.5 h-1.5 bg-secondary rounded-full mt-2 shrink-0" />
                         <span>{item}</span>
                       </li>
