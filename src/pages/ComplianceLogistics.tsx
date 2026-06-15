@@ -12,7 +12,6 @@ import {
   ArrowRight,
   Check,
 } from "lucide-react";
-import { Helmet } from "react-helmet-async";
 import HeaderLight from "@/components/home4/HeaderLight";
 import Footer from "@/components/home4/Footer4";
 import earthBg from "@/assets/earth-horizon-bg.jpg";
@@ -138,14 +137,6 @@ const standards = [
 const ComplianceLogistics = () => {
   return (
     <div className="min-h-screen bg-[#FAF8F5] text-gray-900">
-      <Helmet>
-        <title>Compliance Logistics | Gould Southern</title>
-        <meta
-          name="description"
-          content="Compliance-driven logistics solutions for aerospace, defense, and regulated environments, with asset visibility, traceability, smart warehousing, and fulfillment support."
-        />
-        <link rel="canonical" href="/compliance-logistics" />
-      </Helmet>
       <HeaderLight />
       <main>
         {/* HERO */}
