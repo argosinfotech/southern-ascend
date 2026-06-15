@@ -1,17 +1,17 @@
 import { motion } from "framer-motion";
-import { Package, Wrench, Plane, Radio, ArrowRight } from "lucide-react";
+import { Wrench, Radio, Plane, Landmark, ArrowRight } from "lucide-react";
 import earthBg from "@/assets/earth-horizon-bg.jpg";
 
 const capabilities = [
   {
-    icon: Package,
-    title: "Custom Packaging",
-    description: "Protective solutions engineered for high-value sensitive components.",
-  },
-  {
     icon: Wrench,
     title: "Kitting & Toolkits",
     description: "Streamlined assembly of complex toolsets and mission-ready kits.",
+  },
+  {
+    icon: Radio,
+    title: "RFID / FOD",
+    description: "Automated asset tracking and Foreign Object Debris prevention.",
   },
   {
     icon: Plane,
@@ -19,9 +19,9 @@ const capabilities = [
     description: "Compliant logistics tailored for defense and government support.",
   },
   {
-    icon: Radio,
-    title: "RFID / FOD Solutions",
-    description: "Automated asset tracking and Foreign Object Debris prevention.",
+    icon: Landmark,
+    title: "Government Contracting",
+    description: "Full-service contracting and procurement support for federal agencies and defense programs.",
   },
 ];
 
