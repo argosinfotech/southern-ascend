@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import whyImage from "@/assets/why-section.jpg";
+import whyImage from "@/assets/why-section-new.jpg";
 
 const points = [
   {
