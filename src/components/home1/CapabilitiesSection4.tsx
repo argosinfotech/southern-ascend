@@ -1,23 +1,11 @@
 import { motion } from "framer-motion";
-import { Package, Wrench, Plane, Radio, Check } from "lucide-react";
-import capPackaging from "@/assets/cap-packaging.jpg";
+import { Wrench, Radio, Plane, Landmark, Check } from "lucide-react";
+import capGov from "@/assets/cap-packaging.jpg";
 import capKitting from "@/assets/cap-kitting.jpg";
 import capAerospace from "@/assets/cap-compliant-logistics-v2.png";
 import capRfid from "@/assets/cap-rfid.jpg";
 
 const capabilities = [
-  {
-    icon: Package,
-    title: "Custom Packaging",
-    description: "Protective solutions engineered for high-value sensitive components.",
-    image: capPackaging,
-    points: [
-      "ESD-safe and climate-controlled enclosures for sensitive electronics",
-      "Custom foam, fixtures and inserts engineered per component geometry",
-      "Reusable and returnable systems for closed-loop programs",
-      "Validated drop, vibration and shock testing on request",
-    ],
-  },
   {
     icon: Wrench,
     title: "Kitting & Toolkits",
@@ -28,6 +16,18 @@ const capabilities = [
       "Serialized component traceability from receipt to deployment",
       "Shadowboard layouts and FOD-controlled tool accountability",
       "Scalable from prototype kits to recurring production runs",
+    ],
+  },
+  {
+    icon: Radio,
+    title: "RFID / FOD",
+    description: "Automated asset tracking and Foreign Object Debris prevention.",
+    image: capRfid,
+    points: [
+      "RFID-tagged kits with automated check-in / check-out workflows",
+      "FOD-prevention shadowboards and tethered tool systems",
+      "Real-time visibility across distributed inventory locations",
+      "Integrates with existing ERP and MES platforms",
     ],
   },
   {
@@ -42,15 +42,15 @@ const capabilities = [
     ],
   },
   {
-    icon: Radio,
-    title: "RFID / FOD Solutions",
-    description: "Automated asset tracking and Foreign Object Debris prevention.",
-    image: capRfid,
+    icon: Landmark,
+    title: "Government Contracting",
+    description: "Full-service contracting and procurement support for federal agencies and defense programs.",
+    image: capGov,
     points: [
-      "RFID-tagged kits with automated check-in / check-out workflows",
-      "FOD-prevention shadowboards and tethered tool systems",
-      "Real-time visibility across distributed inventory locations",
-      "Integrates with existing ERP and MES platforms",
+      "GSA contract holder with streamlined federal procurement pathways",
+      "ITAR and DFARS compliant handling for defense programs",
+      "Full-service proposal, packaging, and delivery to government standards",
+      "Dedicated program management for multi-year contract execution",
     ],
   },
 ];
