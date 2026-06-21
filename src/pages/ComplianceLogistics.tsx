@@ -14,7 +14,6 @@ import HeaderLight from "@/components/home4/HeaderLight";
 import Footer from "@/components/home4/Footer4";
 import earthBg from "@/assets/earth-horizon-bg.jpg";
 import heroImg from "@/assets/compliance-logistics-hero.jpg";
-import warehouseImg from "@/assets/compliance-logistics-warehouse.jpg";
 
 
 const capabilityBlocks = [
@@ -319,8 +318,8 @@ const ComplianceLogistics = () => {
             >
               <div className="w-full aspect-video bg-[#E8E2D9] rounded-lg shadow-2xl overflow-hidden relative">
                 <img
-                  src={warehouseImg}
-                  alt="Vertical lift module operator managing controlled aerospace inventory"
+                  src={heroImg}
+                  alt="Compliance-driven warehouse with RFID-tracked aerospace and defense inventory"
                   className="absolute inset-0 w-full h-full object-cover"
                   loading="lazy"
                   width={1024}
