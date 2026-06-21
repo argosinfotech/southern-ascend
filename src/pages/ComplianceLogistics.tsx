@@ -103,75 +103,66 @@ const ComplianceLogistics = () => {
       <HeaderLight />
       <main>
         {/* HERO */}
-        <section className="relative min-h-[600px] flex items-center px-6 md:px-12 pt-32 pb-20 overflow-hidden bg-[#FAF8F5]">
+        <section className="relative min-h-[600px] flex items-center px-6 md:px-12 pt-32 pb-20 overflow-hidden">
           <div className="absolute inset-0 z-0">
-            <img src={earthBg} alt="" aria-hidden="true" className="w-full h-full object-cover opacity-30" />
+            <img
+              src={heroImg}
+              alt="Compliance-driven warehouse with RFID-tracked aerospace and defense inventory"
+              width={1920}
+              height={1080}
+              className="w-full h-full object-cover opacity-30"
+            />
             <div className="absolute inset-0 bg-gradient-to-r from-[#FAF8F5] via-[#FAF8F5]/85 to-[#FAF8F5]/40" />
           </div>
-          <div className="relative z-10 max-w-[1920px] mx-auto w-full grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <motion.span
-                initial={{ opacity: 0, y: 16 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                className="inline-block text-secondary font-label text-[0.6875rem] uppercase tracking-[0.3em] mb-6"
-              >
-                Mission-Critical Logistics
-              </motion.span>
-              <motion.h1
-                initial={{ opacity: 0, y: 24 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                className="font-headline text-4xl md:text-[3.5rem] leading-[1.1] font-extrabold tracking-tighter mb-8 uppercase text-[#1E3448] max-w-4xl"
-              >
-                Compliance-Driven Logistics for{" "}
-                <span className="text-secondary">Mission-Critical Programs</span>
-              </motion.h1>
-              <motion.p
-                initial={{ opacity: 0, y: 24 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="text-gray-600 text-lg max-w-2xl font-body leading-relaxed mb-8"
-              >
-                Gould Southern helps defense, aerospace, and federal partners
-                maintain visibility, traceability, and control across
-                warehousing, asset tracking, packaging, kitting, and fulfillment
-                operations. Built for regulated environments, our logistics
-                capabilities support readiness, accountability, and operational
-                discipline.
-              </motion.p>
-              <motion.div
-                initial={{ opacity: 0, y: 16 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                className="flex flex-wrap gap-4"
-              >
-                <a
-                  href="/contact"
-                  className="inline-flex items-center gap-2 bg-secondary text-white px-7 py-3.5 rounded-md font-headline font-bold uppercase text-sm tracking-widest hover:brightness-110 transition-all"
-                >
-                  Talk to Our Team <ArrowRight className="w-4 h-4" />
-                </a>
-                <a
-                  href="/contact"
-                  className="inline-flex items-center gap-2 border border-[#1E3448]/20 text-[#1E3448] px-7 py-3.5 rounded-md font-headline font-bold uppercase text-sm tracking-widest hover:bg-[#1E3448]/5 transition-all"
-                >
-                  Speak With Our Team
-                </a>
-              </motion.div>
-            </div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.96 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.7, delay: 0.2 }}
-              className="hidden lg:flex items-center justify-center relative bg-[#E8E2D9] rounded-lg shadow-2xl min-h-[440px] overflow-hidden"
+          <div className="relative z-10 max-w-4xl">
+            <motion.span
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="inline-block bg-[#FAF8F5] text-gray-700 font-label text-[0.6875rem] uppercase tracking-[0.2em] px-3 py-1 mb-8"
             >
-              <img
-                src={heroImg}
-                alt="Compliance-driven warehouse with RFID-tracked aerospace and defense inventory"
-                className="absolute inset-0 w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 rounded-lg ring-1 ring-[#1E3448]/10 pointer-events-none" />
+              Mission-Critical Logistics
+            </motion.span>
+            <motion.h1
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="font-headline text-4xl md:text-[3.5rem] leading-[1.1] font-extrabold tracking-tighter mb-8 uppercase text-[#1E3448] max-w-4xl"
+            >
+              Compliance-Driven Logistics for{" "}
+              <span className="text-secondary">Mission-Critical Programs</span>
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-gray-600 text-lg max-w-2xl font-body leading-relaxed mb-8"
+            >
+              Gould Southern helps defense, aerospace, and federal partners
+              maintain visibility, traceability, and control across
+              warehousing, asset tracking, packaging, kitting, and fulfillment
+              operations. Built for regulated environments, our logistics
+              capabilities support readiness, accountability, and operational
+              discipline.
+            </motion.p>
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="flex flex-wrap gap-4"
+            >
+              <a
+                href="/contact"
+                className="inline-flex items-center gap-2 bg-secondary text-white px-7 py-3.5 rounded-md font-headline font-bold uppercase text-sm tracking-widest hover:brightness-110 transition-all"
+              >
+                Talk to Our Team <ArrowRight className="w-4 h-4" />
+              </a>
+              <a
+                href="/contact"
+                className="inline-flex items-center gap-2 border border-[#1E3448]/20 text-[#1E3448] px-7 py-3.5 rounded-md font-headline font-bold uppercase text-sm tracking-widest hover:bg-[#1E3448]/5 transition-all"
+              >
+                Speak With Our Team
+              </a>
             </motion.div>
           </div>
         </section>
