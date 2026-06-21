@@ -156,12 +156,6 @@ const ComplianceLogistics = () => {
               >
                 Talk to Our Team <ArrowRight className="w-4 h-4" />
               </a>
-              <a
-                href="/contact"
-                className="inline-flex items-center gap-2 border border-[#1E3448]/20 text-[#1E3448] px-7 py-3.5 rounded-md font-headline font-bold uppercase text-sm tracking-widest hover:bg-[#1E3448]/5 transition-all"
-              >
-                Speak With Our Team
-              </a>
             </motion.div>
           </div>
         </section>
