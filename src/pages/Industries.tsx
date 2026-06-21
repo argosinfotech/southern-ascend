@@ -12,6 +12,7 @@ import industryIndustrial from "@/assets/industry-industrial.jpg";
 import whySectionImg from "@/assets/why-section.jpg";
 import industryEnergy from "@/assets/industry-energy-light.jpg";
 import capPackaging from "@/assets/cap-packaging.jpg";
+import gsaInfographic from "@/assets/gsa-compliant-supply-chain-partner.png.asset.json";
 
 const overview = [
   { icon: Plane, label: "Aerospace", desc: "Commercial aviation, aircraft manufacturing, MRO facilities", href: "#aerospace" },
@@ -253,7 +254,7 @@ const Industries = () => {
           ]}
           tags={["GSA Schedule", "DOD E-Mall", "DLA", "MRO Distribution", "Small Business"]}
           photoLabel="Government / Federal Photography"
-          photoSrc={whySectionImg}
+          photoSrc={gsaInfographic.url}
           reversed
         />
 
