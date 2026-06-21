@@ -184,48 +184,6 @@ const ComplianceLogistics = () => {
           </div>
         </section>
 
-        {/* PROOF BAR */}
-        <section className="px-6 md:px-12 py-8 bg-white border-y border-[#E8E2D9]">
-          <div className="max-w-[1920px] mx-auto flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
-            {proofPoints.map((p) => (
-              <span
-                key={p}
-                className="text-xs md:text-sm font-label uppercase tracking-[0.18em] text-[#1E3448]/80 flex items-center gap-2"
-              >
-                <ShieldCheck className="w-4 h-4 text-secondary" />
-                {p}
-              </span>
-            ))}
-          </div>
-        </section>
-
-        {/* INTRO */}
-        <section className="px-6 md:px-12 py-20 md:py-24 bg-[#FAF8F5]">
-          <div className="max-w-4xl mx-auto text-center">
-            <span className="text-secondary font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
-              Built for Regulated Supply Chains
-            </span>
-            <h2 className="font-headline text-3xl md:text-5xl font-extrabold tracking-tighter uppercase text-[#1E3448] mb-6">
-              Logistics that do more than <span className="text-secondary">move material</span>
-            </h2>
-            <div className="w-12 h-[3px] bg-secondary mx-auto mb-8" />
-            <div className="space-y-5 text-gray-600 leading-relaxed text-base md:text-lg">
-              <p>
-                In regulated environments, logistics is about more than storage
-                and transport. It is about control, traceability, audit
-                readiness, and making sure critical assets are available when
-                needed.
-              </p>
-              <p>
-                Gould Southern delivers integrated logistics support that brings
-                warehousing, asset management, packaging, kitting, sourcing,
-                and fulfillment into a more disciplined operating model.
-              </p>
-            </div>
-          </div>
-        </section>
-
-
         {/* CAPABILITY DETAILS */}
         <section className="px-6 md:px-12 py-20 md:py-24 bg-[#082A40] border-t border-white/5">
           <div className="max-w-[1920px] mx-auto">
@@ -242,7 +200,14 @@ const ComplianceLogistics = () => {
               <h2 className="font-headline text-3xl md:text-5xl font-extrabold tracking-tighter uppercase text-white mb-6">
                 What This Capability <span className="text-secondary">Includes</span>
               </h2>
-              <div className="w-12 h-[3px] bg-secondary" />
+              <div className="w-12 h-[3px] bg-secondary mb-6" />
+              <p className="text-white/70 leading-relaxed text-lg">
+                In regulated environments, logistics is about more than storage
+                and transport. Gould Southern delivers integrated logistics
+                support that brings warehousing, asset management, packaging,
+                kitting, sourcing, and fulfillment into a more disciplined
+                operating model.
+              </p>
             </motion.div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {capabilityBlocks.map((cap, i) => (
