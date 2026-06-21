@@ -16,14 +16,6 @@ import earthBg from "@/assets/earth-horizon-bg.jpg";
 import heroImg from "@/assets/compliance-logistics-hero.jpg";
 import warehouseImg from "@/assets/compliance-logistics-warehouse.jpg";
 
-const proofPoints = [
-  "AS9100:D Certified",
-  "ISO 9001:2015 Certified",
-  "ITAR Compliance Program",
-  "DDTC Registered",
-  "CMMC Level 1 Certified",
-  "CMMC Level 2 Targeted Q1 2027",
-];
 
 const capabilityBlocks = [
   {
