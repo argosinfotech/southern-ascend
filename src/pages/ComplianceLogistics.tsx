@@ -5,9 +5,7 @@ import {
   Boxes,
   Truck,
   Radio,
-  PackageCheck,
   Eye,
-  FileCheck,
   Layers,
   ArrowRight,
   Check,
@@ -25,33 +23,6 @@ const proofPoints = [
   "DDTC Registered",
   "CMMC Level 1 Certified",
   "CMMC Level 2 Targeted Q1 2027",
-];
-
-const valueCards = [
-  {
-    icon: Eye,
-    title: "End-to-End Visibility",
-    description:
-      "Real-time visibility across tools, kits, inventory, and mission-critical assets.",
-  },
-  {
-    icon: FileCheck,
-    title: "Traceability & Audit Support",
-    description:
-      "Secure audit trails and stronger chain-of-custody assurance.",
-  },
-  {
-    icon: Warehouse,
-    title: "Warehouse Efficiency & Control",
-    description:
-      "Improved storage density, retrieval speed, and organized access.",
-  },
-  {
-    icon: PackageCheck,
-    title: "Integrated Fulfillment Support",
-    description:
-      "Procurement, quality control, vendor management, and surge-ready execution.",
-  },
 ];
 
 const capabilityBlocks = [
@@ -254,44 +225,6 @@ const ComplianceLogistics = () => {
           </div>
         </section>
 
-        {/* VALUE PROPOSITION */}
-        <section className="px-6 md:px-12 py-20 md:py-24 bg-white border-t border-[#E8E2D9]">
-          <div className="max-w-[1920px] mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.6 }}
-              className="max-w-3xl mb-14"
-            >
-              <span className="text-gray-500 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
-                The Value
-              </span>
-              <h2 className="font-headline text-3xl md:text-5xl font-extrabold tracking-tighter uppercase text-[#1E3448] mb-6">
-                A more controlled logistics model for <span className="text-secondary">demanding programs</span>
-              </h2>
-              <div className="w-12 h-[3px] bg-secondary" />
-            </motion.div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {valueCards.map((card, i) => (
-                <motion.div
-                  key={card.title}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: "-40px" }}
-                  transition={{ duration: 0.5, delay: 0.05 + i * 0.06 }}
-                  className="bg-[#FAF8F5] border border-[#E8E2D9] rounded-lg p-7 hover:border-secondary/50 hover:shadow-lg transition-all duration-300"
-                >
-                  <card.icon className="text-secondary w-7 h-7 mb-5" strokeWidth={1.75} />
-                  <h3 className="font-headline font-extrabold text-[#1E3448] text-lg uppercase tracking-tight mb-3 leading-tight">
-                    {card.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{card.description}</p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* CAPABILITY DETAILS */}
         <section className="px-6 md:px-12 py-20 md:py-24 bg-[#082A40] border-t border-white/5">
