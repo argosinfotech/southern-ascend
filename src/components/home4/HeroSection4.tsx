@@ -60,12 +60,6 @@ const HeroSection = () => {
           >
             Request a Consultation
           </a>
-          <a
-            href="#capabilities"
-            className="border border-[#D4C9B8] text-gray-900 px-8 py-4 font-headline font-bold uppercase text-sm tracking-widest hover:bg-[#F5F2EE] transition-all rounded-md"
-          >
-            Explore Our Capabilities
-          </a>
         </motion.div>
       </div>
     </section>
