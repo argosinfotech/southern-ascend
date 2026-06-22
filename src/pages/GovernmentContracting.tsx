@@ -378,49 +378,86 @@ const GovernmentContracting = () => {
         </section>
 
         {/* SUPPORTING FEDERAL PARTNERS */}
-        <section className="px-6 md:px-12 py-20 md:py-24 bg-[#FAF8F5] border-t border-[#E8E2D9]">
-          <div className="max-w-[1920px] mx-auto grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+        <section className="bg-[#082A40]">
+          <div className="grid lg:grid-cols-2 min-h-[520px]">
             <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.6 }}
+              className="relative bg-[#0E3A55] min-h-[300px] flex items-center justify-center overflow-hidden"
             >
-              <span className="text-gray-500 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
-                Supporting Federal Partners
-              </span>
-              <h2 className="font-headline text-3xl md:text-5xl font-extrabold tracking-tighter uppercase text-[#1E3448] mb-6">
-                Responsive. Secure. <span className="text-secondary">Mission-Ready.</span>
-              </h2>
-              <div className="w-12 h-[3px] bg-secondary mb-6" />
-              <p className="text-gray-600 leading-relaxed text-lg mb-8">
-                Federal customers operate under short lead times and uncertain markets. Our facilities, compliance posture, and fulfillment protocols are built to meet DoD responsiveness standards without trade-offs on security or quality.
-              </p>
-              <ul className="space-y-4">
-                {federalSupport.map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <div className="shrink-0 w-6 h-6 rounded-md bg-secondary/10 flex items-center justify-center mt-0.5">
-                      <Check className="w-3.5 h-3.5 text-secondary" strokeWidth={3} />
-                    </div>
-                    <p className="text-gray-700 leading-relaxed text-[0.95rem]">{item}</p>
-                  </li>
-                ))}
-              </ul>
+              <img src={secureCage.url} alt="Secure access-controlled storage" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#082A40]/85 via-[#082A40]/60 to-[#082A40]/85" />
+              <div className="relative text-center">
+                <ShieldCheck className="w-10 h-10 text-white/30 mx-auto mb-3" strokeWidth={1.5} />
+                <span className="text-white/60 font-label text-xs uppercase tracking-widest">
+                  Secure / Compliant Facilities
+                </span>
+              </div>
             </motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="space-y-6"
+              transition={{ duration: 0.6 }}
+              className="px-6 md:px-16 py-16 md:py-20 flex flex-col justify-center"
             >
-              <span className="text-gray-500 font-label text-[0.6875rem] uppercase tracking-[0.3em] block">
+              <span className="text-white/50 font-label text-[0.6875rem] uppercase tracking-[0.3em] mb-4">
+                Supporting Federal Partners
+              </span>
+              <h2 className="font-headline text-3xl md:text-5xl font-extrabold tracking-tighter uppercase text-white mb-6">
+                Responsive. Secure. <span className="text-secondary">Mission-Ready.</span>
+              </h2>
+              <div className="w-12 h-[3px] bg-secondary mb-6" />
+              <p className="text-white/70 leading-relaxed text-lg mb-8">
+                Federal customers operate under short lead times and uncertain markets. Our facilities, compliance posture, and fulfillment protocols are built to meet DoD responsiveness standards without trade-offs on security or quality.
+              </p>
+              <ul className="space-y-4">
+                {federalSupport.map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <div className="shrink-0 w-6 h-6 rounded-md bg-secondary/20 flex items-center justify-center mt-0.5">
+                      <Check className="w-3.5 h-3.5 text-secondary" strokeWidth={3} />
+                    </div>
+                    <p className="text-white/80 leading-relaxed text-[0.95rem]">{item}</p>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* RECORD OF SUCCESS */}
+        <section className="px-6 md:px-12 py-20 md:py-24 bg-[#FAF8F5] border-t border-[#E8E2D9]">
+          <div className="max-w-[1920px] mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.6 }}
+              className="max-w-3xl mb-12"
+            >
+              <span className="text-gray-500 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
                 A Record Of Success
               </span>
-              {caseStudies.map((cs) => (
-                <div
+              <h2 className="font-headline text-3xl md:text-5xl font-extrabold tracking-tighter uppercase text-[#1E3448] mb-6">
+                Proven Results For <span className="text-secondary">Federal Missions.</span>
+              </h2>
+              <div className="w-12 h-[3px] bg-secondary mb-6" />
+              <p className="text-gray-600 leading-relaxed text-lg">
+                Real-world outcomes delivered under demanding timelines, strict compliance requirements, and complex supply chain conditions.
+              </p>
+            </motion.div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {caseStudies.map((cs, i) => (
+                <motion.div
                   key={cs.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-40px" }}
+                  transition={{ duration: 0.5, delay: i * 0.05 }}
                   className="bg-white border-l-4 border-secondary rounded-r-lg p-7 md:p-8 shadow-sm"
                 >
                   <div className="text-secondary font-label text-[0.6875rem] uppercase tracking-widest mb-2">
@@ -430,11 +467,12 @@ const GovernmentContracting = () => {
                     {cs.title}
                   </h3>
                   <p className="text-gray-600 leading-relaxed text-sm">{cs.body}</p>
-                </div>
+                </motion.div>
               ))}
-            </motion.div>
+            </div>
           </div>
         </section>
+
 
         {/* DARK BAND: TAILORED SOLUTIONS */}
         <section className="relative px-6 md:px-12 py-20 bg-[#061E2E] text-center overflow-hidden">
