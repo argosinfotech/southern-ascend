@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import {
-  Check, Wrench, Package, ShieldCheck, ArrowRight, Mail, Phone, MapPin, Image,
+  Check, Wrench, Package, ShieldCheck, ArrowRight, Image,
+  Calendar, DollarSign, Globe, Users, Network, Building2,
 } from "lucide-react";
 import HeaderLight from "@/components/home4/HeaderLight";
 import Footer from "@/components/home4/Footer4";
@@ -12,6 +13,15 @@ const credentials = [
   { code: "ITAR", label: "DDTC Registered" },
   { code: "CMMC L1", label: "L2 Targeted Q1 2027" },
   { code: "AS9100:D", label: "ISO 9001:2015 Certified" },
+];
+
+const networkStats = [
+  { icon: Calendar, value: "85+", label: "Years In Business" },
+  { icon: DollarSign, value: "$950M+", label: "Annual Revenue" },
+  { icon: Globe, value: "40", label: "Global Locations" },
+  { icon: Users, value: "800+", label: "Team Members" },
+  { icon: Network, value: "3,600", label: "Supplier Network" },
+  { icon: Building2, value: "5,500", label: "Clients Served" },
 ];
 
 const capabilities = [
@@ -35,18 +45,18 @@ const capabilities = [
 const whyItems = [
   {
     num: "01",
-    title: "Streamlined Ordering",
-    body: "GSA Schedule contract holder with 250,000+ line offerings. Federal buyers can procure through established channels with pre-negotiated pricing and compliant processes.",
+    title: "Revitalizing U.S. Supply",
+    body: "Builds a robust domestic supply chain ecosystem, connecting federal customers with thousands of U.S.-based partners. Empowers American suppliers and reduces reliance on foreign sources for mission-critical inputs.",
   },
   {
     num: "02",
-    title: "Turnkey Delivery",
-    body: "We source the components, assemble the kits, inspect to spec, and deliver a fully completed product. Your receiving team gets a ready-to-deploy solution, not a box of parts.",
+    title: "Strengthening Competitiveness",
+    body: "Enables rapid adaptation to market and geopolitical shifts across defense, life sciences, healthcare, electronics, and food systems. Regular stress testing and scenario planning surface vulnerabilities before they disrupt the mission.",
   },
   {
     num: "03",
-    title: "Certified Quality",
-    body: "AS9100:D and ISO 9001:2015 certified quality management system. Full traceability from procurement through delivery on every order.",
+    title: "Supporting Federal Partners",
+    body: "Surge-ready U.S. manufacturing hubs with flexible sourcing and production to maintain consistent supply under short lead times. Global footprint with deep local roots to respond to evolving supply chain dynamics.",
   },
 ];
 
@@ -81,23 +91,34 @@ const advantages = [
 
 const caseStudies = [
   {
-    eyebrow: "Federal Defense Partner",
-    title: "Scaled Tool Delivery",
-    body: "Partnered with a federal defense production facility to deliver nearly 40,000 tools. Purchase orders expanded to include toolkit design, custom foam, quality control, and turnkey shipping solutions.",
+    eyebrow: "Defense",
+    title: "10M Units In 30 Days",
+    body: "During the COVID-19 pandemic, a leading manufacturer of life-saving medical equipment needed to scale carrying cases and foam-packaged components for military triage units. Within 30 days we ramped from a modest annual order to 10 million units — half of a $7.4M emergency contract — by standing up new production lines, quadrupling the workforce, and running 24/7 under stringent defense compliance. All units delivered ahead of schedule with zero rejections.",
   },
   {
-    eyebrow: "Leading Prime Defense Contractor",
-    title: "Custom Tool Kits",
-    body: "Delivered comprehensive, custom tool kits engineered to the customer's exact specifications. All tools built to print, with independent third-party inspections for quality and blueprint adherence.",
+    eyebrow: "Healthcare",
+    title: "70M COVID-19 Test Kits",
+    body: "Partnered with a major diagnostic testing provider to design, assemble, and distribute over 70 million COVID-19 test kits during the national pandemic response. Packaging engineering, supply chain coordination, and high-volume fulfillment moved from concept to nationwide deployment in record time, expanding testing access during urgent public health need.",
+  },
+  {
+    eyebrow: "Automotive",
+    title: "6,000 Custom Conveyor Hooks",
+    body: "Designed and manufactured heavy-duty hook fixtures for the first automated overhead conveyor system of its kind in North America. Five unique hook designs and 6,000+ units produced within 18 months, enabling high output in a smaller facility, reducing costs and product damage across ~60 part types.",
+  },
+  {
+    eyebrow: "Consumer Goods",
+    title: "Reshored Turnkey Supply Chain",
+    body: "Reshored a manufacturer's entire turnkey supply chain from China to the United States — manufacturing, packaging, and raw material sourcing. In-house engineers re-engineered 15+ package types from scratch across injection molding, thermoforming, and precision printing. Lead times reduced 60% with a cost-neutral solution versus importing.",
   },
 ];
 
 const federalSupport = [
-  "Flexible sourcing and production to maintain consistent supply under short lead times.",
-  "Secure, compliant facilities aligned with standard federal contracting security frameworks.",
+  "Flexible sourcing and surge-ready U.S. manufacturing hubs to maintain consistent supply under short lead times.",
+  "Secure, compliant facilities aligned with federal contracting security frameworks.",
   "Rapid fulfillment protocols with contingency routing to meet DoD responsiveness standards.",
   "Active DDTC registration with a fully implemented ITAR compliance program.",
   "CMMC Level 1 certified, with a formal POA&M advancing to CMMC Level 2 by Q1 2027.",
+  "Global footprint with deep local roots — 40 locations and 3,600+ supplier network supporting federal missions.",
 ];
 
 const GovernmentContracting = () => {
