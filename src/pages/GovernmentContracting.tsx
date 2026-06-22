@@ -147,8 +147,8 @@ const GovernmentContracting = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="font-headline text-4xl md:text-[3.5rem] leading-[1.1] font-extrabold tracking-tighter mb-8 uppercase text-[#1E3448] max-w-5xl"
             >
-              Your Mission-Critical<br />
-              Supply Chain <span className="text-secondary">Partner.</span>
+              Strengthening America's<br />
+              Supply Chain <span className="text-secondary">Resilience.</span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 24 }}
@@ -156,7 +156,7 @@ const GovernmentContracting = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-gray-600 text-lg max-w-3xl font-body leading-relaxed mb-8"
             >
-              Gould Southern is a trusted MRO distributor, custom tool kit provider, and FOD control specialist for federal agencies across DOD E-Mall, DLA, and GSA, with over 250,000 industrial-grade products available on contract.
+              As part of the Stephen Gould network — a U.S.-based manufacturing and supply chain provider with 85+ years supporting defense, aerospace, life sciences, and healthcare — Gould Southern delivers mission-critical packaging, logistics, kitting, and MRO distribution to federal agencies across DOD E-Mall, DLA, and GSA.
             </motion.p>
             <motion.a
               initial={{ opacity: 0, y: 16 }}
