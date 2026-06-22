@@ -388,12 +388,12 @@ const GovernmentContracting = () => {
               transition={{ duration: 0.6 }}
               className="relative bg-[#0E3A55] min-h-[300px] flex items-center justify-center overflow-hidden"
             >
-              <img src={secureCage.url} alt="Secure access-controlled storage" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+              <img src={afHangar.url} alt="Air Force hangar and defense aerospace support" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-br from-[#082A40]/85 via-[#082A40]/60 to-[#082A40]/85" />
               <div className="relative text-center">
-                <ShieldCheck className="w-10 h-10 text-white/30 mx-auto mb-3" strokeWidth={1.5} />
+                <Building2 className="w-10 h-10 text-white/30 mx-auto mb-3" strokeWidth={1.5} />
                 <span className="text-white/60 font-label text-xs uppercase tracking-widest">
-                  Secure / Compliant Facilities
+                  Defense & Aerospace Support
                 </span>
               </div>
             </motion.div>
