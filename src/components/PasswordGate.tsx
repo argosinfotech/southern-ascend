@@ -1,6 +1,6 @@
 import { useEffect, useState, type ReactNode } from "react";
 
-const PASSWORD = "GS@20261";
+const PASSWORD = "GS@2026";
 const STORAGE_KEY = "site_unlocked_v1";
 
 export const PasswordGate = ({ children }: { children: ReactNode }) => {
