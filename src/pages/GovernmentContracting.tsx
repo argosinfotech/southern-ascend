@@ -7,6 +7,7 @@ import HeaderLight from "@/components/home4/HeaderLight";
 import Footer from "@/components/home4/Footer4";
 import earthBg from "@/assets/earth-horizon-bg.jpg";
 import secureCage from "@/assets/gs-secure-cage.jpg.asset.json";
+import afHangar from "@/assets/gs-af-hangar.jpg.asset.json";
 
 const credentials = [
   { code: "GSA Schedule", label: "GS-06F-0047S" },
