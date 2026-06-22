@@ -186,6 +186,47 @@ const GovernmentContracting = () => {
           </div>
         </section>
 
+        {/* NETWORK STATS */}
+        <section className="px-6 md:px-12 pt-16 md:pt-20 bg-[#FAF8F5]">
+          <div className="max-w-[1920px] mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.5 }}
+              className="max-w-3xl mb-10"
+            >
+              <span className="text-gray-500 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
+                The Stephen Gould Network
+              </span>
+              <h2 className="font-headline text-3xl md:text-5xl font-extrabold tracking-tighter uppercase text-[#1E3448]">
+                Scale, Reach, And <span className="text-secondary">Stability.</span>
+              </h2>
+              <div className="w-12 h-[3px] bg-secondary mt-6" />
+            </motion.div>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-px bg-[#E8E2D9] border border-[#E8E2D9] rounded-lg overflow-hidden">
+              {networkStats.map((s, i) => (
+                <motion.div
+                  key={s.label}
+                  initial={{ opacity: 0, y: 12 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-40px" }}
+                  transition={{ duration: 0.35, delay: i * 0.05 }}
+                  className="bg-white p-6 flex flex-col items-center text-center"
+                >
+                  <s.icon className="w-6 h-6 text-secondary mb-3" strokeWidth={1.75} />
+                  <div className="font-headline font-extrabold text-[#1E3448] text-2xl md:text-3xl tracking-tight leading-none">
+                    {s.value}
+                  </div>
+                  <div className="text-gray-500 font-label text-[0.625rem] uppercase tracking-widest mt-2">
+                    {s.label}
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* CORE CAPABILITIES */}
         <section className="px-6 md:px-12 py-20 md:py-24 bg-[#FAF8F5]">
           <div className="max-w-[1920px] mx-auto">
