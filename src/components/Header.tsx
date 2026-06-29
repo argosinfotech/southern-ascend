@@ -79,7 +79,7 @@ const Header = () => {
             </a>
           ))}
           <a
-            href="#contact"
+            href="/contact"
             className="bg-secondary text-on-secondary-container px-6 py-3 font-headline font-bold uppercase text-xs tracking-widest hover:brightness-110 active:scale-95 transition-all"
           >
             Talk to Our Team
@@ -134,7 +134,7 @@ const Header = () => {
               </a>
             ))}
             <a
-              href="#contact"
+              href="/contact"
               onClick={() => setMobileOpen(false)}
               className="bg-secondary text-on-secondary-container px-6 py-3 font-headline font-bold uppercase text-xs tracking-widest text-center mt-2"
             >

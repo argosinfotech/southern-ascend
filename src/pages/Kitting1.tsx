@@ -281,7 +281,7 @@ const KittingToolkits = () => {
               deployment environment. We'll design a solution around them.
             </p>
             <a
-              href="#contact"
+              href="/contact"
               className="inline-flex items-center gap-2 bg-secondary text-white px-8 py-4 rounded-md font-headline font-bold uppercase text-sm tracking-widest hover:brightness-110 hover:shadow-lg hover:shadow-secondary/30 transition-all"
             >
               Initiate Consultation <ArrowRight className="w-4 h-4" />

@@ -98,7 +98,7 @@ const Certifications = () => {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              href="#contact"
+              href="/contact"
               className="inline-flex items-center gap-2 bg-secondary text-white px-8 py-4 rounded-md font-headline font-bold uppercase text-sm tracking-widest hover:brightness-110 hover:shadow-lg hover:shadow-secondary/30 transition-all"
             >
               Request a Consultation <ArrowRight className="w-4 h-4" />
@@ -242,7 +242,7 @@ const Certifications = () => {
               Registered as a small business with CCR, Gould Southern adheres to Six Sigma and lean principles. For DOD E-Mall, DLA, and GSA, we are a trusted source as a traditional MRO distributor, custom tool kit provider for FOD control, and safety solutions partner with over 250,000 industrial-grade products available to federal customers.
             </p>
             <a
-              href="#contact"
+              href="/contact"
               className="inline-flex items-center gap-2 bg-secondary text-white px-8 py-4 rounded-md font-headline font-bold uppercase text-sm tracking-widest hover:brightness-110 hover:shadow-lg hover:shadow-secondary/30 transition-all"
             >
               View GSA Offerings <ArrowRight className="w-4 h-4" />
