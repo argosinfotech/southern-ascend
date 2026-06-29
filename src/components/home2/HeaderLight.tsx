@@ -13,7 +13,7 @@ const navItems = [
   { label: "Industries", href: "#industries" },
   { label: "Certifications", href: "#quality" },
   { label: "About", href: "#about" },
-  { label: "Contact", href: "#contact" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const HeaderLight = () => {
