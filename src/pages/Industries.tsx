@@ -253,7 +253,6 @@ const Industries = () => {
           ]}
           tags={["GSA Schedule", "DOD E-Mall", "DLA", "MRO Distribution", "Small Business"]}
           photoLabel="Government / Federal Photography"
-          photoSrc={gsaInfographic.url}
           reversed
         />
 
