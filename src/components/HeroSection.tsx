@@ -55,7 +55,7 @@ const HeroSection = () => {
           className="flex flex-wrap gap-6"
         >
           <a
-            href="#contact"
+            href="/contact"
             className="bg-secondary text-on-secondary-container px-8 py-4 font-headline font-bold uppercase text-sm tracking-widest hover:brightness-110 transition-all"
           >
             Request a Consultation

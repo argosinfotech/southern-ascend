@@ -85,7 +85,7 @@ const StephenGouldSection = () => {
             </li>
           </ul>
           <a
-            href="mailto:sales@gouldsouthern.com"
+            href="/contact"
             className="block w-full bg-secondary text-on-secondary-container py-4 font-headline font-bold uppercase text-xs tracking-[0.2em] hover:brightness-110 transition-all text-center"
           >
             Initiate Consultation
