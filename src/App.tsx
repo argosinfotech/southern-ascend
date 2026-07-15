@@ -20,7 +20,6 @@ import ComplianceLogistics from "./pages/ComplianceLogistics.tsx";
 import About from "./pages/About.tsx";
 import Contact from "./pages/Contact.tsx";
 import NotFound from "./pages/NotFound.tsx";
-import PasswordGate from "./components/PasswordGate.tsx";
 
 const queryClient = new QueryClient();
 
@@ -29,7 +28,6 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <PasswordGate>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home4 />} />
@@ -52,7 +50,6 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
-      </PasswordGate>
     </TooltipProvider>
   </QueryClientProvider>
 );
