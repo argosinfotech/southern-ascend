@@ -22,7 +22,6 @@ const networkStats = [
   { icon: Globe, value: "40", label: "Global Locations" },
   { icon: Users, value: "800+", label: "Team Members" },
   { icon: Network, value: "3,600", label: "Supplier Network" },
-  { icon: Building2, value: "5,500", label: "Clients Served" },
 ];
 
 const capabilities = [
@@ -205,7 +204,7 @@ const GovernmentContracting = () => {
               </h2>
               <div className="w-12 h-[3px] bg-secondary mt-6" />
             </motion.div>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-px bg-[#E8E2D9] border border-[#E8E2D9] rounded-lg overflow-hidden">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-px bg-[#E8E2D9] border border-[#E8E2D9] rounded-lg overflow-hidden">
               {networkStats.map((s, i) => (
                 <motion.div
                   key={s.label}
@@ -213,7 +212,9 @@ const GovernmentContracting = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-40px" }}
                   transition={{ duration: 0.35, delay: i * 0.05 }}
-                  className="bg-white p-6 flex flex-col items-center text-center"
+                  className={`bg-white p-6 flex flex-col items-center text-center ${
+                    i === networkStats.length - 1 ? "col-span-2 md:col-span-1" : ""
+                  }`}
                 >
                   <s.icon className="w-6 h-6 text-secondary mb-3" strokeWidth={1.75} />
                   <div className="font-headline font-extrabold text-[#1E3448] text-2xl md:text-3xl tracking-tight leading-none">
