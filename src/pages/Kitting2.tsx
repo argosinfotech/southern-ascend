@@ -156,7 +156,7 @@ const advantages = [
   "RFID-enabled access control limits kit use to authorized personnel.",
   "Turnkey delivery: sourced, assembled, inspected, shipped ready-to-use.",
   "Daily manifest reporting gives full project visibility.",
-  "GSA Schedule contract holder (GS-06F-0047S) with 250,000+ line offerings.",
+  "GSA Schedule contract holder (GS-06F-0047S).",
 ];
 
 const Kitting2 = () => {

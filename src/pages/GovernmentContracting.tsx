@@ -29,7 +29,7 @@ const capabilities = [
   {
     icon: Package,
     title: "MRO Distribution",
-    body: "Traditional MRO distributor with over 250,000 industrial-grade products available through GSA Schedule, DOD E-Mall, and DLA contracts. Distributor agreements with major manufacturers ensure quality and availability for government end users.",
+    body: "Traditional MRO distributor with industrial-grade products available through GSA Schedule, DOD E-Mall, and DLA contracts. Distributor agreements with major manufacturers ensure quality and availability for government end users.",
   },
   {
     icon: Wrench,
@@ -100,7 +100,7 @@ const distributionLines = [
 ];
 
 const advantages = [
-  "GSA Schedule GS-06F-0047S with 250,000+ industrial-grade line offerings.",
+  "GSA Schedule GS-06F-0047S contract holder.",
   "Approved vendor for DOD E-Mall, DLA, and GSA procurement channels.",
   "CCR-registered small business adhering to Six Sigma and lean principles.",
   "Distributor agreements with 17+ major manufacturers on government contracts.",

@@ -53,7 +53,7 @@ const advantages = [
   "CMMC Level 2 Readiness supporting controlled defense program requirements.",
   "ITAR compliant handling for controlled defense articles and technical data.",
   "ISO 9001 quality management practices supporting consistent execution.",
-  "GSA Schedule GS-06F-0047S with 250,000+ industrial-grade line offerings for federal procurement.",
+  "GSA Schedule GS-06F-0047S contract holder for federal procurement.",
   "Registered small business with CCR, adhering to Six Sigma and lean principles.",
   "Distributor agreements with major manufacturers recognized by government end users.",
   "Full traceability from sourcing through delivery: documented, auditable, and compliant.",
@@ -241,7 +241,7 @@ const Certifications = () => {
               GSA Schedule Contract Holder.
             </h2>
             <p className="text-white/60 leading-relaxed text-base mb-8">
-              Registered as a small business with CCR, Gould Southern adheres to Six Sigma and lean principles. For DOD E-Mall, DLA, and GSA, we are a trusted source as a traditional MRO distributor, custom tool kit provider for FOD control, and safety solutions partner with over 250,000 industrial-grade products available to federal customers.
+              Registered as a small business with CCR, Gould Southern adheres to Six Sigma and lean principles. For DOD E-Mall, DLA, and GSA, we are a trusted source as a traditional MRO distributor, custom tool kit provider for FOD control, and safety solutions partner with industrial-grade products available to federal customers.
             </p>
             <a
               href="/contact"

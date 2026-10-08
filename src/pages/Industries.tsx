@@ -249,7 +249,7 @@ const Industries = () => {
           eyebrow="Government & Federal"
           title={<>Your GSA-Compliant <span className="text-secondary">Supply Chain Partner.</span></>}
           paragraphs={[
-            "Gould Southern is a GSA Schedule contract holder (GS-06F-0047S) with over 250,000 industrial-grade products available through DOD E-Mall, DLA, and GSA procurement channels. Registered as a small business with CCR, we adhere to Six Sigma and lean principles across every engagement.",
+            "Gould Southern is a GSA Schedule contract holder (GS-06F-0047S) with industrial-grade products available through DOD E-Mall, DLA, and GSA procurement channels. Registered as a small business with CCR, we adhere to Six Sigma and lean principles across every engagement.",
             "Federal buyers benefit from pre-negotiated pricing, compliant ordering processes, and distributor agreements with 17+ major manufacturers who recognize the value of providing quality products to government end users.",
           ]}
           tags={["GSA Schedule", "DOD E-Mall", "DLA", "MRO Distribution", "Small Business"]}
