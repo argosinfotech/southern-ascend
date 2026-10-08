@@ -124,10 +124,8 @@ const KittingToolkits = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-gray-600 text-lg max-w-2xl mb-12 font-body leading-relaxed"
             >
-              Gould Southern engineers custom tool kits and shadow-board systems
-              that eliminate FOD risk, enforce lean workflows, and keep your
-              teams audit-ready — from single hand-held kits to fully equipped
-              mobile tool cribs.
+              Gould Southern engineers custom toolkits and shadow board systems
+              capable of digital tracking that eliminate FOD risk.
             </motion.p>
           </div>
         </section>
