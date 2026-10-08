@@ -13,7 +13,6 @@ import {
 import HeaderLight from "@/components/home4/HeaderLight";
 import Footer from "@/components/home4/Footer4";
 import earthBg from "@/assets/earth-horizon-bg.jpg";
-import heroImg from "@/assets/compliance-logistics-hero.jpg";
 import qualityAsset from "@/assets/Smart_warehouse_asset_traceability.png.asset.json";
 const qualityImg = qualityAsset.url;
 
@@ -105,7 +104,7 @@ const SmartWarehousing = () => {
         <section className="relative min-h-[600px] flex items-center px-6 md:px-12 pt-32 pb-20 overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
-              src={heroImg}
+              src={qualityImg}
               alt="Compliance-driven warehouse with RFID-tracked aerospace and defense inventory"
               width={1920}
               height={1080}
