@@ -43,7 +43,7 @@ const capabilities = [
     items: [
       "AS9100 and ISO 9001 governed workflows",
       "MIL-SPEC compliant marking and reporting",
-      "Daily manifest reports for full visibility",
+      "Daily manifest reports for full visibility of asset lifecycle",
       "Continuous monitoring of FOD standards",
     ],
   },
