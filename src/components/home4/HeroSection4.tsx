@@ -11,7 +11,7 @@ const HeroSection = () => {
           alt="Precision tool control workstation"
           width={1920}
           height={1080}
-          className="w-full h-full object-cover object-left origin-left scale-[1.12] md:scale-[1.5] opacity-35"
+          className="w-full h-full object-cover object-left origin-left scale-[1.12] md:scale-[1.5] opacity-25"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#FAF8F5] via-[#FAF8F5]/80 to-[#FAF8F5]/82" />
         <div className="absolute inset-0 bg-gradient-to-l from-[#FAF8F5]/88 via-[#FAF8F5]/45 to-transparent" />
