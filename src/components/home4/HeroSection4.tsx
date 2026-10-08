@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import heroBgAsset from "@/assets/Precision_Tool_Control_Workstation.png.asset.json";
+import heroBgAsset from "@/assets/Smart_warehouse_asset_traceability.png.asset.json";
 const heroBg = heroBgAsset.url;
 
 const HeroSection = () => {
@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 z-0">
         <img
           src={heroBg}
-          alt="Precision tool control workstation"
+          alt="Smart warehouse asset traceability"
           width={1920}
           height={1080}
           className="w-full h-full object-cover object-left origin-left scale-[1.12] md:scale-[1.5] opacity-25"
