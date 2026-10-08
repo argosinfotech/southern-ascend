@@ -78,7 +78,7 @@ const CapabilitiesSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-40px" }}
                 transition={{ duration: 0.5, delay: 0.1 + i * 0.08, ease: [0.25, 0.46, 0.45, 0.94] }}
-                className={`px-6 md:px-8 py-6 ${
+                className={`flex h-full flex-col px-6 md:px-8 py-6 ${
                   i > 0 ? "lg:border-l lg:border-dashed lg:border-white/20" : ""
                 }`}
               >
@@ -86,12 +86,12 @@ const CapabilitiesSection = () => {
                 <h3 className="font-headline font-extrabold text-white text-lg md:text-xl uppercase tracking-tight mb-5">
                   {cap.title}
                 </h3>
-                <p className="text-white/65 text-sm leading-relaxed">
+                <p className="text-white/65 text-sm leading-relaxed mb-6">
                   {cap.description}
                 </p>
                 <a
                   href="#"
-                  className="inline-flex items-center gap-1.5 mt-5 text-secondary text-sm font-medium hover:text-secondary/80 transition-colors"
+                  className="mt-auto inline-flex items-center gap-1.5 whitespace-nowrap text-secondary text-sm font-medium hover:text-secondary/80 transition-colors"
                 >
                   Learn More <ArrowRight className="w-4 h-4" />
                 </a>
