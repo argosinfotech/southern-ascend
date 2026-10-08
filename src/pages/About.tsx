@@ -12,7 +12,7 @@ const stats = [
   { num: "1974", label: "Year Founded" },
   { num: "50+", label: "Years of Expertise" },
   { num: "40+", label: "Locations Nationwide" },
-  { num: "300+", label: "Supplier Partners" },
+  { num: "3,600", label: "Supplier Network" },
 ];
 
 const milestones = [
@@ -75,7 +75,7 @@ const differentiators = [
   {
     icon: Globe2,
     title: "Network-Backed Scale",
-    body: "Access to 40+ fulfillment locations and 300+ supplier partners through the Stephen Gould network. Boutique-level service with enterprise-level procurement power and logistics reach.",
+    body: "Access to 40+ fulfillment locations and a 3,600-supplier network through Stephen Gould. Boutique-level service with enterprise-level procurement power and logistics reach.",
   },
 ];
 
@@ -84,9 +84,9 @@ const advantages = [
   "AS9100 certified quality management system.",
   "CMMC Level 2 Readiness and ITAR compliant operations.",
   "Access to 40+ fulfillment locations across North America.",
-  "300+ supplier partners for virtually any tool or component requirement.",
+  "A 3,600-supplier network for virtually any tool or component requirement.",
   "GSA Schedule contract holder serving DOD E-Mall, DLA, and federal agencies.",
-  "Privately held since 1939 with the financial stability of a half-billion-dollar organization.",
+  "Privately held and operated since 1939 with the financial stability of a half-billion-dollar organization.",
 ];
 
 const About = () => {
@@ -356,7 +356,7 @@ const About = () => {
               Privately Held. Operator Owned.
             </h2>
             <p className="text-white/60 leading-relaxed text-base">
-              The Stephen Gould Corporation has been privately held by the same ownership since 1939. No outside investors. No quarterly pressure. Just a long-term commitment to doing right by customers, built over eight decades and counting.
+              The Stephen Gould Corporation has been privately held and operated by the same ownership since 1939. No outside investors. No quarterly pressure. Just a long-term commitment to doing right by customers, built over eight decades and counting.
             </p>
           </motion.div>
         </section>
