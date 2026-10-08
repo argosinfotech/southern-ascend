@@ -3,14 +3,13 @@ import { motion } from "framer-motion";
 const certs = [
   { title: "AS9100:D", subtitle: "Certified Quality" },
   { title: "ISO 9001:2015", subtitle: "Global Standards" },
-  { title: "AS9120:B", subtitle: "Distribution & Stockist" },
   { title: "AS9100:D", subtitle: "Aviation & Defense" },
 ];
 
 const TrustBar = () => {
   return (
     <section className="relative bg-[#082A40] py-10 px-6 md:px-12">
-      <div className="max-w-[1920px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div className="max-w-[1920px] mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8">
         {certs.map((cert, i) => (
           <motion.div
             key={i}
