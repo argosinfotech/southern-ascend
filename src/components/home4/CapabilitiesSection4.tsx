@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Wrench, Radio, Plane, Landmark, ArrowRight } from "lucide-react";
+import { Wrench, Radio, Warehouse, Landmark, ArrowRight } from "lucide-react";
 import earthBg from "@/assets/earth-horizon-bg.jpg";
 
 const capabilities = [
@@ -14,9 +14,9 @@ const capabilities = [
     description: "Automated asset tracking and Foreign Object Debris prevention.",
   },
   {
-    icon: Plane,
-    title: "Compliant Logistics",
-    description: "Compliant logistics tailored for defense and government support.",
+    icon: Warehouse,
+    title: "Smart Warehousing",
+    description: "Controlled storage, real-time inventory visibility, and accurate order fulfillment.",
   },
   {
     icon: Landmark,
