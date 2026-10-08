@@ -9,7 +9,6 @@ const footerLinks = {
   Certifications: [
     { label: "AS9100:D", href: "#quality" },
     { label: "ISO 9001:2015", href: "#quality" },
-    { label: "AS9120:B", href: "#quality" },
     { label: "AS9100:D", href: "#quality" },
   ],
 };

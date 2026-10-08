@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Check, ShieldCheck, Globe2, Boxes, Award, FileCheck2, TrendingDown, Mail, Phone, MapPin, ArrowRight, Image } from "lucide-react";
+import { Check, ShieldCheck, Globe2, Award, FileCheck2, TrendingDown, Mail, Phone, MapPin, ArrowRight, Image } from "lucide-react";
 import HeaderLight from "@/components/home4/HeaderLight";
 import Footer from "@/components/home4/Footer4";
 import earthBg from "@/assets/earth-horizon-bg.jpg";
@@ -8,7 +8,6 @@ import qualityBg from "@/assets/quality-bg-light.jpg";
 const certs = [
   { code: "AS9100:D", label: "Certified Quality", icon: ShieldCheck },
   { code: "ISO 9001:2015", label: "Global Standards", icon: Globe2 },
-  { code: "AS9120:B", label: "Distribution & Stockist", icon: Boxes },
   { code: "AS9100:D", label: "Aviation & Defense", icon: Award },
 ];
 
@@ -50,7 +49,6 @@ const policy = [
 
 const advantages = [
   "AS9100:D and ISO 9001:2015 certified quality management system audited to aerospace standards.",
-  "AS9120:B certified distribution and stockist operations for controlled aerospace components.",
   "GSA Schedule GS-06F-0047S with 250,000+ industrial-grade line offerings for federal procurement.",
   "Registered small business with CCR, adhering to Six Sigma and lean principles.",
   "Distributor agreements with major manufacturers recognized by government end users.",
@@ -92,7 +90,7 @@ const Certifications = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-gray-600 text-lg max-w-3xl font-body leading-relaxed mb-8"
             >
-              Gould Southern maintains AS9100:D, ISO 9001:2015, and AS9120:B certifications, aligning our quality management system to the global standards adopted by the aerospace industry and the International Aerospace Quality Group (IAQG).
+              Gould Southern maintains AS9100:D and ISO 9001:2015 certifications, aligning our quality management system to the global standards adopted by the aerospace industry and the International Aerospace Quality Group (IAQG).
             </motion.p>
             <motion.a
               initial={{ opacity: 0, y: 16 }}
@@ -108,7 +106,7 @@ const Certifications = () => {
 
         {/* CERT SHOWCASE */}
         <section className="px-6 md:px-12 -mt-10 relative z-10">
-          <div className="max-w-[1920px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+          <div className="max-w-[1920px] mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-5">
             {certs.map((c, i) => (
               <motion.div
                 key={c.code + i}
