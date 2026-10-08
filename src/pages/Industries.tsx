@@ -24,7 +24,8 @@ const overview = [
 
 const advantages = [
   "50+ years serving aerospace, defense, and industrial clients.",
-  "AS9100:D and ISO 9001:2015 certified quality management.",
+  "AS9100 certified quality management.",
+  "CMMC Level 2 Readiness and ITAR compliant operations.",
   "Access to 40+ fulfillment locations and 300+ supplier partners.",
   "GSA Schedule contract holder for streamlined federal procurement.",
   "Custom-engineered solutions, not catalog products repurposed.",

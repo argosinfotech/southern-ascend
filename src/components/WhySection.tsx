@@ -12,7 +12,7 @@ const points = [
     num: "02",
     title: "Quality Rigor",
     description:
-      "Every process is governed by AS9100D protocols, ensuring total accountability from receipt to final delivery.",
+      "Every process is governed by AS9100 protocols, ensuring total accountability from receipt to final delivery.",
   },
   {
     num: "03",

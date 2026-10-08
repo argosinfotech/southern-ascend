@@ -9,9 +9,10 @@ const footerLinks = {
     { label: "Government Contracting", href: "#capabilities" },
   ],
   Certifications: [
-    { label: "AS9100:D", href: "#quality" },
-    { label: "ISO 9001:2015", href: "#quality" },
-    { label: "AS9100:D", href: "#quality" },
+    { label: "AS9100", href: "#quality" },
+    { label: "CMMC Level 2 Readiness", href: "#quality" },
+    { label: "ITAR compliant", href: "#quality" },
+    { label: "ISO 9001", href: "#quality" },
   ],
 };
 

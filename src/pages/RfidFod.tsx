@@ -41,7 +41,7 @@ const capabilities = [
     icon: Workflow,
     title: "Process Integration",
     items: [
-      "AS9100D and ISO 9001 governed workflows",
+      "AS9100 and ISO 9001 governed workflows",
       "MIL-SPEC compliant marking and reporting",
       "Daily manifest reports for full visibility",
       "Continuous monitoring of FOD standards",
