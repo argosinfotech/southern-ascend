@@ -14,7 +14,7 @@ const industries = [
     image: industryDefense,
     title: "Defense & Gov",
     description:
-      "Robust logistics solutions meeting MIL-SPEC requirements for deployment-ready equipment kits.",
+      "Robust logistics solutions meeting MIL-SPEC requirements for deployment-ready equipment kits and field assets.",
   },
   {
     image: industryIndustrial,
