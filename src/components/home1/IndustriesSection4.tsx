@@ -20,7 +20,7 @@ const industries = [
     image: industryIndustrial,
     title: "Industrial Ops",
     description:
-      "Turnkey fulfillment and RFID tracking for complex manufacturing environments and supply chains.",
+      "Turnkey fulfillment and RFID tracking for complex manufacturing environments, plant floors, and supply chains.",
   },
 ];
 
