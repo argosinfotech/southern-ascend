@@ -1,5 +1,5 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -16,7 +16,7 @@ import Certifications from "./pages/Certifications.tsx";
 import GovernmentContracting from "./pages/GovernmentContracting.tsx";
 import Industries from "./pages/Industries.tsx";
 import RfidFod from "./pages/RfidFod.tsx";
-import ComplianceLogistics from "./pages/ComplianceLogistics.tsx";
+import SmartWarehousing from "./pages/SmartWarehousing.tsx";
 import About from "./pages/About.tsx";
 import Contact from "./pages/Contact.tsx";
 import NotFound from "./pages/NotFound.tsx";
@@ -43,7 +43,11 @@ const App = () => (
           <Route path="/government-contracting" element={<GovernmentContracting />} />
           <Route path="/industries" element={<Industries />} />
           <Route path="/rfid-fod" element={<RfidFod />} />
-          <Route path="/compliance-logistics" element={<ComplianceLogistics />} />
+          <Route path="/smart-warehousing" element={<SmartWarehousing />} />
+          <Route
+            path="/compliance-logistics"
+            element={<Navigate to="/smart-warehousing" replace />}
+          />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
