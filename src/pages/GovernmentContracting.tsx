@@ -108,28 +108,6 @@ const advantages = [
   "Custom FOD control kits and safety solutions engineered for defense applications.",
 ];
 
-const caseStudies = [
-  {
-    eyebrow: "Defense",
-    title: "10M Units In 30 Days",
-    body: "During the COVID-19 pandemic, a leading manufacturer of life-saving medical equipment needed to scale carrying cases and foam-packaged components for military triage units. Within 30 days we ramped from a modest annual order to 10 million units — half of a $7.4M emergency contract — by standing up new production lines, quadrupling the workforce, and running 24/7 under stringent defense compliance. All units delivered ahead of schedule with zero rejections.",
-  },
-  {
-    eyebrow: "Healthcare",
-    title: "70M COVID-19 Test Kits",
-    body: "Partnered with a major diagnostic testing provider to design, assemble, and distribute over 70 million COVID-19 test kits during the national pandemic response. Packaging engineering, supply chain coordination, and high-volume fulfillment moved from concept to nationwide deployment in record time, expanding testing access during urgent public health need.",
-  },
-  {
-    eyebrow: "Automotive",
-    title: "6,000 Custom Conveyor Hooks",
-    body: "Designed and manufactured heavy-duty hook fixtures for the first automated overhead conveyor system of its kind in North America. Five unique hook designs and 6,000+ units produced within 18 months, enabling high output in a smaller facility, reducing costs and product damage across ~60 part types.",
-  },
-  {
-    eyebrow: "Consumer Goods",
-    title: "Reshored Turnkey Supply Chain",
-    body: "Reshored a manufacturer's entire turnkey supply chain from China to the United States — manufacturing, packaging, and raw material sourcing. In-house engineers re-engineered 15+ package types from scratch across injection molding, thermoforming, and precision printing. Lead times reduced 60% with a cost-neutral solution versus importing.",
-  },
-];
 
 const federalSupport = [
   "Flexible sourcing and surge-ready U.S. manufacturing hubs to maintain consistent supply under short lead times.",
