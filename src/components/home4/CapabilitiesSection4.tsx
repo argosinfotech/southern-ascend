@@ -7,21 +7,25 @@ const capabilities = [
     icon: Wrench,
     title: "Kitting & Toolkits",
     description: "Streamlined assembly of complex toolsets and mission-ready kits.",
+    href: "/kitting-toolkits",
   },
   {
     icon: Radio,
     title: "RFID / FOD",
     description: "Automated asset tracking and Foreign Object Debris prevention.",
+    href: "/rfid-fod",
   },
   {
     icon: Warehouse,
     title: "Smart Warehousing",
     description: "Controlled storage, real-time inventory visibility, and accurate order fulfillment.",
+    href: "/smart-warehousing",
   },
   {
     icon: Landmark,
     title: "Government Contracting",
     description: "Full-service contracting and procurement support for federal agencies and defense programs.",
+    href: "/government-contracting",
   },
 ];
 
@@ -90,7 +94,7 @@ const CapabilitiesSection = () => {
                   {cap.description}
                 </p>
                 <a
-                  href="#"
+                  href={cap.href}
                   className="mt-auto inline-flex items-center gap-1.5 whitespace-nowrap self-start text-secondary text-sm font-medium hover:text-secondary/80 transition-colors"
                 >
                   Learn More <ArrowRight className="w-4 h-4" />
