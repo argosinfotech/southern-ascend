@@ -9,7 +9,7 @@ import earthBg from "@/assets/earth-horizon-bg.jpg";
 import industryAerospace from "@/assets/silver-jet-hangar.png.asset.json";
 import industryDefense from "@/assets/rugged-cases-ready-to-ship.png.asset.json";
 import industryGovernment from "@/assets/traceable-tool-dispatch.png.asset.json";
-import industryIndustrial from "@/assets/precision-tool-control-station.png.asset.json";
+import industryIndustrial from "@/assets/industrial-workstations.png.asset.json";
 import whySectionImg from "@/assets/why-section.jpg";
 import industryEnergy from "@/assets/turbine-hall-tool-control.png.asset.json";
 import industryShipbuilding from "@/assets/marine-tool-accountability-station.png.asset.json";
@@ -268,7 +268,7 @@ const Industries = () => {
             "From stationary cabinet systems on the production floor to portable kits that move between work cells, we build solutions that integrate with your existing lean workflows rather than adding complexity to them.",
           ]}
           tags={["Shadow Boards", "Lean Integration", "Cabinet Systems", "Tool Accountability"]}
-          photoLabel="Tool control station with shadow board and cutting tools on a production floor"
+          photoLabel="Row of lean production workstations with orange 5S shadow boards, inspection tools, and machined parts"
           photoSrc={industryIndustrial.url}
           reversed
         />
