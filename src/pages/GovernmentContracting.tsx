@@ -116,7 +116,7 @@ const federalSupport = [
   "Flexible sourcing and surge-ready U.S. manufacturing hubs to maintain consistent supply under short lead times.",
   "Secure, compliant facilities aligned with federal contracting security frameworks.",
   "Rapid fulfillment protocols with contingency routing to meet DoD responsiveness standards.",
-  "ITAR compliant operations supported by active DDTC registration.",
+  "ITAR compliant operations.",
   "CMMC Level 2 Readiness supporting controlled defense program requirements.",
   "Global footprint with deep local roots — 40 locations and 3,600+ supplier network supporting federal missions.",
 ];
