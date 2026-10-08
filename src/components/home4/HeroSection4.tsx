@@ -31,9 +31,8 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="font-headline text-4xl md:text-[3.5rem] leading-[1.1] font-extrabold tracking-tighter mb-8 uppercase text-[#1E3448]"
         >
-          Mission-Critical{" "}
-          <span className="text-secondary">Kitting & Packaging</span> for
-          High-Consequence Industries.
+          Tool Control and{" "}
+          <span className="text-secondary">Asset Tracking</span>
         </motion.h1>
 
         <motion.p
