@@ -6,7 +6,6 @@ const footerLinks = {
     { label: "RFID/FOD", href: "/rfid-fod" },
     { label: "Smart Warehousing", href: "/smart-warehousing" },
     { label: "Government Contracting", href: "/government-contracting" },
-    { label: "Government Contracting", href: "#capabilities" },
   ],
   Certifications: [
     { label: "AS9100", href: "#quality" },
