@@ -1,15 +1,16 @@
 import { motion } from "framer-motion";
 
 const certs = [
-  { title: "AS9100:D", subtitle: "Certified Quality" },
-  { title: "ISO 9001:2015", subtitle: "Global Standards" },
-  { title: "AS9100:D", subtitle: "Aviation & Defense" },
+  { title: "AS9100", subtitle: "Primary Certification" },
+  { title: "CMMC Level 2", subtitle: "Readiness" },
+  { title: "ITAR", subtitle: "Compliant" },
+  { title: "ISO 9001", subtitle: "Quality Management" },
 ];
 
 const TrustBar = () => {
   return (
     <section className="relative bg-[#FAF8F5] py-10 px-6 md:px-12 border-t border-[#E8E2D9]">
-      <div className="max-w-[1920px] mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8">
+      <div className="max-w-[1920px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
         {certs.map((cert, i) => (
           <motion.div
             key={i}
