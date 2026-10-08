@@ -14,6 +14,8 @@ import HeaderLight from "@/components/home4/HeaderLight";
 import Footer from "@/components/home4/Footer4";
 import earthBg from "@/assets/earth-horizon-bg.jpg";
 import heroImg from "@/assets/compliance-logistics-hero.jpg";
+import qualityAsset from "@/assets/Smart_warehouse_asset_traceability.png.asset.json";
+const qualityImg = qualityAsset.url;
 
 
 const capabilityBlocks = [
@@ -313,12 +315,12 @@ const SmartWarehousing = () => {
             >
               <div className="w-full aspect-video bg-[#E8E2D9] rounded-lg shadow-2xl overflow-hidden relative">
                 <img
-                  src={heroImg}
-                  alt="Compliance-driven warehouse with RFID-tracked aerospace and defense inventory"
+                  src={qualityImg}
+                  alt="Warehouse workstation with checklist, inventory screen, and RFID scanner beside tracked storage racks"
                   className="absolute inset-0 w-full h-full object-cover"
                   loading="lazy"
-                  width={1024}
-                  height={1024}
+                  width={1672}
+                  height={941}
                 />
                 <div className="absolute inset-0 ring-1 ring-[#1E3448]/10 rounded-lg pointer-events-none" />
               </div>
