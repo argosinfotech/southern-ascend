@@ -226,7 +226,7 @@ const Contact = () => {
                     <InfoItem icon={MapPin} label="Headquarters">
                       Gould Southern<br />2940 Old Norcross Road<br />Duluth, GA 30096
                     </InfoItem>
-                    <InfoItem icon={Phone} label="Customer Service">
+                    <InfoItem icon={Phone} label="Toll-Free Customer Service">
                       <a href="tel:8005489085" className="hover:text-secondary transition-colors">800.548.9085</a>
                     </InfoItem>
                     <InfoItem icon={Phone} label="Local">
