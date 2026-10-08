@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 const certs = [
-  { title: "AS9100", subtitle: "Primary Certification" },
+  { title: "AS9100", subtitle: "Approved" },
   { title: "CMMC Level 2", subtitle: "Readiness" },
   { title: "ITAR", subtitle: "Compliant" },
   { title: "ISO 9001", subtitle: "Quality Management" },

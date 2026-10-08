@@ -6,7 +6,7 @@ import earthBg from "@/assets/earth-horizon-bg.jpg";
 import qualityBg from "@/assets/quality-bg-light.jpg";
 
 const certs = [
-  { code: "AS9100", label: "Primary Certification", icon: ShieldCheck },
+  { code: "AS9100", label: "Approved", icon: ShieldCheck },
   { code: "CMMC Level 2", label: "Readiness", icon: LockKeyhole },
   { code: "ITAR", label: "Compliant", icon: Globe2 },
   { code: "ISO 9001", label: "Quality Management", icon: FileCheck2 },
@@ -94,7 +94,7 @@ const Certifications = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-gray-600 text-lg max-w-3xl font-body leading-relaxed mb-8"
             >
-              Gould Southern maintains AS9100 as its primary certification, supported by CMMC Level 2 Readiness, ITAR compliant operations, and ISO 9001 quality management practices.
+              Gould Southern maintains AS9100 approval, supported by CMMC Level 2 Readiness, ITAR compliant operations, and ISO 9001 quality management practices.
             </motion.p>
             <motion.a
               initial={{ opacity: 0, y: 16 }}

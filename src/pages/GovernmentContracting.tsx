@@ -10,7 +10,7 @@ import secureCage from "@/assets/gs-secure-cage.jpg.asset.json";
 import afHangar from "@/assets/gs-af-hangar.jpg.asset.json";
 
 const credentials = [
-  { code: "AS9100", label: "Primary Certification" },
+  { code: "AS9100", label: "Approved" },
   { code: "CMMC Level 2", label: "Readiness" },
   { code: "ITAR", label: "Compliant" },
   { code: "ISO 9001", label: "Quality Management" },

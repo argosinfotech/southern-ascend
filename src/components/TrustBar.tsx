@@ -4,7 +4,7 @@ const TrustBar = () => {
       <div className="max-w-[1920px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
         <div className="flex flex-col items-center md:items-start">
           <span className="text-secondary font-headline font-black text-xl mb-1">AS9100</span>
-          <span className="text-on-surface-variant font-label text-[0.6875rem] uppercase tracking-widest">Primary Certification</span>
+          <span className="text-on-surface-variant font-label text-[0.6875rem] uppercase tracking-widest">Approved</span>
         </div>
         <div className="flex flex-col items-center md:items-start">
           <span className="text-secondary font-headline font-black text-xl mb-1">CMMC Level 2</span>
