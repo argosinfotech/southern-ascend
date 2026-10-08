@@ -6,12 +6,13 @@ import {
 import HeaderLight from "@/components/home4/HeaderLight";
 import Footer from "@/components/home4/Footer4";
 import earthBg from "@/assets/earth-horizon-bg.jpg";
-import industryAerospace from "@/assets/gs-af-hangar.jpg.asset.json";
-import industryDefense from "@/assets/industry-defense.jpg";
-import industryIndustrial from "@/assets/industry-industrial.jpg";
+import industryAerospace from "@/assets/silver-jet-hangar.png.asset.json";
+import industryDefense from "@/assets/rugged-cases-ready-to-ship.png.asset.json";
+import industryGovernment from "@/assets/traceable-tool-dispatch.png.asset.json";
+import industryIndustrial from "@/assets/precision-tool-control-station.png.asset.json";
 import whySectionImg from "@/assets/why-section.jpg";
-import industryEnergy from "@/assets/industry-energy-light.jpg";
-import capPackaging from "@/assets/cap-packaging.jpg";
+import industryEnergy from "@/assets/turbine-hall-tool-control.png.asset.json";
+import industryShipbuilding from "@/assets/marine-tool-accountability-station.png.asset.json";
 
 const overview = [
   { icon: Plane, label: "Aerospace", desc: "Commercial aviation, aircraft manufacturing, MRO facilities", href: "#aerospace" },
@@ -227,7 +228,7 @@ const Industries = () => {
             "Every kit we build gives inspectors immediate visual confirmation that all tools are present and accounted for. Shadow boards, laser-etched identification, and RFID tracking ensure complete accountability from hangar floor to final sign-off.",
           ]}
           tags={["Custom Tool Kits", "Shadow Boards", "FOD Control", "RFID Tracking", "Laser Etching"]}
-          photoLabel="Aerospace / Aircraft Photography"
+          photoLabel="Commercial jet and turbofan engine in an aircraft hangar"
           photoSrc={industryAerospace.url}
         />
 
@@ -240,8 +241,8 @@ const Industries = () => {
             "We source, assemble, inspect, and deliver fully completed kits so your receiving team gets a ready-to-deploy product, not a shipment of loose components. Kits can be standardized across multiple facilities or customized for task-specific missions.",
           ]}
           tags={["MIL-Spec Kitting", "Turnkey Assembly", "Rugged Cases", "Mobile Tool Cribs"]}
-          photoLabel="Defense / Military Photography"
-          photoSrc={industryDefense}
+          photoLabel="Protective cases and deployment-ready toolkits staged for shipment"
+          photoSrc={industryDefense.url}
         />
 
         <DarkSplit
@@ -253,7 +254,8 @@ const Industries = () => {
             "Federal buyers benefit from pre-negotiated pricing, compliant ordering processes, and distributor agreements with 17+ major manufacturers who recognize the value of providing quality products to government end users.",
           ]}
           tags={["GSA Schedule", "DOD E-Mall", "DLA", "MRO Distribution", "Small Business"]}
-          photoLabel="Government / Federal Photography"
+          photoLabel="Distribution staging with barcoded totes, handheld scanner, and documented fulfillment checklist"
+          photoSrc={industryGovernment.url}
           reversed
         />
 
@@ -266,8 +268,8 @@ const Industries = () => {
             "From stationary cabinet systems on the production floor to portable kits that move between work cells, we build solutions that integrate with your existing lean workflows rather than adding complexity to them.",
           ]}
           tags={["Shadow Boards", "Lean Integration", "Cabinet Systems", "Tool Accountability"]}
-          photoLabel="Manufacturing Floor Photography"
-          photoSrc={industryIndustrial}
+          photoLabel="Tool control station with shadow board and cutting tools on a production floor"
+          photoSrc={industryIndustrial.url}
           reversed
         />
 
@@ -280,8 +282,8 @@ const Industries = () => {
             "Our kitting systems bring the same precision tool accountability used in aerospace programs to energy sector maintenance operations, with kits built to withstand industrial environments and designed for rapid inspection during outage windows.",
           ]}
           tags={["FOD Prevention", "Outage Kitting", "Rugged Systems", "Tool Imaging"]}
-          photoLabel="Energy / Power Plant Photography"
-          photoSrc={industryEnergy}
+          photoLabel="Organized maintenance tools in a turbine facility"
+          photoSrc={industryEnergy.url}
         />
 
         <WhiteSplit
@@ -293,8 +295,8 @@ const Industries = () => {
             "Water-resistant, chemical-resistant cases and purpose-built shadow boards ensure tools survive harsh marine environments. RFID tracking provides digital accountability that complements physical inspection, giving program managers full visibility across multiple work zones and shifts.",
           ]}
           tags={["Marine-Grade Cases", "RFID Tracking", "Multi-Zone Control", "FOD Prevention"]}
-          photoLabel="Shipyard / Marine Photography"
-          photoSrc={capPackaging}
+          photoLabel="Tracked maintenance toolkit in a dockside marine workshop"
+          photoSrc={industryShipbuilding.url}
         />
 
         {/* DARK BAND */}
