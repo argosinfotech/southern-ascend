@@ -5,7 +5,7 @@ import logo from "@/assets/gouldsouthern-logo.png";
 const capabilitiesItems = [
   { label: "Kitting & Toolkits", href: "/kitting-toolkits" },
   { label: "RFID/FOD", href: "/rfid-fod" },
-  { label: "Compliant Logistics", href: "/compliance-logistics" },
+  { label: "Smart Warehousing", href: "/compliance-logistics" },
   { label: "Government Contracting", href: "/government-contracting" },
 ];
 
