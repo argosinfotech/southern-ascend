@@ -474,69 +474,23 @@ const GovernmentContracting = () => {
           </div>
         </section>
 
-        {/* RECORD OF SUCCESS */}
-        <section className="px-6 md:px-12 py-20 md:py-24 bg-[#FAF8F5] border-t border-[#E8E2D9]">
-          <div className="max-w-[1920px] mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.6 }}
-              className="max-w-3xl mb-12"
-            >
-              <span className="text-gray-500 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
-                A Record Of Success
-              </span>
-              <h2 className="font-headline text-3xl md:text-5xl font-extrabold tracking-tighter uppercase text-[#1E3448] mb-6">
-                Proven Results For <span className="text-secondary">Federal Missions.</span>
-              </h2>
-              <div className="w-12 h-[3px] bg-secondary mb-6" />
-              <p className="text-gray-600 leading-relaxed text-lg">
-                Real-world outcomes delivered under demanding timelines, strict compliance requirements, and complex supply chain conditions.
-              </p>
-            </motion.div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {caseStudies.map((cs, i) => (
-                <motion.div
-                  key={cs.title}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: "-40px" }}
-                  transition={{ duration: 0.5, delay: i * 0.05 }}
-                  className="bg-white border-l-4 border-secondary rounded-r-lg p-7 md:p-8 shadow-sm"
-                >
-                  <div className="text-secondary font-label text-[0.6875rem] uppercase tracking-widest mb-2">
-                    {cs.eyebrow}
-                  </div>
-                  <h3 className="font-headline font-extrabold text-[#1E3448] text-xl uppercase tracking-tight mb-3 leading-tight">
-                    {cs.title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed text-sm">{cs.body}</p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-
-        {/* DARK BAND: TAILORED SOLUTIONS */}
-        <section className="relative px-6 md:px-12 py-20 bg-[#061E2E] text-center overflow-hidden">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-1 bg-secondary" />
+        {/* TAILORED SOLUTIONS */}
+        <section className="px-6 md:px-12 py-20 md:py-24 bg-[#FAF8F5] text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative z-10 max-w-3xl mx-auto"
+            className="relative max-w-3xl mx-auto"
           >
             <span className="text-secondary font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
               Agency-Specific Solutions
             </span>
-            <h2 className="font-headline text-3xl md:text-5xl font-extrabold tracking-tighter uppercase text-white mb-6">
-              Tailored To Your Mission.
+            <h2 className="font-headline text-3xl md:text-5xl font-extrabold tracking-tighter uppercase text-[#1E3448] mb-6">
+              Tailored To Your <span className="text-secondary">Mission.</span>
             </h2>
-            <p className="text-white/60 leading-relaxed text-base">
+            <div className="w-12 h-[3px] bg-secondary mx-auto mb-6" />
+            <p className="text-gray-600 leading-relaxed text-base">
               Every agency has unique requirements. Our solutions are configured to meet your specific procurement channels, compliance standards, and operational needs. Contact us to schedule a meeting with our local representatives.
             </p>
           </motion.div>
