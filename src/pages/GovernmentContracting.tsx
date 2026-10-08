@@ -256,7 +256,7 @@ const GovernmentContracting = () => {
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 min-[1360px]:grid-cols-4 gap-6">
               {capabilities.map((c, i) => (
                 <motion.div
                   key={c.title}
@@ -269,7 +269,7 @@ const GovernmentContracting = () => {
                   <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center mb-5">
                     <c.icon className="text-secondary w-6 h-6" strokeWidth={1.75} />
                   </div>
-                  <h3 className="font-headline font-extrabold text-[#1E3448] text-base xl:text-lg uppercase tracking-tight mb-3 leading-tight">
+                  <h3 className="font-headline font-extrabold text-[#1E3448] text-lg uppercase tracking-tight mb-3 leading-tight">
                     {c.title}
                   </h3>
                   <p className="text-gray-600 leading-relaxed text-sm">{c.body}</p>
