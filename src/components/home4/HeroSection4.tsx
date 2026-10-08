@@ -14,6 +14,7 @@ const HeroSection = () => {
           className="w-full h-full object-cover object-left origin-left scale-[1.12] md:scale-[1.5] opacity-35"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#FAF8F5] via-[#FAF8F5]/80 to-[#FAF8F5]/82" />
+        <div className="absolute inset-0 bg-gradient-to-l from-[#FAF8F5]/70 via-[#FAF8F5]/25 to-transparent" />
       </div>
 
       <div className="relative z-10 max-w-4xl">
