@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import {
   Check, Wrench, Package, ShieldCheck, ArrowRight, Image, Boxes,
   Calendar, DollarSign, Globe, Users, Network, Building2,
+  Archive, ScanLine, Layers, Hammer, Cog, PencilRuler,
 } from "lucide-react";
 import HeaderLight from "@/components/home4/HeaderLight";
 import Footer from "@/components/home4/Footer4";
@@ -65,24 +66,37 @@ const whyItems = [
   },
 ];
 
-const manufacturers = [
-  { name: "Apex Tool Group", category: "Hand Tools" },
-  { name: "Apex Tool Group", category: "Cooper Power Tools" },
-  { name: "Chicago Pneumatic", category: "Pneumatic Tools" },
-  { name: "HP Wetmore", category: "Industrial Supply" },
-  { name: "Lavallee & Ide", category: "Cutting Tools" },
-  { name: "Regal Cutting Tools", category: "Cutting Tools" },
-  { name: "Precision Dormer", category: "Drills & Cutting" },
-  { name: "Lista", category: "Storage & Cabinets" },
-  { name: "Lyon", category: "Storage & Workspace" },
-  { name: "Carr Lane", category: "Tooling Components" },
-  { name: "Channellock", category: "Pliers & Hand Tools" },
-  { name: "General", category: "Precision Tools" },
-  { name: "M.K. Morse", category: "Saws & Blades" },
-  { name: "SPI", category: "Precision Measurement" },
-  { name: "Stanley-Proto", category: "Industrial Hand Tools" },
-  { name: "Streamlight", category: "Lighting Solutions" },
-  { name: "Sturtevant Richmont", category: "Torque Tools" },
+const distributionLines = [
+  {
+    icon: Archive,
+    title: "Toolboxes & Digital Toolboxes",
+    body: "Tool storage and accountability solutions that keep equipment organized and accessible.",
+  },
+  {
+    icon: ScanLine,
+    title: "RFID Technology",
+    body: "Tracking solutions that improve asset visibility and traceability.",
+  },
+  {
+    icon: Layers,
+    title: "Vertical Lift Modules",
+    body: "Automated storage solutions that organize inventory and improve retrieval.",
+  },
+  {
+    icon: Hammer,
+    title: "Hand Tools",
+    body: "Hand tool distribution supporting maintenance, assembly, and operational needs.",
+  },
+  {
+    icon: Cog,
+    title: "Cutting Tools",
+    body: "Cutting tools for machining and production applications.",
+  },
+  {
+    icon: PencilRuler,
+    title: "Parts To Print",
+    body: "Custom components produced to customer drawings and specifications.",
+  },
 ];
 
 const advantages = [
@@ -327,21 +341,11 @@ const GovernmentContracting = () => {
                   </div>
                 ))}
               </div>
-
-              <div className="mt-10 flex items-center gap-5">
-                <div className="w-24 h-24 rounded-lg bg-gradient-to-br from-secondary to-[#c93a14] flex flex-col items-center justify-center shrink-0">
-                  <div className="font-headline text-3xl font-extrabold text-white leading-none">250K+</div>
-                  <div className="text-[0.625rem] font-bold uppercase tracking-widest text-white/80 mt-1">Products</div>
-                </div>
-                <p className="text-white/60 text-sm leading-relaxed">
-                  Industrial-grade quality products available to federal customers through our GSA Schedule and direct contracts.
-                </p>
-              </div>
             </motion.div>
           </div>
         </section>
 
-        {/* MANUFACTURER PARTNERS */}
+        {/* DISTRIBUTION & CUSTOM SOLUTIONS */}
         <section className="px-6 md:px-12 py-20 md:py-24 bg-white">
           <div className="max-w-[1920px] mx-auto">
             <motion.div
@@ -352,35 +356,70 @@ const GovernmentContracting = () => {
               className="max-w-3xl mb-12"
             >
               <span className="text-gray-500 font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
-                Authorized Distributor
+                Distribution &amp; Custom Solutions
               </span>
               <h2 className="font-headline text-3xl md:text-5xl font-extrabold tracking-tighter uppercase text-[#1E3448] mb-6">
-                Manufacturer <span className="text-secondary">Partners.</span>
+                Your Distributor And <span className="text-secondary">Custom Solution Provider.</span>
               </h2>
               <div className="w-12 h-[3px] bg-secondary mb-6" />
               <p className="text-gray-600 leading-relaxed text-lg">
-                These manufacturers maintain distributor agreements with Gould Southern on our government contracts, recognizing the value of providing quality products to federal end users.
+                Gould Southern combines tool distribution, storage technology, and custom solutions through a single source. From established products to components made for a specific application, we bring together what your operation needs.
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-              {manufacturers.map((m, i) => (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {distributionLines.map((d, i) => (
                 <motion.div
-                  key={i}
-                  initial={{ opacity: 0, y: 12 }}
+                  key={d.title}
+                  initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-40px" }}
-                  transition={{ duration: 0.35, delay: (i % 8) * 0.03 }}
-                  className="flex items-center gap-3 px-5 py-4 bg-[#FAF8F5] border border-[#E8E2D9] rounded-md hover:border-secondary hover:shadow-md hover:shadow-secondary/10 transition-all"
+                  transition={{ duration: 0.5, delay: 0.05 + (i % 3) * 0.06 }}
+                  className="bg-[#FAF8F5] border border-[#E8E2D9] rounded-lg p-7 hover:border-secondary/40 hover:shadow-lg transition-all"
                 >
-                  <div className="w-2 h-2 rounded-full bg-secondary shrink-0" />
-                  <div>
-                    <div className="font-headline font-bold text-[#1E3448] text-sm tracking-tight">{m.name}</div>
-                    <div className="text-gray-500 text-[0.6875rem] mt-0.5">{m.category}</div>
+                  <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center mb-5">
+                    <d.icon className="text-secondary w-6 h-6" strokeWidth={1.75} />
                   </div>
+                  <h3 className="font-headline font-extrabold text-[#1E3448] text-lg uppercase tracking-tight mb-3 leading-tight">
+                    {d.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-sm">{d.body}</p>
                 </motion.div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* STNA CUSTOM TOOL SOLUTIONS */}
+        <section className="bg-[#061E2E] px-6 md:px-12 py-16 md:py-20">
+          <div className="max-w-[1920px] mx-auto flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-16">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-60px" }}
+              transition={{ duration: 0.6 }}
+              className="flex-1 border-l-2 border-secondary/60 pl-6 md:pl-8"
+            >
+              <span className="text-secondary font-label text-[0.6875rem] uppercase tracking-[0.3em] block mb-4">
+                STNA Custom Tool Solutions
+              </span>
+              <h2 className="font-headline text-3xl md:text-4xl font-extrabold tracking-tighter uppercase text-white mb-5">
+                When The Tool Doesn’t Exist, <span className="text-secondary">We Make It.</span>
+              </h2>
+              <p className="text-white/70 leading-relaxed text-base max-w-2xl">
+                When an off-the-shelf tool cannot do the job, Gould Southern’s STNA team can develop a custom solution for your application.
+              </p>
+            </motion.div>
+            <motion.a
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-60px" }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              href="/contact"
+              className="inline-flex items-center gap-2 bg-secondary text-white px-8 py-4 rounded-md font-headline font-bold uppercase text-sm tracking-widest hover:brightness-110 hover:shadow-lg hover:shadow-secondary/30 transition-all shrink-0"
+            >
+              Explore STNA <ArrowRight className="w-4 h-4" />
+            </motion.a>
           </div>
         </section>
 
