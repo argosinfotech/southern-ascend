@@ -68,13 +68,13 @@ const StephenGouldSection = () => {
             <li className="flex items-center gap-4">
               <Mail className="w-5 h-5 text-secondary" />
               <span className="text-sm font-label tracking-wide uppercase">
-                sales@gouldsouthern.com
+                info@gouldsouthern.com
               </span>
             </li>
             <li className="flex items-center gap-4">
               <Phone className="w-5 h-5 text-secondary" />
               <span className="text-sm font-label tracking-wide uppercase">
-                +1 (770) 476-1860
+                800.548.9085
               </span>
             </li>
             <li className="flex items-center gap-4">
