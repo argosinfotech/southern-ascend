@@ -1,9 +1,9 @@
 const footerLinks = {
   Capabilities: [
-    { label: "Kitting & Toolkits", href: "#capabilities" },
-    { label: "Packaging & Logistics", href: "#capabilities" },
-    { label: "RFID/FOD Solutions", href: "#capabilities" },
-    { label: "Turnkey Integration", href: "#capabilities" },
+    { label: "Kitting & Toolkits", href: "/kitting-toolkits" },
+    { label: "RFID/FOD", href: "/rfid-fod" },
+    { label: "Smart Warehousing", href: "/smart-warehousing" },
+    { label: "Government Contracting", href: "/government-contracting" },
     { label: "Government Contracting", href: "#capabilities" },
   ],
   Certifications: [
