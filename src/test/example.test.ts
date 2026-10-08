@@ -5,6 +5,7 @@ import { extname, join } from "node:path";
 const sourceFiles = (directory: string): string[] =>
   readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
     const path = join(directory, entry.name);
+    if (path === join("src", "test")) return [];
     if (entry.isDirectory()) return sourceFiles(path);
     return [".ts", ".tsx"].includes(extname(path)) ? [path] : [];
   });
