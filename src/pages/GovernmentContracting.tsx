@@ -157,7 +157,7 @@ const GovernmentContracting = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-gray-600 text-lg max-w-3xl font-body leading-relaxed mb-8"
             >
-              As part of the Stephen Gould network — a U.S.-based manufacturing and supply chain provider with 85+ years supporting defense, aerospace, life sciences, and healthcare — Gould Southern delivers mission-critical packaging, logistics, kitting, and MRO distribution to federal agencies across DOD E-Mall, DLA, and GSA.
+              As part of the Stephen Gould network, a U.S.-based manufacturing and supply chain provider with 85+ years supporting defense, aerospace, life sciences, and healthcare. Gould Southern delivers mission-critical packaging, logistics, kitting, and MRO distribution to federal agencies.
             </motion.p>
             <motion.a
               initial={{ opacity: 0, y: 16 }}
