@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { z } from "zod";
 import { toast } from "sonner";
-import { MapPin, Phone, Printer, Mail, ArrowRight, Map as MapIcon, type LucideIcon } from "lucide-react";
+import { MapPin, Phone, Mail, ArrowRight, Map as MapIcon, type LucideIcon } from "lucide-react";
 import HeaderLight from "@/components/home4/HeaderLight";
 import Footer from "@/components/home4/Footer4";
 import earthBg from "@/assets/earth-horizon-bg.jpg";
@@ -19,7 +19,6 @@ const inquirySchema = z.object({
   zip: z.string().trim().max(20).optional().or(z.literal("")),
   email: z.string().trim().email("Invalid email address").max(255),
   phone: z.string().trim().min(7, "Phone is required").max(40),
-  fax: z.string().trim().max(40).optional().or(z.literal("")),
   message: z.string().trim().max(2000).optional().or(z.literal("")),
 });
 
@@ -186,10 +185,6 @@ const Contact = () => {
                   </div>
                 </div>
                 <div>
-                  <label className={labelCls}>Fax</label>
-                  <input name="fax" maxLength={40} placeholder="Fax number (optional)" className={inputCls} />
-                </div>
-                <div>
                   <label className={labelCls}>Additional Information</label>
                   <textarea
                     name="message"
@@ -236,9 +231,6 @@ const Contact = () => {
                     </InfoItem>
                     <InfoItem icon={Phone} label="Local">
                       <a href="tel:7704761860" className="hover:text-secondary transition-colors">(770) 476-1860</a>
-                    </InfoItem>
-                    <InfoItem icon={Printer} label="Fax">
-                      (770) 921-9477
                     </InfoItem>
                     <InfoItem icon={Mail} label="Email">
                       <a href="mailto:info@gouldsouthern.com" className="hover:text-secondary transition-colors break-all">info@gouldsouthern.com</a>

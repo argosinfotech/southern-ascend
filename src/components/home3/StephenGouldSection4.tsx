@@ -56,7 +56,7 @@ const StephenGouldSection = () => {
                 <Mail className="w-4 h-4 text-secondary" />
               </div>
               <span className="text-sm font-label tracking-wide uppercase text-gray-600">
-                sales@gouldsouthern.com
+                info@gouldsouthern.com
               </span>
             </li>
             <li className="flex items-center gap-4 group/item">
@@ -64,7 +64,7 @@ const StephenGouldSection = () => {
                 <Phone className="w-4 h-4 text-secondary" />
               </div>
               <span className="text-sm font-label tracking-wide uppercase text-gray-600">
-                +1 (770) 476-1860
+                800.548.9085
               </span>
             </li>
             <li className="flex items-center gap-4 group/item">

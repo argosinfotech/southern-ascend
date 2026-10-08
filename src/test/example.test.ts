@@ -32,4 +32,20 @@ describe("certification language", () => {
   it("does not reference FAR or DFARS", () => {
     expect(siteSource).not.toMatch(/\b(?:FAR|DFARS)\b/);
   });
+
+  it("uses the correct public contact details", () => {
+    expect(siteSource).not.toMatch(/sales@gouldsouthern\.com/i);
+    expect(siteSource).not.toMatch(/\bfax\b|770[). -]+921[. -]+9477/i);
+    expect(siteSource).toContain("info@gouldsouthern.com");
+  });
+
+  it("keeps the local number only on the Contact page", () => {
+    const sourcesOutsideContact = sourceFiles("src")
+      .filter((path) => path !== join("src", "pages", "Contact.tsx"))
+      .map((path) => readFileSync(path, "utf8"))
+      .join("\n");
+
+    expect(sourcesOutsideContact).not.toMatch(/770[). -]+476[. -]+1860/);
+    expect(readFileSync(join("src", "pages", "Contact.tsx"), "utf8")).toContain("(770) 476-1860");
+  });
 });
