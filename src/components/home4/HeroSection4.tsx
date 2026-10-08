@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBgAsset from "@/assets/Precision_Tool_Control_Workstation.png.asset.json";
+const heroBg = heroBgAsset.url;
 
 const HeroSection = () => {
   return (
@@ -7,7 +8,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 z-0">
         <img
           src={heroBg}
-          alt="High-tech manufacturing facility"
+          alt="Precision tool control workstation"
           width={1920}
           height={1080}
           className="w-full h-full object-cover opacity-40"
