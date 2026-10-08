@@ -76,7 +76,7 @@ const advantages = [
   { label: "Deployment-ready.", text: "Built to exacting weight and space specifications for transport and deployment constraints." },
   { label: "Repeatable.", text: "Standardize a single kit design across multiple locations — or customize per task, per team." },
   { label: "Turnkey delivery.", text: "We source the contents, assemble, inspect, and ship a ready-to-use product." },
-  { label: "GSA contract.", text: "Schedule contract holder (GS-06F-0047S) with 250,000+ line offerings for government procurement." },
+  { label: "GSA contract.", text: "Schedule contract holder (GS-06F-0047S) for government procurement." },
 ];
 
 const KittingToolkits = () => {

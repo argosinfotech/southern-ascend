@@ -75,7 +75,7 @@ const advantages = [
   "RFID-enabled access control limits kit use to authorized personnel or tracks individual items.",
   "Turnkey delivery: we source the contents, assemble, inspect, and ship a ready-to-use product.",
   "Daily manifest reporting gives your team full visibility into project status and timelines.",
-  "GSA Schedule contract holder (GS-06F-0047S) with 250,000+ line offerings for government procurement.",
+  "GSA Schedule contract holder (GS-06F-0047S) for government procurement.",
 ];
 
 const KittingToolkits = () => {
