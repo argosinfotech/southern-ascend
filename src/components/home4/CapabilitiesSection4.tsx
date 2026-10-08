@@ -91,7 +91,7 @@ const CapabilitiesSection = () => {
                 </p>
                 <a
                   href="#"
-                  className="mt-auto inline-flex items-center gap-1.5 whitespace-nowrap text-secondary text-sm font-medium hover:text-secondary/80 transition-colors"
+                  className="mt-auto inline-flex items-center gap-1.5 whitespace-nowrap self-start text-secondary text-sm font-medium hover:text-secondary/80 transition-colors"
                 >
                   Learn More <ArrowRight className="w-4 h-4" />
                 </a>
