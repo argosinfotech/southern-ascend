@@ -15,6 +15,11 @@ const siteSource = [...sourceFiles("src"), "index.html"]
   .join("\n");
 
 describe("certification language", () => {
+  it("labels AS9100 as Approved, never Primary Certification", () => {
+    expect(siteSource).toContain('{ title: "AS9100", subtitle: "Approved" }');
+    expect(siteSource).not.toMatch(/Primary Certification/i);
+  });
+
   it("does not reference CMMC Level 1", () => {
     expect(siteSource).not.toMatch(/CMMC(?:\s+Level)?\s*(?:1|L1)/i);
   });
