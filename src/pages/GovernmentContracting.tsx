@@ -56,7 +56,7 @@ const whyItems = [
   {
     num: "03",
     title: "Supporting Federal Partners",
-    body: "Surge-ready U.S. manufacturing hubs with flexible sourcing and production to maintain consistent supply under short lead times. Global footprint with deep local roots to respond to evolving supply chain dynamics.",
+    body: "Gould Southern supports federal sourcing and procurement while strengthening U.S. supply chain resilience. Counterfeit prevention practices help protect product authenticity and supply chain integrity for mission-critical programs.",
   },
 ];
 
