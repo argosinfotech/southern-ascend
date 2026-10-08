@@ -94,7 +94,7 @@ const standards = [
   "ISO 9001",
 ];
 
-const ComplianceLogistics = () => {
+const SmartWarehousing = () => {
   return (
     <div className="min-h-screen bg-[#FAF8F5] text-gray-900">
       <HeaderLight />
@@ -118,7 +118,7 @@ const ComplianceLogistics = () => {
               transition={{ duration: 0.5 }}
               className="inline-block bg-[#FAF8F5] text-gray-700 font-label text-[0.6875rem] uppercase tracking-[0.2em] px-3 py-1 mb-8"
             >
-              Mission-Critical Logistics
+              Smart Warehousing
             </motion.span>
             <motion.h1
               initial={{ opacity: 0, y: 24 }}
@@ -393,4 +393,4 @@ const ComplianceLogistics = () => {
   );
 };
 
-export default ComplianceLogistics;
+export default SmartWarehousing;
