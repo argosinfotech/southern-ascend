@@ -35,8 +35,8 @@ const capabilities = [
     title: "Compliant Logistics",
     image: capAerospace,
     points: [
-      "AS9100D and ISO 9001 governed processes end-to-end",
-      "ITAR-aware handling for controlled defense components",
+      "AS9100 and ISO 9001 governed processes end-to-end",
+      "ITAR compliant handling for controlled defense components",
       "MIL-SPEC packaging, marking and barcoding compliance",
       "Secure storage and managed release for program timelines",
     ],
@@ -48,7 +48,7 @@ const capabilities = [
     image: capGov,
     points: [
       "GSA contract holder with streamlined federal procurement pathways",
-      "ITAR and DFARS compliant handling for defense programs",
+      "ITAR compliant handling for defense programs",
       "Full-service proposal, packaging, and delivery to government standards",
       "Dedicated program management for multi-year contract execution",
     ],

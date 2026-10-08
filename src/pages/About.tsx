@@ -39,7 +39,7 @@ const milestones = [
   {
     year: "Today",
     title: "50+ Years of Excellence",
-    body: "AS9100:D and ISO 9001:2015 certified, serving the leading names in aerospace and defense from our Duluth, Georgia headquarters, with access to 40+ fulfillment locations and 300+ supplier partners through the Stephen Gould network.",
+    body: "AS9100 certified, with CMMC Level 2 Readiness, ITAR compliant operations, and ISO 9001 quality management practices supporting leading aerospace and defense programs from our Duluth, Georgia headquarters.",
   },
 ];
 
@@ -52,7 +52,7 @@ const principles = [
   {
     num: "02",
     title: "Zero-Tolerance Quality",
-    body: "Our AS9100:D and ISO 9001:2015 certifications are not credentials on a wall. They govern every process from procurement through final delivery, with full traceability at every step.",
+    body: "Our AS9100 certification is not a credential on a wall. It governs every process from procurement through final delivery, with full traceability at every step.",
   },
   {
     num: "03",
@@ -81,7 +81,8 @@ const differentiators = [
 
 const advantages = [
   "50+ years of specialized expertise in industrial kitting and packaging.",
-  "AS9100:D and ISO 9001:2015 certified quality management system.",
+  "AS9100 certified quality management system.",
+  "CMMC Level 2 Readiness and ITAR compliant operations.",
   "Access to 40+ fulfillment locations across North America.",
   "300+ supplier partners for virtually any tool or component requirement.",
   "GSA Schedule contract holder serving DOD E-Mall, DLA, and federal agencies.",

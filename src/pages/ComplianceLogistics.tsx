@@ -88,12 +88,10 @@ const industries = [
 ];
 
 const standards = [
-  "AS9100:D",
-  "ISO 9001:2015",
-  "ITAR",
-  "DDTC Registered",
-  "CMMC Level 1",
-  "CMMC Level 2 targeted Q1 2027",
+  "AS9100",
+  "CMMC Level 2 Readiness",
+  "ITAR compliant",
+  "ISO 9001",
 ];
 
 const ComplianceLogistics = () => {
@@ -339,10 +337,9 @@ const ComplianceLogistics = () => {
               <p className="text-gray-600 leading-relaxed text-base md:text-lg mb-8">
                 Gould Southern's compliance logistics capability is supported
                 by quality and regulatory frameworks that reinforce disciplined
-                execution in regulated environments, including AS9100:D, ISO
-                9001:2015, DDTC registration, ITAR compliance, and CMMC Level 1
-                certification, with advancement to CMMC Level 2 targeted by Q1
-                2027.
+                execution in regulated environments, including AS9100, CMMC
+                Level 2 Readiness, ITAR compliant operations, and ISO 9001
+                quality management practices.
               </p>
               <ul className="grid sm:grid-cols-2 gap-3">
                 {standards.map((s) => (

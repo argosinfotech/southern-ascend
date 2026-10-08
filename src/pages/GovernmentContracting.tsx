@@ -10,10 +10,10 @@ import secureCage from "@/assets/gs-secure-cage.jpg.asset.json";
 import afHangar from "@/assets/gs-af-hangar.jpg.asset.json";
 
 const credentials = [
-  { code: "GSA Schedule", label: "GS-06F-0047S" },
-  { code: "ITAR", label: "DDTC Registered" },
-  { code: "CMMC L1", label: "L2 Targeted Q1 2027" },
-  { code: "AS9100:D", label: "ISO 9001:2015 Certified" },
+  { code: "AS9100", label: "Primary Certification" },
+  { code: "CMMC Level 2", label: "Readiness" },
+  { code: "ITAR", label: "Compliant" },
+  { code: "ISO 9001", label: "Quality Management" },
 ];
 
 const networkStats = [
@@ -86,7 +86,7 @@ const advantages = [
   "Approved vendor for DOD E-Mall, DLA, and GSA procurement channels.",
   "CCR-registered small business adhering to Six Sigma and lean principles.",
   "Distributor agreements with 17+ major manufacturers on government contracts.",
-  "AS9100:D and ISO 9001:2015 certified quality management with full traceability.",
+  "AS9100 certified quality management with full traceability.",
   "Custom FOD control kits and safety solutions engineered for defense applications.",
 ];
 
@@ -117,8 +117,8 @@ const federalSupport = [
   "Flexible sourcing and surge-ready U.S. manufacturing hubs to maintain consistent supply under short lead times.",
   "Secure, compliant facilities aligned with federal contracting security frameworks.",
   "Rapid fulfillment protocols with contingency routing to meet DoD responsiveness standards.",
-  "Active DDTC registration with a fully implemented ITAR compliance program.",
-  "CMMC Level 1 certified, with a formal POA&M advancing to CMMC Level 2 by Q1 2027.",
+  "ITAR compliant operations supported by active DDTC registration.",
+  "CMMC Level 2 Readiness supporting controlled defense program requirements.",
   "Global footprint with deep local roots — 40 locations and 3,600+ supplier network supporting federal missions.",
 ];
 
