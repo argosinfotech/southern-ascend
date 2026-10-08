@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import {
-  Check, Wrench, Package, ShieldCheck, ArrowRight, Image,
+  Check, Wrench, Package, ShieldCheck, ArrowRight, Image, Boxes,
   Calendar, DollarSign, Globe, Users, Network, Building2,
 } from "lucide-react";
 import HeaderLight from "@/components/home4/HeaderLight";
@@ -36,9 +36,14 @@ const capabilities = [
     body: "Purpose-built kitting solutions engineered for FOD (Foreign Object Debris) control. Every kit is designed around your program's tooling requirements, compliance standards, and deployment environment.",
   },
   {
+    icon: Boxes,
+    title: "Packaging Solutions",
+    body: "Custom cases, crates, and protective packaging for sensitive equipment and mission-critical components, including emerging drone applications. Designed to support secure storage, transport, and deployment.",
+  },
+  {
     icon: ShieldCheck,
-    title: "Safety Solutions",
-    body: "Comprehensive safety product sourcing and custom solutions built to meet the specific requirements of defense and government facilities, adhering to Six Sigma and lean principles throughout.",
+    title: "Counterfeit Prevention",
+    body: "Counterfeit prevention practices that help protect product authenticity and reduce the risk of counterfeit materials and components entering federal, defense, and aerospace supply chains.",
   },
 ];
 
@@ -251,7 +256,7 @@ const GovernmentContracting = () => {
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 min-[1360px]:grid-cols-4 gap-6">
               {capabilities.map((c, i) => (
                 <motion.div
                   key={c.title}
