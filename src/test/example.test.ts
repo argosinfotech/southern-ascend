@@ -1,8 +1,15 @@
 import { describe, it, expect } from "vitest";
-import { readFileSync } from "node:fs";
-import { globSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
+import { extname, join } from "node:path";
 
-const siteSource = globSync(["src/**/*.{ts,tsx}", "index.html"])
+const sourceFiles = (directory: string): string[] =>
+  readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
+    const path = join(directory, entry.name);
+    if (entry.isDirectory()) return sourceFiles(path);
+    return [".ts", ".tsx"].includes(extname(path)) ? [path] : [];
+  });
+
+const siteSource = [...sourceFiles("src"), "index.html"]
   .map((path) => readFileSync(path, "utf8"))
   .join("\n");
 
