@@ -15,6 +15,13 @@ const HeroSection = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#FAF8F5] via-[#FAF8F5]/80 to-[#FAF8F5]/82" />
         <div className="absolute inset-0 bg-gradient-to-l from-[#FAF8F5] via-[#FAF8F5]/68 to-transparent" />
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage:
+              "linear-gradient(to left, rgba(250,248,245,0.70) 0%, rgba(250,248,245,0.25) 35%, rgba(250,248,245,0) 65%)",
+          }}
+        />
       </div>
 
       <div className="relative z-10 max-w-4xl">
