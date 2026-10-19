@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import {
-  Check, Wrench, Package, ShieldCheck, ArrowRight, Image, Boxes,
+  Check, Wrench, Package, ShieldCheck, ArrowRight, Boxes,
   Calendar, DollarSign, Globe, Users, Network, Building2,
   Archive, ScanLine, Layers, Hammer, Cog, PencilRuler,
 } from "lucide-react";
@@ -283,12 +283,6 @@ const GovernmentContracting = () => {
             >
               <img src={federalNetwork.url} alt="Federal supply chain network overview" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-br from-[#082A40]/85 via-[#082A40]/60 to-[#082A40]/85" />
-              <div className="relative text-center">
-                <Image className="w-10 h-10 text-white/30 mx-auto mb-3" strokeWidth={1.5} />
-                <span className="text-white/60 font-label text-xs uppercase tracking-widest">
-                  Secure / Compliant Facilities
-                </span>
-              </div>
             </motion.div>
 
             <motion.div
