@@ -7,7 +7,7 @@ import {
 import HeaderLight from "@/components/home4/HeaderLight";
 import Footer from "@/components/home4/Footer4";
 import earthBg from "@/assets/earth-horizon-bg.jpg";
-import secureCage from "@/assets/gs-secure-cage.jpg.asset.json";
+import federalNetwork from "@/assets/futuristic-federal-supply-chain-network.png.asset.json";
 import afHangar from "@/assets/gs-af-hangar.jpg.asset.json";
 
 const credentials = [
@@ -281,7 +281,7 @@ const GovernmentContracting = () => {
               transition={{ duration: 0.6 }}
               className="relative bg-[#0E3A55] min-h-[300px] flex items-center justify-center overflow-hidden"
             >
-              <img src={secureCage.url} alt="Secure access-controlled storage" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+              <img src={federalNetwork.url} alt="Federal supply chain network overview" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-br from-[#082A40]/85 via-[#082A40]/60 to-[#082A40]/85" />
               <div className="relative text-center">
                 <Image className="w-10 h-10 text-white/30 mx-auto mb-3" strokeWidth={1.5} />
