@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import {
-  Check, Wrench, Package, ShieldCheck, ArrowRight, Image, Boxes,
+  Check, Wrench, Package, ShieldCheck, ArrowRight, Boxes,
   Calendar, DollarSign, Globe, Users, Network, Building2,
   Archive, ScanLine, Layers, Hammer, Cog, PencilRuler,
 } from "lucide-react";
